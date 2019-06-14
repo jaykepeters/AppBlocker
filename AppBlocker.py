@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 import Foundation
 import signal
 import re
@@ -10,28 +10,37 @@ from PyObjCTools import AppHelper
 
 # List of all blocked bundle identifiers. Can use regexes.
 blockedBundleIdentifiers = {
-	"com.apple.InstallAssistant.Sierra": {
+	"com.apple.InstallAssistant*": {
 		"alertUser": True,
-		"alertMessage": "macOS Sierra is blocked.",
-		"deleteBlockedApplication": True
+		"alertMessage": "The installation of OS X/macOS is not allowed.",
+		"deleteBlockedApplication": False
 	},
 	"com.apple.Terminal": {
 		"deleteBlockedApplication": True,
 		"alertUser": True,
-		"alertMessage": "Only Jayke is allowed to use the terminal."
 	},
 	"com.google.Chrome":{},
-	"com.microsoft.Word":{}
+	"com.apple.*":{
+		"alertUser": True,
+		"alertMessage": "Apple applications are not allowed!"
+	},
 }
+#blockedBundleIdentifiers.update({'com.apple.Console':{}})
 
-blockedBundleIdentifiers.update({'com.apple.Console':{}})
-print(blockedBundleIdentifiers.keys())
+## Match Regex Identifier Options
+def matchIdentifier(dictionary, substr):
+    result = {}
+    for key in dictionary.keys():
+        if re.match(key, substr):
+            result = dictionary[key]
+            break
+    return result
 
 ## Defaults
 deleteBlockedApplication = False
 
 # Whether the user should be alerted that the launched applicaion was blocked
-alertUser = True
+alertUser = False
 
 # Message displayed to the user when application is blocked
 alertMessage = "The application \"{appname}\" has been blocked by IT"
@@ -51,10 +60,19 @@ class AppLaunch(NSObject):
 		bundleIdentifier = userInfo()['NSApplicationBundleIdentifier']
 
 		# Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
-		if re.match(blockedBundleIdentifiersCombined, bundleIdentifier):
-
+		matched = re.match(blockedBundleIdentifiersCombined, bundleIdentifier)
+		if matched:
+			print("Match Found: " + matched.group())
+		
 			## OPTIONS
-			options = blockedBundleIdentifiers[bundleIdentifier]
+			try:
+				# Verbatim Identifier
+				options = blockedBundleIdentifiers[bundleIdentifier]
+			except:
+				# Regex Identifier
+				print(matched.group())
+				options = matchIdentifier(blockedBundleIdentifiers, matched.group())
+				print(options)
 
 			# Get path of launched app
 			path = userInfo()['NSApplicationPath']
@@ -116,6 +134,8 @@ def alert(message="Default Message", info_text="", buttons=["OK"]):
 
 # Combine all bundle identifiers and regexes to one
 blockedBundleIdentifiersCombined = "(" + ")|(".join(blockedBundleIdentifiers.keys()) + ")"
+## TINKERING
+print(blockedBundleIdentifiersCombined)
 
 # Register for 'NSWorkspaceDidLaunchApplicationNotification' notifications
 nc = Foundation.NSWorkspace.sharedWorkspace().notificationCenter()
