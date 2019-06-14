@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import Foundation
 import signal
 import re
@@ -8,9 +9,25 @@ from AppKit import *
 from PyObjCTools import AppHelper
 
 # List of all blocked bundle identifiers. Can use regexes.
-blockedBundleIdentifiers = ['com.apple.InstallAssistant.Sierra']
+blockedBundleIdentifiers = {
+	"com.apple.InstallAssistant.Sierra": {
+		"alertUser": True,
+		"alertMessage": "macOS Sierra is blocked.",
+		"deleteBlockedApplication": True
+	},
+	"com.apple.Terminal": {
+		"deleteBlockedApplication": True,
+		"alertUser": True,
+		"alertMessage": "Only Jayke is allowed to use the terminal."
+	},
+	"com.google.Chrome":{},
+	"com.microsoft.Word":{}
+}
 
-# Whether the blocked application should be deleted if launched
+blockedBundleIdentifiers.update({'com.apple.Console':{}})
+print(blockedBundleIdentifiers.keys())
+
+## Defaults
 deleteBlockedApplication = False
 
 # Whether the user should be alerted that the launched applicaion was blocked
@@ -36,6 +53,9 @@ class AppLaunch(NSObject):
 		# Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
 		if re.match(blockedBundleIdentifiersCombined, bundleIdentifier):
 
+			## OPTIONS
+			options = blockedBundleIdentifiers[bundleIdentifier]
+
 			# Get path of launched app
 			path = userInfo()['NSApplicationPath']
 
@@ -45,15 +65,20 @@ class AppLaunch(NSObject):
 			# Quit launched app
 			os.kill(pid, signal.SIGKILL)
 
-			# Alert user
-			if alertUser:
-				alert(alertMessage.format(appname=userInfo()['NSApplicationName']), alertInformativeText, ["OK"])
+			if 'deleteBlockedApplication' in options:
+				if options['deleteBlockedApplication']:
+					try:
+						shutil.rmtree(path)
+					except OSError, e:
+						print ("Error: %s - %s." % (e.filename,e.strerror))
 
-			if deleteBlockedApplication:
-				try:
-					shutil.rmtree(path)
-				except OSError, e:
-					print ("Error: %s - %s." % (e.filename,e.strerror))
+			# Alert user
+			if 'alertUser' in options:
+				if options['alertUser']:
+					if 'alertMessage' in options:
+						alert(options['alertMessage'], alertInformativeText, ["OK"])
+			else:
+				alert(alertMessage.format(appname=userInfo()['NSApplicationName']), alertInformativeText, ["OK"])
 
 # Define alert class
 class Alert(object):
@@ -90,7 +115,7 @@ def alert(message="Default Message", info_text="", buttons=["OK"]):
 	ap.displayAlert()
 
 # Combine all bundle identifiers and regexes to one
-blockedBundleIdentifiersCombined = "(" + ")|(".join(blockedBundleIdentifiers) + ")"
+blockedBundleIdentifiersCombined = "(" + ")|(".join(blockedBundleIdentifiers.keys()) + ")"
 
 # Register for 'NSWorkspaceDidLaunchApplicationNotification' notifications
 nc = Foundation.NSWorkspace.sharedWorkspace().notificationCenter()
