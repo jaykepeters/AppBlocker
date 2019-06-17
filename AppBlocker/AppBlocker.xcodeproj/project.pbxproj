@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5520EF422B69CE000ED135D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5520EF322B69CE000ED135D /* main.swift */; };
+		C5520EFC22B7606700ED135D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5520EF322B69CE000ED135D /* main.swift */; };
+		C5520F0122B7732400ED135D /* CLFunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = C5520F0022B7732400ED135D /* CLFunctions.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,9 @@
 /* Begin PBXFileReference section */
 		C5520EF022B69CE000ED135D /* AppBlocker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppBlocker; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5520EF322B69CE000ED135D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C5520EFE22B7732300ED135D /* AppBlocker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppBlocker-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5520EFF22B7732400ED135D /* CLFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLFunctions.h; sourceTree = "<group>"; };
+		C5520F0022B7732400ED135D /* CLFunctions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CLFunctions.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				C5520EF322B69CE000ED135D /* main.swift */,
+				C5520EFF22B7732400ED135D /* CLFunctions.h */,
+				C5520F0022B7732400ED135D /* CLFunctions.c */,
+				C5520EFE22B7732300ED135D /* AppBlocker-Bridging-Header.h */,
 			);
 			path = AppBlocker;
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 				TargetAttributes = {
 					C5520EEF22B69CE000ED135D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -119,7 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5520EF422B69CE000ED135D /* main.swift in Sources */,
+				C5520F0122B7732400ED135D /* CLFunctions.c in Sources */,
+				C5520EFC22B7606700ED135D /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +253,20 @@
 		C5520EF822B69CE000ED135D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				DEVELOPMENT_TEAM = EH7Q7F2F5D;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppBlocker/AppBlocker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -254,9 +274,19 @@
 		C5520EF922B69CE000ED135D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				DEVELOPMENT_TEAM = EH7Q7F2F5D;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppBlocker/AppBlocker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

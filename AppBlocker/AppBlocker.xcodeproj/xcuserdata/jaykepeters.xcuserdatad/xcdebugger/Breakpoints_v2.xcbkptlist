@@ -10,13 +10,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppBlocker/main.swift"
-            timestampString = "582436192.9693201"
+            timestampString = "582453715.342365"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "init()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppBlocker.Observer.__allocating_init() -&gt; AppBlocker.Observer"
+                  moduleName = "AppBlocker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaykepeters/Desktop/AppBlocker/AppBlocker/main.swift"
+                  timestampString = "582503082.2803839"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppBlocker.Observer.init() -&gt; AppBlocker.Observer"
+                  moduleName = "AppBlocker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaykepeters/Desktop/AppBlocker/AppBlocker/main.swift"
+                  timestampString = "582503082.283173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +58,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AppBlocker/main.swift"
-            timestampString = "582436192.969968"
+            timestampString = "582453715.3432879"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "Observer"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppBlocker.Observer.deinit"
+                  moduleName = "AppBlocker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaykepeters/Desktop/AppBlocker/AppBlocker/main.swift"
+                  timestampString = "582503081.689786"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AppBlocker.Observer.__deallocating_deinit"
+                  moduleName = "AppBlocker"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaykepeters/Desktop/AppBlocker/AppBlocker/main.swift"
+                  timestampString = "582503081.733176"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AppBlocker/CLFunctions.c"
+            timestampString = "582453715.343712"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
