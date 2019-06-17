@@ -1,0 +1,51 @@
+{
+	"com.Roblox.*": {
+		"alertUser": true,
+		"alertMessage": "Roblox is not allowed on this computer.",
+		"deleteBlockedApplication": true
+	},
+	"com.apple.InstallAssistant*": {
+		"alertUser": true,
+		"alertMessage": "The installation of OS X/macOS is not allowed.",
+		"deleteBlockedApplication": true
+	},
+	"com.epicgames.EpicGamesLauncher": {
+		"alertUser": false,
+		"deleteBlockedApplication": true
+	},
+	"com.roblox.*": {
+		"alertUser": true,
+		"alertMessage": "Roblox is not allowed on this computer.",
+		"deleteBlockedApplication": true
+	},
+	"com.zeobit.MacKeeper": {
+		"alertUser": true,
+		"alertMessage": "Don't be fooled, MacKeeper is malicious. We've got your back, \n<3 IT",
+		"deleteBlockedApplication": true
+    },
+    "com.valvesoftware.steam": {
+        "alertUser": true,
+        "alertMessage": "Steam is not allowed on this computer.",
+        "deleteBlockedApplication": true
+    },
+    "org.torproject.torbrowser": {
+        "alertUser": true,
+        "alertMessage": "Tor is not allowed on this computer.",
+        "deleteBlockedApplication": true
+    },
+    "org.mozilla.firefox": {
+        "alertUser": true,
+        "alertMessage": "Firefox is not allowed because it can be used to bypass filtering restrictions.",
+        "deleteBlockedApplication": true
+    },
+    "com.apple.DirectoryUtility": {"alertUser": false},
+    "com.jumpcloud.jcagent-tray": {
+        "alertUser": false, 
+        "deleteBlockedApplication": true
+    },
+    "com.operasoftware.Opera": {
+        "alertUser": true,
+        "alertMessage": "Opera is not allowed because it has not been approved by IT.",
+        "deleteBlockedApplication": true
+    }
+}
