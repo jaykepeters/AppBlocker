@@ -64,8 +64,13 @@
 	"com.apple.Terminal": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
-		"alertMessage": "Terminal is for admin users only.",
+		"alertMessage": "Terminal is for power users users only.",
 		"deleteBlockedApplication": true
+	},
+	"com.apple.Console": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Console is for power users users only."
 	},
 	"com.Roblox.*": {
 		"allowedUsers": ["gaming"],
@@ -78,7 +83,20 @@
 		"alertMessage": "The installation of OS X/macOS is not allowed.",
 		"deleteBlockedApplication": true
 	},
-	"com.epicgames.EpicGamesLauncher": {"deleteBlockedApplication": true},
+	"com.apple.DiskUtility": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Disk Utility is for admin users only.",
+		"deleteBlockedApplication": true
+	},
+	"com.apple.bootcampassistant": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Boot Camp Assistant is for admin users only. The installation of Windows 10 may be limited on this computer. Contact your System Adminsitrator for more information if you would like to insall Windows."
+	},
+	"com.epicgames.EpicGamesLauncher": {
+		"deleteBlockedApplication": true
+	},
 	"com.roblox.*": {
 		"allowedUsers": ["gaming"],
 		"alertUser": true,
@@ -89,36 +107,42 @@
 		"alertUser": true,
 		"alertMessage": "Don't be fooled, MacKeeper is malicious. We've got your back, \n<3 IT",
 		"deleteBlockedApplication": true
-    	},
-    	"com.valvesoftware.steam": {
+	},
+	"com.valvesoftware.steam": {
 		"allowedUsers": ["gaming"],
-        	"alertUser": true,
-        	"alertMessage": "Steam is not allowed on this computer.",
-        	"deleteBlockedApplication": true
-    	},
-    	"org.torproject.torbrowser": {
-        	"alertUser": true,
-        	"alertMessage": "Tor is not allowed on this computer.",
-        	"deleteBlockedApplication": true
-    	},
-    	"org.mozilla.firefox": {
-        	"alertUser": true,
-        	"alertMessage": "Firefox is not allowed because it can be used to bypass filtering restrictions.",
-        	"deleteBlockedApplication": true
-    	},
-    	"com.apple.DirectoryUtility": {},
-   	"com.jumpcloud.jcagent-tray": {"deleteBlockedApplication": true},
-    	"com.operasoftware.*": {
-        	"alertUser": true,
-        	"alertMessage": "Opera is not allowed because it has not been approved by IT.",
-        	"deleteBlockedApplication": true
-    	},
+		"alertUser": true,
+		"alertMessage": "Steam is not allowed on this computer.",
+		"deleteBlockedApplication": true
+	},
+	"org.torproject.torbrowser": {
+		"alertUser": true,
+		"alertMessage": "Tor is not allowed on this computer.",
+		"deleteBlockedApplication": true
+	},
+	"org.mozilla.firefox": {
+		"alertUser": true,
+		"alertMessage": "Firefox is not allowed because it can be used to bypass filtering restrictions.",
+		"deleteBlockedApplication": true
+	},
+	"com.apple.DirectoryUtility": {
+		"allowedUsers": ["root"]
+	},
+	"com.jumpcloud.jcagent-tray": {
+		"deleteBlockedApplication": true
+	},
+	"com.operasoftware.*": {
+		"alertUser": true,
+		"alertMessage": "Opera is not allowed because it has not been approved by IT.",
+		"deleteBlockedApplication": true
+	},
 	"com.mojang.*": {
 		"allowedUsers": ["gaming"],
 		"alertUser": true,
 		"alertMessage": "Mojang games are not allowed on this computer.",
 		"deleteBlockedApplication": true
 	},
-	"com.oracle.java.Java-Updater":{},
-	"com.apple.AppStore": {"allowedGroups": ["admin"]}
+	"com.oracle.java.Java-Updater": {},
+	"com.apple.AppStore": {
+		"allowedGroups": ["admin"]
+	}
 }
