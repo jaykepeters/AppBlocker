@@ -1,4 +1,9 @@
 {
+	"com.emtec.zoc.*": "allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like ZOC are not allowed.",
+		"deleteBlockedApplication": true
+	},
 	"io.alacritty": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
