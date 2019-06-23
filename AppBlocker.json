@@ -1,5 +1,6 @@
 {
 	"com.Roblox.*": {
+		"allowedUsers": ["gaming"],
 		"alertUser": true,
 		"alertMessage": "Roblox is not allowed on this computer.",
 		"deleteBlockedApplication": true
@@ -11,6 +12,7 @@
 	},
 	"com.epicgames.EpicGamesLauncher": {"deleteBlockedApplication": true},
 	"com.roblox.*": {
+		"allowedUsers": ["gaming"],
 		"alertUser": true,
 		"alertMessage": "Roblox is not allowed on this computer.",
 		"deleteBlockedApplication": true
@@ -21,6 +23,7 @@
 		"deleteBlockedApplication": true
     	},
     	"com.valvesoftware.steam": {
+		"allowedUsers": ["gaming"],
         	"alertUser": true,
         	"alertMessage": "Steam is not allowed on this computer.",
         	"deleteBlockedApplication": true
@@ -43,6 +46,7 @@
         	"deleteBlockedApplication": true
     	},
 	"com.mojang.*": {
+		"allowedUsers": ["gaming"],
 		"alertUser": true,
 		"alertMessage": "Mojang games are not allowed on this computer.",
 		"deleteBlockedApplication": true
