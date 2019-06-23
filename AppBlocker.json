@@ -1,4 +1,9 @@
 {
+	"com.apple.MigrateAssistant": {
+		"allowedUsers": ["_mbsetupuser", "root"],
+		"alertUser": true,
+		"alertMessage": "Migration Assistant is to be used during the initial setup of this computer only. Only your System Administrator is allowed to run this application."
+	},
 	"com.github.GitHubClient": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
