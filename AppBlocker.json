@@ -3,19 +3,16 @@
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
 		"alertMessage": "Xcode is for use by devlopers only. This may be a mistake.",
-		"deleteBlockedApplication": true
 	},
 	"com.microsoft.VSCode": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
 		"alertMessage": "Visual Studio Code is for use by devlopers only. This may be a mistake.",
-		"deleteBlockedApplication": true
 	},
 	"com.github.atom": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
 		"alertMessage": "Atom is for use by devlopers only. This may be a mistake.",
-		"deleteBlockedApplication": true
 	},
 	"com.emtec.*": {
 		"allowedGroups": ["admin"],
