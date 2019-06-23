@@ -1,5 +1,12 @@
 #!/usr/bin/python
 # Next version, use categorify.org to extract bundle id info, block categories...
+# Users that should have gaming access
+"""
+SOMETHING LIKE THIS, NOT EXACTLY...
+dscl . -create /Groups/gaming RealName "Gaming Users"
+dseditgroup -o edit -a jaykepeters -t user gaming
+
+"""
 print("Status: Starting AppBlocker")
 import Foundation
 import signal
