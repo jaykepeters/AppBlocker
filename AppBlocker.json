@@ -1,5 +1,5 @@
 {
-	"com.emtec.zoc.*": {
+	"com.emtec.*": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
 		"alertMessage": "Alternative terminal applications like ZOC are not allowed.",
