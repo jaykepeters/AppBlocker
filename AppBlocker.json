@@ -47,5 +47,6 @@
 		"alertMessage": "Mojang games are not allowed on this computer.",
 		"deleteBlockedApplication": true
 	},
-	"com.oracle.java.Java-Updater":{}
+	"com.oracle.java.Java-Updater":{},
+	"com.apple.AppStore": {"allowedGroups": ["admin"]}
 }
