@@ -1,4 +1,10 @@
 {
+	"com.apple.ActivityMonitor": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Activity Monitor is for admin users only. It can be used to stop AppBlocker.",
+		"deleteBlockedApplication": true
+	},
 	"com.apple.Terminal": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
