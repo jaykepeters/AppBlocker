@@ -42,6 +42,7 @@
    	 "com.jumpcloud.jcagent-tray": {
         	"alertUser": false, 
         	"deleteBlockedApplication": true
+		 "allowedGroups"
     	},
     	"com.operasoftware.*": {
         	"alertUser": true,
