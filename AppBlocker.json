@@ -1,4 +1,10 @@
 {
+	"com.github.erikberglund.ProfileCreator": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Profile Creator is for experienced Mac SysAdmins only."
+		"deleteBlockedApplication": true
+	},
 	"com.apple.MigrateAssistant": {
 		"allowedUsers": ["_mbsetupuser", "root"],
 		"alertUser": true,
