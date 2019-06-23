@@ -1,4 +1,10 @@
 {
+	"com.apple.Terminal": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Terminal is for admin users only.",
+		"deleteBlockedApplication": true
+	},
 	"com.Roblox.*": {
 		"allowedUsers": ["gaming"],
 		"alertUser": true,
