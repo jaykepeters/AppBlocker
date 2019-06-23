@@ -1,4 +1,22 @@
 {
+	"io.alacritty": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like Alacritty are not allowed.",
+		"deleteBlockedApplication": true
+	},
+	"com.github.railsware.upterm": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like Upterm are not allowed.",
+		"deleteBlockedApplication": true
+	},
+	"net.macterm.MacTerm": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like MacTerm are not allowed.",
+		"deleteBlockedApplication": true
+	},
 	"co.zeit.hyper": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
