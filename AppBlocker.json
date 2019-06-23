@@ -52,5 +52,6 @@
 		"alertUser": true,
 		"alertMessage": "Mojang games are not allowed on this computer.",
 		"deleteBlockedApplication": true
-	}
+	},
+	"com.oracle.java.Java-Updater":{}
 }
