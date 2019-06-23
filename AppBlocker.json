@@ -1,4 +1,9 @@
 {
+	"com.github.GitHubClient": {
+		"allowedGroups": ["_developer"],
+		"alertUser": true,
+		"alertMessage": "Github Desktop is for use by devlopers only. This may be a mistake."
+	},
 	"com.apple.dt.Xcode": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
