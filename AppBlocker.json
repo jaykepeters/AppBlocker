@@ -2,17 +2,17 @@
 	"com.apple.dt.Xcode": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
-		"alertMessage": "Xcode is for use by devlopers only. This may be a mistake.",
+		"alertMessage": "Xcode is for use by devlopers only. This may be a mistake."
 	},
 	"com.microsoft.VSCode": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
-		"alertMessage": "Visual Studio Code is for use by devlopers only. This may be a mistake.",
+		"alertMessage": "Visual Studio Code is for use by devlopers only. This may be a mistake."
 	},
 	"com.github.atom": {
 		"allowedGroups": ["_developer"],
 		"alertUser": true,
-		"alertMessage": "Atom is for use by devlopers only. This may be a mistake.",
+		"alertMessage": "Atom is for use by devlopers only. This may be a mistake."
 	},
 	"com.emtec.*": {
 		"allowedGroups": ["admin"],
