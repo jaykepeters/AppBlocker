@@ -1,3 +1,9 @@
+# Installing and Loading the Launch Daemon
+1. Place net.jayke.AppBlocker.plist into /Library/LaunchDaemons/
+2. `sudo chmod 644 /Library/LaunchDaemons/net.jayke.AppBlocker.plist`
+3. `sudo chown root:wheel /Library/LaunchDaemons/net.jayke.AppBlocker.plist`
+4. `sudo launchctl load -w /Library/LaunchDaemons/net.jayke.AppBlocker.plist`
+
 # AppBlocker
 Block applications by their bundle identifier from launching in the Finder
 
