@@ -1,4 +1,16 @@
 {
+	"co.zeit.hyper": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like Hyper are not allowed.",
+		"deleteBlockedApplication": true
+	},
+	"com.googlecode.iterm2": {
+		"allowedGroups": ["admin"],
+		"alertUser": true,
+		"alertMessage": "Alternative terminal applications like iTerm are not allowed.",
+		"deleteBlockedApplication": true
+	},
 	"com.apple.ActivityMonitor": {
 		"allowedGroups": ["admin"],
 		"alertUser": true,
