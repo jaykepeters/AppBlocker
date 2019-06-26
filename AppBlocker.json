@@ -155,5 +155,10 @@
 	"com.oracle.java.Java-Updater": {},
 	"com.apple.AppStore": {
 		"allowedGroups": ["admin"]
-	}
+	},
+	"com.sublimetext.*": {
+		"allowedGroups": ["_developer"],
+		"alertUser": true,
+		"alertMessage": "Sublime Text is for use by devlopers only. This may be a mistake."
+	}	
 }
