@@ -1,3 +1,5 @@
+Bundle ID Selection List
+- "com.parallels.desktop.installer":{},
 # Installing and Loading the Launch Daemon
 1. Place net.jayke.AppBlocker.plist into /Library/LaunchDaemons/
 2. `sudo chmod 644 /Library/LaunchDaemons/net.jayke.AppBlocker.plist`
