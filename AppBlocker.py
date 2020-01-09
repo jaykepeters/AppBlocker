@@ -5,7 +5,6 @@
 SOMETHING LIKE THIS, NOT EXACTLY...
 dscl . -create /Groups/gaming RealName "Gaming Users"
 dseditgroup -o edit -a jaykepeters -t user gaming
-
 """
 print("Status: Starting AppBlocker")
 import Foundation
@@ -36,7 +35,7 @@ def get_groups(user):
 	return groups
 
 ## CONFIG FILE ##
-config = "/private/var/root/.AppBlocker.json"
+config = "/Users/os/.AppBlocker.json"
 ## CONFIG FILE ##
 
 ## MD5 File Hasher
@@ -52,6 +51,8 @@ def hashfile(file):
 
 ## CONFIG LOAD FUNCTIONS
 def loadConfig():
+	global whitelisted
+
 	global filehash
 	global currentuser
 	global blockedBundleIdentifiers
@@ -78,6 +79,7 @@ def loadConfig():
 
 ## Configuration refresher
 ## No more reloading the agent :)
+## Probably stop for sake of battery life...
 def refreshConfig():
 	threading.Timer(15, refreshConfig).start()
 
@@ -129,19 +131,24 @@ class AppLaunch(NSObject):
 				options = blockedBundleIdentifiers[bundleIdentifier]
 			except:
 				# Regex Identifier
-				print(matched.group())
+				print(matched.group()) ## BUG and NOT WORKING?
 				options = matchIdentifier(blockedBundleIdentifiers, matched.group())
 				print(options)
 
+			## ABSOLUTE PATH
 			def takeAction():
 				# Get path of launched app
 				path = userInfo()['NSApplicationPath']
+				print(path)
 
 				# Get PID of launchd app
 				pid = userInfo()['NSApplicationProcessIdentifier']
 
 				# Quit launched app
-				os.kill(pid, signal.SIGKILL)
+				try:
+					os.kill(pid, signal.SIGKILL)
+				except:
+					print("Error, some other process killed the app first...")
 					
 				# Delete launched app
 				if 'deleteBlockedApplication' in options:
@@ -152,12 +159,11 @@ class AppLaunch(NSObject):
 							print ("Error: %s - %s." % (e.filename,e.strerror))
 
 				# Alert user
-				if 'alertUser' in options:
-					if options['alertUser']:
-						if 'alertMessage' in options:
-							alert(options['alertMessage'], alertInformativeText, ["OK"])
+				if 'alertMessage' in options:
+					alert(options['alertMessage'], alertInformativeText, ["OK"])
+				## REMEMBER THAT ALERTUSER IS NOW DEPRECATED. THE PRESENCE OF THE ALERT MESSAGE IS THE TRIGGER
 
-			## ALLOWED USERS/GROUPS
+			## ALLOWED USERS/GROUPS/FILEPATHS
 			if 'allowedUsers' in options:
 				if options['allowedUsers']:
 					if currentuser not in options['allowedUsers']:
@@ -171,6 +177,12 @@ class AppLaunch(NSObject):
 							membercount += 1
 					if not membercount >= 1:
 						takeAction()
+			elif 'allowedPath' in options:
+				if options['allowedPath'] and options['allowedPath'] != userInfo()['NSApplicationPath']:
+					print(userInfo()['NSApplicationPath'])
+					print(options['allowedPath'])
+					whitelisted = False #experimental
+				 	takeAction()# Maybe convert option path to that of path launched... Making sure compares no matter what...
 			else:
 				takeAction()
 
