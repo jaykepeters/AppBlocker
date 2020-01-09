@@ -1,3 +1,4 @@
+# FIX REGEX: ORGIGINAL FROM ERICK ALREADY DID THAT!!!
 Bundle ID Selection List
 - "com.parallels.desktop.installer":{},
 # Installing and Loading the Launch Daemon
