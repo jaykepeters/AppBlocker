@@ -20,6 +20,8 @@ import json
 import threading
 import hashlib
 
+import plistlib # FOR APP VERSION
+
 ## Current User Function
 # A more "Apple Approved" way
 def current_user():
@@ -81,7 +83,7 @@ def loadConfig():
 ## No more reloading the agent :)
 ## Probably stop for sake of battery life...
 def refreshConfig():
-	threading.Timer(15, refreshConfig).start()
+	threading.Timer(30, refreshConfig).start()
 
 	global blockedBundleIdentifiers
 	global blockedBundleIdentifiersCombined
@@ -160,7 +162,7 @@ class AppLaunch(NSObject):
 
 				# Alert user
 				if 'alertMessage' in options:
-					alert(options['alertMessage'], alertInformativeText, ["OK"])
+					alert(options['alertMessage'], alertInformativeText, ["I Understand"])
 				## REMEMBER THAT ALERTUSER IS NOW DEPRECATED. THE PRESENCE OF THE ALERT MESSAGE IS THE TRIGGER
 
 			## ALLOWED USERS/GROUPS/FILEPATHS
@@ -183,6 +185,13 @@ class AppLaunch(NSObject):
 					print(options['allowedPath'])
 					whitelisted = False #experimental
 				 	takeAction()# Maybe convert option path to that of path launched... Making sure compares no matter what...
+			# elif 'allowedVersion' in options:
+			# 	if options['allowedVersion']:
+			# 		plistPath = os.path(os.path.join([userInfo()['NSApplicationPath'], "Contents/Info.plist"]))
+			# 		pl = plistlib.loadPlist(plistPath)
+			# 		#print(appVersion)
+			# 		if appVersion != options['allowedVersion']:
+			# 			takeAction()
 			else:
 				takeAction()
 
