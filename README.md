@@ -1,3 +1,4 @@
+# exclude /Library/Widgets and /Library/Scripts, none have cfbids
 # note that automator apps can be blocked by wildcarding com.apple.automator.*
 # FIX REGEX: ORGIGINAL FROM ERICK ALREADY DID THAT!!!
 Bundle ID Selection List
