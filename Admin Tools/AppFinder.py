@@ -17,16 +17,13 @@ appDBJSON = "appdb.json"
 
 ## FUNCTIONS
 def getBinaryPlistKey(plist, key):
-    out = subprocess.Popen(['defaults', 'read', plist, key], 
-        stdout=subprocess.PIPE, 
-        stderr=subprocess.STDOUT)
-    stdout, stderr = out.communicate()
+    process = subprocess.Popen(['defaults', 'read', plist, key], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    output = process.stdout.readline()
 
-    # Error check
-    if out.returncode != 0:
-        return None
+    if process.poll() is None:
+        return output.strip()
     else:
-        return stdout.strip()#, stderr
+        return None
 
 def writeDict(_dict, file):
     with open(file, "w") as outfile:
@@ -56,12 +53,17 @@ for app in apps:
     # Set the plist path
     plist = '/'.join([app, 'Contents/Info.plist'])
 
+    # There are no errors, so far
+    error = False # Resolved switching issue in dict...
+
     # Try to get the plist and/or bundle identifier
     try:    
         _plist = plistlib.readPlist(plist)
     except xml.parsers.expat.ExpatError:
+        error = True
         appsWithErrors['binaryPlist'].append(app)
     except IOError:
+        error = True
         appsWithErrors['noPlist'].append(app)        
     
     # Assuming we got a valid, readable plist
@@ -69,35 +71,42 @@ for app in apps:
     try: 
         bundleID = _plist['CFBundleIdentifier']
     except:
+        error = True
         appsWithErrors['noCFBundleIdentifier'].append(app)
 
     # Ok, so we got the bundle id, let's get some more info 
-    applicationDB[bundleID] = {}
-    applicationDB[bundleID]['appPath'] = app
-    for key in addtionalKeys.keys():
-        if key in _plist.keys():
-            value = _plist[key]
-            applicationDB[bundleID][addtionalKeys[key]] = value
+    if not error:
+        applicationDB[bundleID] = {}
+        applicationDB[bundleID]['appPath'] = app
+        for key in addtionalKeys.keys():
+            if key in _plist.keys():
+                value = _plist[key]
+                applicationDB[bundleID][addtionalKeys[key]] = value
 
 # Try to get the binary plist keys (WORKAROUND) SEE DOCS
+counter = 0 #temp
+for app in appsWithErrors['binaryPlist']:
+    counter += 1 #temp
+    plist = '/'.join([app, 'Contents/Info.plist'])
+    bundleID = getBinaryPlistKey(plist, 'CFBundleIdentifier')
+    if bundleID != None:
+        applicationDB[bundleID] = {}
+        applicationDB[bundleID]['appPath'] = app
+        for key in addtionalKeys.keys():
+            value = getBinaryPlistKey(plist, key)
+            if value != None:
+                applicationDB[bundleID][addtionalKeys[key]] = value
+
+## Can't remove item each time for some reason... HOPE
+if counter == len(appsWithErrors['binaryPlist']): #temp
+    del appsWithErrors['binaryPlist'] #temp
 
 # Output our findings to 2 files
 writeDict(applicationDB, appDBJSON)
 writeDict(appsWithErrors, 'appfinder_errors.json')
 
-# Let the user know some things :)
+# Let the user know some key information ;)
 print("Total Apps Found: "+str(len(apps)))
 print("Total Bundle Identifiers found: "+str(len(applicationDB)))
 print("The application database has been exported to: "+appDBJSON)
 print("Any apps with errors can be found in appErrors.json")
-
-for app in appsWithErrors['binaryPlist']:
-    bundleID = getBinaryPlistKey(app+"/Contents/Info.plist", 'CFBundleIdentifier')
-    if bundleID != None:
-        _applicationDB[bundleID] = {}
-        for key in addtionalKeys.keys():
-            value = getBinaryPlistKey(app+"/Contents/Info.plist", key)
-            if value != None:
-                _applicationDB[bundleID][addtionalKeys[key]] = value
-
-print json.dumps(_applicationDB, indent=4, sort_keys=True)
