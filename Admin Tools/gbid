@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(defaults read "$1/Contents/Info.plist" CFBundleIdentifier)
