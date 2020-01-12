@@ -6,6 +6,7 @@ import xml.parsers.expat # for error checking
 
 # Initialize Necessary Types
 applicationDB = {}
+_applicationDB = {}
 appsWithErrors = {
     "noCFBundleIdentifier": [],
     "binaryPlist": [],
@@ -20,7 +21,12 @@ def getBinaryPlistKey(plist, key):
         stdout=subprocess.PIPE, 
         stderr=subprocess.STDOUT)
     stdout, stderr = out.communicate()
-    return stdout.strip(), stderr
+
+    # Error check
+    if out.returncode != 0:
+        return None
+    else:
+        return stdout.strip()#, stderr
 
 def writeDict(_dict, file):
     with open(file, "w") as outfile:
@@ -56,7 +62,7 @@ for app in apps:
     except xml.parsers.expat.ExpatError:
         appsWithErrors['binaryPlist'].append(app)
     except IOError:
-        appsWithErrors['noPlist'].append(app)
+        appsWithErrors['noPlist'].append(app)        
     
     # Assuming we got a valid, readable plist
     # Get the CFBundleIdentifier, or not
@@ -74,11 +80,6 @@ for app in apps:
             applicationDB[bundleID][addtionalKeys[key]] = value
 
 # Try to get the binary plist keys (WORKAROUND) SEE DOCS
-for app in appsWithErrors['noCFBundleIdentifier']:
-    plist = '/'.join([app, 'Contents/Info'])
-    cmdOut = getBinaryPlistKey(plist, 'CFBundleIdentifier')
-    if not 'not' in cmdOut[0]:
-        print(cmdOut[0])
 
 # Output our findings to 2 files
 writeDict(applicationDB, appDBJSON)
@@ -89,3 +90,14 @@ print("Total Apps Found: "+str(len(apps)))
 print("Total Bundle Identifiers found: "+str(len(applicationDB)))
 print("The application database has been exported to: "+appDBJSON)
 print("Any apps with errors can be found in appErrors.json")
+
+for app in appsWithErrors['binaryPlist']:
+    bundleID = getBinaryPlistKey(app+"/Contents/Info.plist", 'CFBundleIdentifier')
+    if bundleID != None:
+        _applicationDB[bundleID] = {}
+        for key in addtionalKeys.keys():
+            value = getBinaryPlistKey(app+"/Contents/Info.plist", key)
+            if value != None:
+                _applicationDB[bundleID][addtionalKeys[key]] = value
+
+print json.dumps(_applicationDB, indent=4, sort_keys=True)
