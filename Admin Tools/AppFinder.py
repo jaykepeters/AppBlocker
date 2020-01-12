@@ -42,7 +42,7 @@ apps = subprocess.check_output(command, shell=True).strip().split("\n")
 # Additional plist keys to check for
 addtionalKeys = {
     "CFBundleDisplayName": "appName",
-    "CFBundleName": "someName",
+    #"CFBundleName": "appName",
     "CFBundleExecutable": "executableName",
     "CFBundleShortVersionString": "appVersion",
     "LSApplicationCategoryType": "category"
@@ -63,25 +63,41 @@ for app in apps:
         error = True
         appsWithErrors['binaryPlist'].append(app)
     except IOError:
-        error = True
-        appsWithErrors['noPlist'].append(app)        
+        if not error: ### EXPERIMENTAL, HEREON
+            error = True
+            appsWithErrors['noPlist'].append(app)
     
-    # Assuming we got a valid, readable plist
     # Get the CFBundleIdentifier, or not
     try: 
         bundleID = _plist['CFBundleIdentifier']
     except:
-        error = True
-        appsWithErrors['noCFBundleIdentifier'].append(app)
+        if not error:
+            error = True
+            appsWithErrors['noCFBundleIdentifier'].append(app)
 
     # Ok, so we got the bundle id, let's get some more info 
     if not error:
-        applicationDB[bundleID] = {}
-        applicationDB[bundleID]['appPath'] = app
+        appInfo = {}
+
+        # GET THE APP DATA, DON'T ADD IT YET
+        appInfo['appPath'] = app
         for key in addtionalKeys.keys():
             if key in _plist.keys():
                 value = _plist[key]
-                applicationDB[bundleID][addtionalKeys[key]] = value
+                appInfo[addtionalKeys[key]] = value
+
+        # NOW ADD THE DATA, CONDITIONALLY
+        if not bundleID in applicationDB.keys():
+            # NORMAL PROCEDURE FOR MOST APPS
+            applicationDB[bundleID] = appInfo
+        else: # MORE THAN ONE OCCURRENCE
+            if type(applicationDB[bundleID]) is not list: # not a list, let's do some moving...
+                originaldata = applicationDB[bundleID].copy()
+                del applicationDB[bundleID]
+                applicationDB[bundleID] = [originaldata, {}]
+                applicationDB[bundleID][1] = appInfo
+            else:
+                applicationDB[bundleID].append(appInfo)
 
 # Try to get the binary plist keys (WORKAROUND) SEE DOCS
 counter = 0 #temp
@@ -89,13 +105,27 @@ for app in appsWithErrors['binaryPlist']:
     counter += 1 #temp
     plist = '/'.join([app, 'Contents/Info.plist'])
     bundleID = getBinaryPlistKey(plist, 'CFBundleIdentifier')
-    if bundleID != None:
-        applicationDB[bundleID] = {}
-        applicationDB[bundleID]['appPath'] = app
+
+    if bundleID != None: # LIKE NORMAL, WE GOT A BUNDLE ID
+        appInfo = {}
+        appInfo['appPath'] = app
         for key in addtionalKeys.keys():
             value = getBinaryPlistKey(plist, key)
             if value != None:
-                applicationDB[bundleID][addtionalKeys[key]] = value
+                appInfo[addtionalKeys[key]] = value
+        
+        # NOW ADD THE DATA, CONDITIONALLY
+        if not bundleID in applicationDB.keys():
+            # NORMAL PROCEDURE FOR MOST APPS
+            applicationDB[bundleID] = appInfo
+        else: # MORE THAN ONE OCCURRENCE
+            if type(applicationDB[bundleID]) is not list: # not a list, let's do some moving...
+                originaldata = applicationDB[bundleID].copy()
+                del applicationDB[bundleID]
+                applicationDB[bundleID] = [originaldata, {}]
+                applicationDB[bundleID][1] = appInfo
+            else:
+                applicationDB[bundleID].append(appInfo)
 
 ## Can't remove item each time for some reason... HOPE
 if counter == len(appsWithErrors['binaryPlist']): #temp
