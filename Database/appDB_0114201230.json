@@ -1,0 +1,2384 @@
+{
+    "Linkury.SafariExtInstall": {
+        "appPath": "/Users/Shared/App_9FCFC912-0E36-4A23-A8DD-2E1FEA48B631-21913-000053841D967BB8/SafariExtInstall.app", 
+        "appVersion": "1.0", 
+        "executableName": "SafariExtInstall"
+    }, 
+    "Oracle.MacJREInstaller": {
+        "appPath": "/Users/os/Library/Application Support/Java/Java 1.8.231.11/Java 8 Update 231.app", 
+        "appVersion": "Java 8 Update 231 build 11", 
+        "executableName": "MacJREInstaller"
+    }, 
+    "adobe.AAMLauncherUtil": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/core/AAMLauncherUtil.app", 
+        "appVersion": "9.0.0.141", 
+        "executableName": "AAMLauncherUtil"
+    }, 
+    "chc.4875E02D9FB21EE389F73B8D1702B320485DF8CE.1": {
+        "appPath": "/Applications/Adobe/Adobe Help.app", 
+        "appVersion": "4.0.244", 
+        "executableName": "Adobe Help"
+    }, 
+    "com.Adobe.Uninstall Product": [
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/DECore/DE5/resources/uninstall/Uninstall Product.app", 
+            "executableName": "Uninstall Product"
+        }, 
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/DECore/DE6/resources/uninstall/Uninstall Product.app", 
+            "executableName": "Uninstall Product"
+        }, 
+        {
+            "appPath": "/Library/Application Support/Adobe/Uninstall/{19D99776-D832-4EB7-84BD-55C06FD8D44C}.app", 
+            "executableName": "Uninstall Product"
+        }, 
+        {
+            "appPath": "/Library/Application Support/Adobe/Uninstall/{8ACD4814-788B-11E1-AC70-A860A781E0D9}/{8ACD4814-788B-11E1-AC70-A860A781E0D9}.app", 
+            "executableName": "Uninstall Product"
+        }
+    ], 
+    "com.Extron.ShareLinkLaucher": {
+        "appPath": "/Applications/ShareLink/ExtronLauncher.app", 
+        "appVersion": "1.0", 
+        "executableName": "ExtronLauncher"
+    }, 
+    "com.Respondus.LockDownBrowser": {
+        "appPath": "/Applications/LockDown Browser.app", 
+        "appVersion": "2.0.5", 
+        "executableName": "LockDown Browser"
+    }, 
+    "com.ShareLink.Extron": {
+        "appName": "ShareLink", 
+        "appPath": "/Applications/ShareLink/ShareLink.app", 
+        "appVersion": "2.0.1.2", 
+        "executableName": "ShareLink"
+    }, 
+    "com.adobe.AAMRegistrationNotifier": [
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/P6/AAM Registration Notifier.app", 
+            "appVersion": "7.0.0.485", 
+            "executableName": "AAM Registration Notifier"
+        }, 
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/P7/AAM Registration Notifier.app", 
+            "appVersion": "9.0.0.121", 
+            "executableName": "AAM Registration Notifier"
+        }
+    ], 
+    "com.adobe.AASIapp": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/P7/AASIapp.app", 
+        "appVersion": "9.0.0.121", 
+        "executableName": "AASIapp"
+    }, 
+    "com.adobe.Acrobat.Pro": {
+        "appPath": "/Applications/Adobe Acrobat X Pro/Adobe Acrobat Pro.app", 
+        "appVersion": "10.1.1", 
+        "executableName": "AdobeAcrobat"
+    }, 
+    "com.adobe.AdobeApplicationManager": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/CCM/Utilities/AdobeApplicationManager.app", 
+        "appVersion": "9.0.1.2", 
+        "executableName": "AdobeApplicationManager"
+    }, 
+    "com.adobe.AdobeApplicationManager-URIHandler-": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/CCM/Utilities/AdobeApplicationManager(URIHandler).app", 
+        "appVersion": "9.0.0.121", 
+        "executableName": "AdobeApplicationManager(URIHandler)"
+    }, 
+    "com.adobe.AdobeIPCBroker": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/IPC/AdobeIPCBroker.app", 
+        "appVersion": "5.2.0.29", 
+        "executableName": "AdobeIPCBroker"
+    }, 
+    "com.adobe.ExtensionManager": {
+        "appPath": "/Applications/Adobe Extension Manager CS6/Adobe Extension Manager CS6.app", 
+        "appVersion": "6.0.8.28", 
+        "executableName": "Adobe Extension Manager CS6"
+    }, 
+    "com.adobe.InDesign": {
+        "appPath": "/Applications/Adobe InDesign CS6/Adobe InDesign CS6.app", 
+        "appVersion": "8.1.0.419", 
+        "executableName": "Adobe InDesign CS6"
+    }, 
+    "com.adobe.Installers.Redirector": [
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/DWA/Setup.app", 
+            "appVersion": "5.0.65.0", 
+            "executableName": "Setup"
+        }, 
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/D6/Setup.app", 
+            "appVersion": "9.0.0.28", 
+            "executableName": "Setup"
+        }
+    ], 
+    "com.adobe.Installers.Setup": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/DECore/Setup.app", 
+        "appVersion": "9.0.0.28", 
+        "executableName": "Setup"
+    }, 
+    "com.adobe.PDApp": {
+        "appName": "Adobe Application Manager", 
+        "appPath": "/Applications/Utilities/Adobe Application Manager/core/Adobe Application Manager.app", 
+        "appVersion": "9.0.0.141", 
+        "executableName": "PDApp"
+    }, 
+    "com.adobe.PDApp.AAMRegistrationNotifier": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/LWA/AAM Registration Notifier.app", 
+        "appVersion": "3.0.64.0", 
+        "executableName": "AAM Registration Notifier"
+    }, 
+    "com.adobe.PDApp.AAMUpdatesNotifier": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/UWA/AAM Updates Notifier.app", 
+        "appVersion": "9.0.0.121", 
+        "executableName": "AAM Updates Notifier"
+    }, 
+    "com.adobe.Photoshop": {
+        "appPath": "/Applications/Adobe Photoshop CS6/Adobe Photoshop CS6.app", 
+        "appVersion": "13.0.6", 
+        "executableName": "Adobe Photoshop CS6"
+    }, 
+    "com.adobe.ViewerBuilder": {
+        "appPath": "/Applications/DPS App Builder.app", 
+        "appVersion": "32.4.5", 
+        "executableName": "DPS App Builder"
+    }, 
+    "com.adobe.ViewerBuilder.installer": {
+        "appPath": "/Library/Application Support/Adobe/Installers/AdobeDigitalPublishingCS6/ContentViewer/Install DPS App Builder.app", 
+        "appVersion": "32.4.5", 
+        "executableName": "Install DPS App Builder"
+    }, 
+    "com.adobe.adobe_licutil": [
+        {
+            "appName": "adobe_licutil", 
+            "appPath": "/Applications/Utilities/Adobe Application Manager/P6/adobe_licutil.app", 
+            "appVersion": "7.0.1.109", 
+            "executableName": "adobe_licutil"
+        }, 
+        {
+            "appPath": "/Applications/Utilities/Adobe Application Manager/LWA/adobe_licutil.app", 
+            "appVersion": "Adobe License Utility 2.0.0.10 (BuildVersion: 2.0; BuildDate: Tue Jul 05 2011 18:00:00)", 
+            "executableName": "adobe_licutil"
+        }, 
+        {
+            "appName": "adobe_licutil", 
+            "appPath": "/Applications/Utilities/Adobe Application Manager/P7/adobe_licutil.app", 
+            "appVersion": "9.0.0.81", 
+            "executableName": "adobe_licutil"
+        }
+    ], 
+    "com.adobe.air.ApplicationInstaller": [
+        {
+            "appPath": "/Applications/Utilities/Adobe AIR Application Installer.app", 
+            "appVersion": "16.0", 
+            "executableName": "Adobe AIR Application Installer"
+        }, 
+        {
+            "appPath": "/Library/Frameworks/Adobe AIR.framework/Versions/1.0/Adobe AIR Application Installer.app", 
+            "appVersion": "16.0", 
+            "executableName": "Adobe AIR Application Installer"
+        }
+    ], 
+    "com.adobe.air.Installer": [
+        {
+            "appPath": "/Applications/Utilities/Adobe AIR Uninstaller.app", 
+            "appVersion": "16.0", 
+            "executableName": "Adobe AIR Installer"
+        }, 
+        {
+            "appPath": "/Library/Frameworks/Adobe AIR.framework/Versions/1.0/Resources/Adobe AIR Updater.app", 
+            "appVersion": "16.0", 
+            "executableName": "Adobe AIR Installer"
+        }, 
+        {
+            "appPath": "/Library/Application Support/Adobe/Installers/AdobeDigitalPublishingCS6/ContentViewer/Adobe AIR Installer.app", 
+            "appVersion": "16.0", 
+            "executableName": "Adobe AIR Installer"
+        }
+    ], 
+    "com.adobe.air.Template": {
+        "appPath": "/Library/Frameworks/Adobe AIR.framework/Versions/1.0/Resources/Template.app", 
+        "appVersion": "16.0", 
+        "executableName": "AppEntry"
+    }, 
+    "com.adobe.ame.application": {
+        "appPath": "/Applications/Adobe Media Encoder CS6/Adobe Media Encoder CS6.app", 
+        "appVersion": "6.0.2", 
+        "executableName": "Adobe Media Encoder CS6"
+    }, 
+    "com.adobe.bridge5": {
+        "appPath": "/Applications/Adobe Bridge CS6/Adobe Bridge CS6.app", 
+        "appVersion": "5.0.2.4", 
+        "executableName": "Adobe Bridge CS6"
+    }, 
+    "com.adobe.csi.CS6ServiceManager": {
+        "appPath": "/Library/Application Support/Adobe/CS6ServiceManager/CS6ServiceManager.app", 
+        "executableName": "CS6ServiceManager"
+    }, 
+    "com.adobe.distiller": {
+        "appPath": "/Applications/Adobe Acrobat X Pro/Acrobat Distiller.app", 
+        "appVersion": "10.1.1", 
+        "executableName": "Distiller"
+    }, 
+    "com.adobe.dmp.contentviewer": {
+        "appPath": "/Applications/Adobe/Adobe Content Viewer.app", 
+        "appVersion": "3.4.3", 
+        "executableName": "Adobe Content Viewer"
+    }, 
+    "com.adobe.dmp.contentviewer.installer": {
+        "appPath": "/Library/Application Support/Adobe/Installers/AdobeDigitalPublishingCS6/ContentViewer/Install Adobe Content Viewer.app", 
+        "appVersion": "3.4.3", 
+        "executableName": "Install Adobe Content Viewer"
+    }, 
+    "com.adobe.dreamweaver-12.0": {
+        "appPath": "/Applications/Adobe Dreamweaver CS6/Adobe Dreamweaver CS6.app", 
+        "appVersion": "12.0.3.5861", 
+        "executableName": "Dreamweaver"
+    }, 
+    "com.adobe.dynamiclinkmanager": {
+        "appPath": "/Library/Application Support/Adobe/Common/dynamiclink/CS6/dynamiclinkmanager.app", 
+        "appVersion": "6.0.0", 
+        "executableName": "dynamiclinkmanager"
+    }, 
+    "com.adobe.dynamiclinkmediaserver": {
+        "appPath": "/Library/Application Support/Adobe/Common/dynamiclinkmediaserver/1.0/dynamiclinkmediaserver.app", 
+        "appVersion": "6.0.1", 
+        "executableName": "dynamiclinkmediaserver"
+    }, 
+    "com.adobe.estoolkit-3.8": {
+        "appPath": "/Applications/Utilities/Adobe Utilities-CS6.localized/ExtendScript Toolkit CS6/ExtendScript Toolkit.app", 
+        "appVersion": "ESTK CS6 3.8.0.12", 
+        "executableName": "ExtendScript Toolkit"
+    }, 
+    "com.adobe.flashplayer.installmanager": {
+        "appPath": "/Applications/Utilities/Adobe Flash Player Install Manager.app", 
+        "appVersion": "32.0.0.303", 
+        "executableName": "Adobe Flash Player Install Manager"
+    }, 
+    "com.adobe.gcclient": {
+        "appPath": "/Library/Application Support/Adobe/AdobeGCClient/AdobeGCClient.app", 
+        "appVersion": "6.4.0.55", 
+        "executableName": "AdobeGCClient"
+    }, 
+    "com.adobe.headlights.LogTransport2App": {
+        "appPath": "/Applications/Utilities/Adobe Application Manager/UWA/LogTransport2.app", 
+        "executableName": "LogTransport2"
+    }, 
+    "com.adobe.illustrator": {
+        "appName": "Adobe Illustrator", 
+        "appPath": "/Applications/Adobe Illustrator CS6/Adobe Illustrator.app", 
+        "appVersion": "691", 
+        "executableName": "Adobe Illustrator"
+    }, 
+    "com.adobe.switchboard-2.0": {
+        "appPath": "/Library/Application Support/Adobe/SwitchBoard/SwitchBoard.app", 
+        "appVersion": "SBSV 2.0.13.7486", 
+        "executableName": "SwitchBoard"
+    }, 
+    "com.apple..NowPlayingWidgetContainer": {
+        "appPath": "/System/Library/CoreServices/NowPlayingWidgetContainer.app", 
+        "appVersion": "1.0", 
+        "executableName": "NowPlayingWidgetContainer"
+    }, 
+    "com.apple.50onPaletteIM": {
+        "appPath": "/System/Library/Input Methods/50onPaletteServer.app", 
+        "appVersion": "1.1.0", 
+        "executableName": "50onPaletteServer"
+    }, 
+    "com.apple.ABAssistantService": {
+        "appPath": "/System/Library/Frameworks/AddressBook.framework/Versions/A/Helpers/ABAssistantService.app", 
+        "appVersion": "11.0", 
+        "executableName": "ABAssistantService"
+    }, 
+    "com.apple.AOSAlertManager": {
+        "appPath": "/System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/Helpers/AOSAlertManager.app", 
+        "appVersion": "1.07", 
+        "executableName": "AOSAlertManager"
+    }, 
+    "com.apple.AOSHeartbeat": {
+        "appPath": "/System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/Helpers/AOSHeartbeat.app", 
+        "appVersion": "1.07", 
+        "executableName": "AOSHeartbeat"
+    }, 
+    "com.apple.AOSPushRelay": {
+        "appPath": "/System/Library/PrivateFrameworks/AOSKit.framework/Versions/A/Helpers/AOSPushRelay.app", 
+        "appVersion": "1.07", 
+        "executableName": "AOSPushRelay"
+    }, 
+    "com.apple.AVB-Audio-Configuration": {
+        "appPath": "/System/Library/CoreServices/AVB Audio Configuration.app", 
+        "appVersion": "1.0", 
+        "executableName": "AVB Audio Configuration"
+    }, 
+    "com.apple.AboutThisMacLauncher": {
+        "appName": "About This Mac", 
+        "appPath": "/System/Library/CoreServices/Applications/About This Mac.app", 
+        "appVersion": "1.0", 
+        "executableName": "About This Mac"
+    }, 
+    "com.apple.AccessibilityVisualsAgent": {
+        "appPath": "/System/Library/PrivateFrameworks/AccessibilitySupport.framework/Versions/A/Resources/AccessibilityVisualsAgent.app", 
+        "appVersion": "1.0", 
+        "executableName": "AccessibilityVisualsAgent"
+    }, 
+    "com.apple.ActivityMonitor": {
+        "appPath": "/Applications/Utilities/Activity Monitor.app", 
+        "appVersion": "10.14", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Activity Monitor"
+    }, 
+    "com.apple.AddressBook": {
+        "appName": "Contacts", 
+        "appPath": "/Applications/Contacts.app", 
+        "appVersion": "12.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Contacts"
+    }, 
+    "com.apple.AddressBook.UrlForwarder": {
+        "appPath": "/System/Library/CoreServices/AddressBookUrlForwarder.app", 
+        "appVersion": "11.0", 
+        "executableName": "AddressBookUrlForwarder"
+    }, 
+    "com.apple.AddressBook.abd": {
+        "appPath": "/System/Library/Frameworks/AddressBook.framework/Versions/A/Helpers/AddressBookManager.app", 
+        "appVersion": "11.0", 
+        "executableName": "AddressBookManager"
+    }, 
+    "com.apple.AddressBook.sync": {
+        "appPath": "/System/Library/Frameworks/AddressBook.framework/Versions/A/Helpers/AddressBookSync.app", 
+        "appVersion": "11.0", 
+        "executableName": "AddressBookSync"
+    }, 
+    "com.apple.AddressBookSourceSync": {
+        "appPath": "/System/Library/Frameworks/AddressBook.framework/Versions/A/Helpers/AddressBookSourceSync.app", 
+        "appVersion": "11.0", 
+        "executableName": "AddressBookSourceSync"
+    }, 
+    "com.apple.AirPlayUIAgent": {
+        "appPath": "/System/Library/CoreServices/AirPlayUIAgent.app", 
+        "appVersion": "2.0", 
+        "executableName": "AirPlayUIAgent"
+    }, 
+    "com.apple.AirPortBaseStationAgent": {
+        "appName": "AirPort Base Station Agent", 
+        "appPath": "/System/Library/CoreServices/AirPort Base Station Agent.app", 
+        "appVersion": "2.2.1", 
+        "executableName": "AirPort Base Station Agent"
+    }, 
+    "com.apple.AirScanScanner": {
+        "appPath": "/System/Library/Image Capture/Devices/AirScanScanner.app", 
+        "appVersion": "14.0", 
+        "executableName": "AirScanScanner"
+    }, 
+    "com.apple.AppStore": {
+        "appPath": "/Applications/App Store.app", 
+        "appVersion": "3.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "App Store"
+    }, 
+    "com.apple.AppleFileServer": {
+        "appPath": "/System/Library/CoreServices/AppleFileServer.app", 
+        "appVersion": "2.1", 
+        "executableName": "AppleFileServer"
+    }, 
+    "com.apple.AppleGraphicsWarning": {
+        "appPath": "/System/Library/CoreServices/AppleGraphicsWarning.app", 
+        "appVersion": "2.3.0", 
+        "executableName": "AppleGraphicsWarning"
+    }, 
+    "com.apple.AppleScriptUtility": {
+        "appPath": "/System/Library/CoreServices/AppleScript Utility.app", 
+        "appVersion": "1.1.2", 
+        "executableName": "AppleScript Utility"
+    }, 
+    "com.apple.AskPermissionUI": {
+        "appPath": "/System/Library/PrivateFrameworks/AskPermission.framework/Versions/A/Resources/AskPermissionUI.app", 
+        "appVersion": "1.0", 
+        "executableName": "AskPermissionUI"
+    }, 
+    "com.apple.AutoImporter": {
+        "appPath": "/System/Library/Image Capture/Support/Application/AutoImporter.app", 
+        "appVersion": "6.7", 
+        "executableName": "AutoImporter"
+    }, 
+    "com.apple.Automator": {
+        "appName": "Automator", 
+        "appPath": "/Applications/Automator.app", 
+        "appVersion": "2.9", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Automator"
+    }, 
+    "com.apple.AutomatorInstaller": {
+        "appName": "Automator Installer", 
+        "appPath": "/System/Library/CoreServices/Automator Installer.app", 
+        "appVersion": "2.9", 
+        "executableName": "Automator Installer"
+    }, 
+    "com.apple.BluetoothFileExchange": {
+        "appPath": "/Applications/Utilities/Bluetooth File Exchange.app", 
+        "appVersion": "6.0.12", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Bluetooth File Exchange"
+    }, 
+    "com.apple.BluetoothSetupAssistant": {
+        "appPath": "/System/Library/CoreServices/Bluetooth Setup Assistant.app", 
+        "appVersion": "6.0.12", 
+        "executableName": "Bluetooth Setup Assistant"
+    }, 
+    "com.apple.BluetoothUIServer": {
+        "appPath": "/System/Library/CoreServices/BluetoothUIServer.app", 
+        "appVersion": "6.0.12", 
+        "executableName": "BluetoothUIServer"
+    }, 
+    "com.apple.BuildWebPage": {
+        "appPath": "/System/Library/Image Capture/Automatic Tasks/Build Web Page.app", 
+        "appVersion": "10.1", 
+        "executableName": "Build Web Page"
+    }, 
+    "com.apple.CCE.CIMFindInputCode": {
+        "appPath": "/System/Library/PrivateFrameworks/CoreChineseEngine.framework/Versions/A/SharedSupport/CIMFindInputCodeTool.app", 
+        "appVersion": "102", 
+        "executableName": "CIMFindInputCodeTool"
+    }, 
+    "com.apple.CalendarFileHandler": {
+        "appPath": "/System/Library/CoreServices/CalendarFileHandler.app", 
+        "appVersion": "8.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "CalendarFileHandler"
+    }, 
+    "com.apple.Calibration-Assistant": {
+        "appPath": "/System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/Resources/Calibration Assistant.app", 
+        "appVersion": "1.0", 
+        "executableName": "Calibration Assistant"
+    }, 
+    "com.apple.CaptiveNetworkAssistant": {
+        "appPath": "/System/Library/CoreServices/Captive Network Assistant.app", 
+        "appVersion": "5.0", 
+        "executableName": "Captive Network Assistant"
+    }, 
+    "com.apple.CertificateAssistant": {
+        "appName": "Certificate Assistant", 
+        "appPath": "/System/Library/CoreServices/Certificate Assistant.app", 
+        "appVersion": "5.0", 
+        "executableName": "Certificate Assistant"
+    }, 
+    "com.apple.CharacterPaletteIM": {
+        "appPath": "/System/Library/Input Methods/CharacterPalette.app", 
+        "appVersion": "2.0.1", 
+        "executableName": "CharacterPalette"
+    }, 
+    "com.apple.Chess": {
+        "appPath": "/Applications/Chess.app", 
+        "appVersion": "3.16", 
+        "category": "public.app-category.board-games", 
+        "executableName": "Chess"
+    }, 
+    "com.apple.ChineseTextConverterService": {
+        "appPath": "/System/Library/Services/ChineseTextConverterService.app", 
+        "appVersion": "2.1", 
+        "executableName": "ChineseTextConverterService"
+    }, 
+    "com.apple.CloudKit.ShareBear": {
+        "appPath": "/System/Library/CoreServices/iCloud.app", 
+        "appVersion": "1.0", 
+        "executableName": "iCloud"
+    }, 
+    "com.apple.ColorSyncCalibrator": {
+        "appPath": "/System/Library/ColorSync/Calibrators/Display Calibrator.app", 
+        "appVersion": "4.11.0", 
+        "executableName": "Display Calibrator"
+    }, 
+    "com.apple.ColorSyncUtility": {
+        "appPath": "/Applications/Utilities/ColorSync Utility.app", 
+        "appVersion": "4.14.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "ColorSync Utility"
+    }, 
+    "com.apple.Console": {
+        "appName": "Console", 
+        "appPath": "/Applications/Utilities/Console.app", 
+        "appVersion": "1.1", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Console"
+    }, 
+    "com.apple.CoreLocationAgent": {
+        "appPath": "/System/Library/CoreServices/CoreLocationAgent.app", 
+        "appVersion": "1486.12", 
+        "executableName": "CoreLocationAgent"
+    }, 
+    "com.apple.DVDPlayer": {
+        "appName": "DVD Player", 
+        "appPath": "/System/Library/CoreServices/Applications/DVD Player.app", 
+        "appVersion": "6.0", 
+        "executableName": "DVD Player"
+    }, 
+    "com.apple.Dictionary": {
+        "appName": "Dictionary", 
+        "appPath": "/Applications/Dictionary.app", 
+        "appVersion": "2.3.0", 
+        "category": "public.app-category.reference", 
+        "executableName": "Dictionary"
+    }, 
+    "com.apple.DigitalColorMeter": {
+        "appPath": "/Applications/Utilities/Digital Color Meter.app", 
+        "appVersion": "5.13", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Digital Color Meter"
+    }, 
+    "com.apple.DirectoryUtility": {
+        "appPath": "/System/Library/CoreServices/Applications/Directory Utility.app", 
+        "appVersion": "6.0", 
+        "executableName": "Directory Utility"
+    }, 
+    "com.apple.DiscHelper": {
+        "appPath": "/System/Library/CoreServices/DiscHelper.app", 
+        "appVersion": "1.0", 
+        "executableName": "DiscHelper"
+    }, 
+    "com.apple.DiskImageMounter": {
+        "appPath": "/System/Library/CoreServices/DiskImageMounter.app", 
+        "appVersion": "480.260.1", 
+        "executableName": "DiskImageMounter"
+    }, 
+    "com.apple.DiskUtility": {
+        "appName": "Disk Utility", 
+        "appPath": "/Applications/Utilities/Disk Utility.app", 
+        "appVersion": "18.0", 
+        "executableName": "Disk Utility"
+    }, 
+    "com.apple.DwellControl": {
+        "appPath": "/System/Library/CoreServices/Dwell Control.app", 
+        "appVersion": "1.0", 
+        "executableName": "Dwell Control"
+    }, 
+    "com.apple.EmojiFunctionRowItem-Container": {
+        "appPath": "/System/Library/Input Methods/EmojiFunctionRowIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "EmojiFunctionRowIM"
+    }, 
+    "com.apple.EscrowSecurityAlert": {
+        "appPath": "/System/Library/CoreServices/EscrowSecurityAlert.app", 
+        "appVersion": "1.0", 
+        "executableName": "EscrowSecurityAlert"
+    }, 
+    "com.apple.ExpansionSlotUtility": {
+        "appName": "Expansion Slot Utility", 
+        "appPath": "/System/Library/CoreServices/Expansion Slot Utility.app", 
+        "appVersion": "1.5.2", 
+        "executableName": "Expansion Slot Utility"
+    }, 
+    "com.apple.FaceTime": {
+        "appName": "FaceTime", 
+        "appPath": "/Applications/FaceTime.app", 
+        "appVersion": "5.0", 
+        "category": "public.app-category.social-networking", 
+        "executableName": "FaceTime"
+    }, 
+    "com.apple.Family": {
+        "appName": "Family", 
+        "appPath": "/System/Library/PrivateFrameworks/FamilyNotification.framework/Versions/A/Resources/Family.app", 
+        "appVersion": "1.0", 
+        "executableName": "Family"
+    }, 
+    "com.apple.FindMyMacMessenger": {
+        "appPath": "/System/Library/PrivateFrameworks/FindMyMac.framework/Versions/A/Resources/FindMyMacMessenger.app", 
+        "appVersion": "4.1", 
+        "executableName": "FindMyMacMessenger"
+    }, 
+    "com.apple.FolderActionsDispatcher": {
+        "appPath": "/System/Library/CoreServices/FolderActionsDispatcher.app", 
+        "appVersion": "1.0", 
+        "executableName": "FolderActionsDispatcher"
+    }, 
+    "com.apple.FolderActionsSetup": {
+        "appName": "Folder Actions Setup", 
+        "appPath": "/System/Library/CoreServices/Applications/Folder Actions Setup.app", 
+        "appVersion": "1.2", 
+        "executableName": "Folder Actions Setup"
+    }, 
+    "com.apple.FollowUpUI": {
+        "appName": "", 
+        "appPath": "/System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Resources/FollowUpUI.app", 
+        "appVersion": "1.0", 
+        "executableName": "FollowUpUI"
+    }, 
+    "com.apple.FontBook": {
+        "appName": "Font Book", 
+        "appPath": "/Applications/Font Book.app", 
+        "appVersion": "9.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Font Book"
+    }, 
+    "com.apple.FontRegistryUIAgent": {
+        "appPath": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/FontRegistryUIAgent.app", 
+        "appVersion": "81.0", 
+        "executableName": "FontRegistryUIAgent"
+    }, 
+    "com.apple.HIM-Container": {
+        "appPath": "/System/Library/Input Methods/HindiIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "HindiIM"
+    }, 
+    "com.apple.Home": {
+        "appName": "Home", 
+        "appPath": "/Applications/Home.app", 
+        "appVersion": "3.0", 
+        "executableName": "Home"
+    }, 
+    "com.apple.IMAutomaticHistoryDeletionAgent": {
+        "appPath": "/System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryDeletionAgent.app", 
+        "appVersion": "10.0", 
+        "executableName": "IMAutomaticHistoryDeletionAgent"
+    }, 
+    "com.apple.ImageCaptureService": {
+        "appPath": "/System/Library/Services/ImageCaptureService.app", 
+        "appVersion": "6.7", 
+        "executableName": "ImageCaptureService"
+    }, 
+    "com.apple.Image_Capture": {
+        "appName": "Image Capture", 
+        "appPath": "/Applications/Image Capture.app", 
+        "appVersion": "8.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Image Capture"
+    }, 
+    "com.apple.Installer-Progress": {
+        "appPath": "/System/Library/CoreServices/Installer Progress.app", 
+        "appVersion": "1.0", 
+        "executableName": "Installer Progress"
+    }, 
+    "com.apple.JapaneseIM-Container": {
+        "appPath": "/System/Library/Input Methods/JapaneseIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "JapaneseIM"
+    }, 
+    "com.apple.JarLauncher": {
+        "appPath": "/System/Library/CoreServices/Jar Launcher.app", 
+        "appVersion": "15.0.1", 
+        "executableName": "Jar Launcher"
+    }, 
+    "com.apple.JavaWebStart": {
+        "appName": "Java Web Start", 
+        "appPath": "/System/Library/CoreServices/Java Web Start.app", 
+        "appVersion": "15.0.1", 
+        "executableName": "Java Web Start"
+    }, 
+    "com.apple.KIM-Container": {
+        "appPath": "/System/Library/Input Methods/KoreanIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "KoreanIM"
+    }, 
+    "com.apple.KeyboardSetupAssistant": {
+        "appPath": "/System/Library/CoreServices/KeyboardSetupAssistant.app", 
+        "appVersion": "10.7", 
+        "executableName": "KeyboardSetupAssistant"
+    }, 
+    "com.apple.KeyboardViewer": {
+        "appName": "Keyboard Viewer", 
+        "appPath": "/System/Library/Input Methods/KeyboardViewer.app", 
+        "appVersion": "3.2", 
+        "executableName": "KeyboardViewer"
+    }, 
+    "com.apple.Language-Chooser": {
+        "appPath": "/System/Library/CoreServices/Language Chooser.app", 
+        "appVersion": "1.0", 
+        "executableName": "Language Chooser"
+    }, 
+    "com.apple.MRT": {
+        "appPath": "/System/Library/CoreServices/MRT.app", 
+        "appVersion": "1.52", 
+        "executableName": "MRT"
+    }, 
+    "com.apple.MakePDF": {
+        "appPath": "/System/Library/Image Capture/Automatic Tasks/MakePDF.app", 
+        "appVersion": "10.1", 
+        "executableName": "MakePDF"
+    }, 
+    "com.apple.ManagedClient": {
+        "appPath": "/System/Library/CoreServices/ManagedClient.app", 
+        "appVersion": "11.2", 
+        "executableName": "ManagedClient"
+    }, 
+    "com.apple.Maps": {
+        "appName": "Maps", 
+        "appPath": "/Applications/Maps.app", 
+        "appVersion": "2.1", 
+        "category": "public.app-category.travel", 
+        "executableName": "Maps"
+    }, 
+    "com.apple.MassStorageCamera": {
+        "appPath": "/System/Library/Image Capture/Devices/MassStorageCamera.app", 
+        "appVersion": "10.1", 
+        "executableName": "MassStorageCamera"
+    }, 
+    "com.apple.MemorySlotUtility": {
+        "appName": "Memory Slot Utility", 
+        "appPath": "/System/Library/CoreServices/Memory Slot Utility.app", 
+        "appVersion": "1.5.3", 
+        "executableName": "Memory Slot Utility"
+    }, 
+    "com.apple.MigrateAssistant": {
+        "appName": "Migration Assistant", 
+        "appPath": "/Applications/Utilities/Migration Assistant.app", 
+        "appVersion": "10.14", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Migration Assistant"
+    }, 
+    "com.apple.MobileDeviceUpdater": {
+        "appPath": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/MobileDeviceUpdater.app", 
+        "appVersion": "1.0", 
+        "executableName": "MobileDeviceUpdater"
+    }, 
+    "com.apple.NetAuthAgent": {
+        "appPath": "/System/Library/CoreServices/NetAuthAgent.app", 
+        "appVersion": "6.2", 
+        "executableName": "NetAuthAgent"
+    }, 
+    "com.apple.NetworkUtility": {
+        "appPath": "/System/Library/CoreServices/Applications/Network Utility.app", 
+        "appVersion": "1.9.2", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Network Utility"
+    }, 
+    "com.apple.Notes": {
+        "appName": "Notes", 
+        "appPath": "/Applications/Notes.app", 
+        "appVersion": "4.6", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Notes"
+    }, 
+    "com.apple.NowPlayingTouchUI": {
+        "appPath": "/System/Library/CoreServices/NowPlayingTouchUI.app", 
+        "appVersion": "1.0", 
+        "executableName": "NowPlayingTouchUI"
+    }, 
+    "com.apple.OBEXAgent": {
+        "appPath": "/System/Library/CoreServices/OBEXAgent.app", 
+        "appVersion": "6.0.12", 
+        "executableName": "OBEXAgent"
+    }, 
+    "com.apple.ODSAgent": {
+        "appName": "ODSAgent", 
+        "appPath": "/System/Library/CoreServices/ODSAgent.app", 
+        "appVersion": "1.8", 
+        "executableName": "ODSAgent"
+    }, 
+    "com.apple.OSDUIHelper": {
+        "appPath": "/System/Library/CoreServices/OSDUIHelper.app", 
+        "appVersion": "1.0", 
+        "executableName": "OSDUIHelper"
+    }, 
+    "com.apple.PAH-Container": {
+        "appPath": "/System/Library/Input Methods/PressAndHold.app", 
+        "appVersion": "1.0", 
+        "executableName": "PressAndHold"
+    }, 
+    "com.apple.PIPAgent": {
+        "appPath": "/System/Library/CoreServices/PIPAgent.app", 
+        "appVersion": "1.0", 
+        "executableName": "PIPAgent"
+    }, 
+    "com.apple.PTPCamera": {
+        "appPath": "/System/Library/Image Capture/Devices/PTPCamera.app", 
+        "appVersion": "10.1", 
+        "executableName": "PTPCamera"
+    }, 
+    "com.apple.PackageKit.Install-in-Progress": {
+        "appPath": "/System/Library/CoreServices/Install in Progress.app", 
+        "appVersion": "3.0", 
+        "executableName": "Install in Progress"
+    }, 
+    "com.apple.PairedDevices": {
+        "appName": "Paired Devices", 
+        "appPath": "/System/Library/CoreServices/Paired Devices.app", 
+        "appVersion": "1.7", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Paired Devices"
+    }, 
+    "com.apple.Pass-Viewer": {
+        "appPath": "/System/Library/CoreServices/Pass Viewer.app", 
+        "appVersion": "1.0", 
+        "executableName": "Pass Viewer"
+    }, 
+    "com.apple.PhotoBooth": {
+        "appPath": "/Applications/Photo Booth.app", 
+        "appVersion": "10.0", 
+        "category": "public.app-category.entertainment", 
+        "executableName": "Photo Booth"
+    }, 
+    "com.apple.PhotoLibraryMigrationUtility": {
+        "appPath": "/System/Library/CoreServices/Photo Library Migration Utility.app", 
+        "appVersion": "2.0", 
+        "category": "public.app-category.photography", 
+        "executableName": "Photo Library Migration Utility"
+    }, 
+    "com.apple.Photos": {
+        "appName": "Photos", 
+        "appPath": "/Applications/Photos.app", 
+        "appVersion": "4.0", 
+        "category": "public.app-category.photography", 
+        "executableName": "Photos"
+    }, 
+    "com.apple.PowerChime": {
+        "appPath": "/System/Library/CoreServices/PowerChime.app", 
+        "appVersion": "1.0", 
+        "executableName": "PowerChime"
+    }, 
+    "com.apple.Preview": {
+        "appName": "Preview", 
+        "appPath": "/Applications/Preview.app", 
+        "appVersion": "10.1", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Preview"
+    }, 
+    "com.apple.ProblemReporter": {
+        "appPath": "/System/Library/CoreServices/Problem Reporter.app", 
+        "appVersion": "10.13", 
+        "executableName": "Problem Reporter"
+    }, 
+    "com.apple.PubSubAgent": {
+        "appPath": "/System/Library/PrivateFrameworks/PubSub.framework/Versions/A/Resources/PubSubAgent.app", 
+        "appVersion": "1.0.5", 
+        "executableName": "PubSubAgent"
+    }, 
+    "com.apple.QuickLookDaemon": {
+        "appPath": "/System/Library/Frameworks/QuickLook.framework/Versions/A/Resources/quicklookd.app", 
+        "appVersion": "5.0", 
+        "executableName": "quicklookd"
+    }, 
+    "com.apple.QuickLookDaemon32": {
+        "appPath": "/System/Library/Frameworks/QuickLook.framework/Versions/A/Resources/quicklookd32.app", 
+        "appVersion": "5.0", 
+        "executableName": "quicklookd32"
+    }, 
+    "com.apple.QuickTimePlayerX": {
+        "appPath": "/Applications/QuickTime Player.app", 
+        "appVersion": "10.5", 
+        "category": "public.app-category.video", 
+        "executableName": "QuickTime Player"
+    }, 
+    "com.apple.RAIDUtility": {
+        "appName": "RAID Utility", 
+        "appPath": "/System/Library/CoreServices/Applications/RAID Utility.app", 
+        "appVersion": "4.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "RAID Utility"
+    }, 
+    "com.apple.RapportUIAgent": {
+        "appPath": "/System/Library/CoreServices/RapportUIAgent.app", 
+        "appVersion": "1.7", 
+        "executableName": "RapportUIAgent"
+    }, 
+    "com.apple.RemoteDesktopAgent": {
+        "appPath": "/System/Library/CoreServices/RemoteManagement/ARDAgent.app", 
+        "appVersion": "3.9.8", 
+        "executableName": "ARDAgent"
+    }, 
+    "com.apple.ReportPanic": {
+        "appPath": "/System/Library/CoreServices/ReportPanic.app", 
+        "appVersion": "10.13", 
+        "executableName": "ReportPanic"
+    }, 
+    "com.apple.SCIM-Container": {
+        "appPath": "/System/Library/Input Methods/SCIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "SCIM"
+    }, 
+    "com.apple.SSMenuAgent": {
+        "appPath": "/System/Library/CoreServices/RemoteManagement/SSMenuAgent.app", 
+        "appVersion": "3.9.8", 
+        "executableName": "SSMenuAgent"
+    }, 
+    "com.apple.STMFramework.UIHelper": {
+        "appPath": "/System/Library/PrivateFrameworks/StorageManagement.framework/Versions/A/Resources/STMUIHelper.app", 
+        "appVersion": "1.0", 
+        "executableName": "STMUIHelper"
+    }, 
+    "com.apple.Safari": {
+        "appName": "Safari", 
+        "appPath": "/Applications/Safari.app", 
+        "appVersion": "12.1.1", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Safari"
+    }, 
+    "com.apple.ScreenReaderUIServer": {
+        "appPath": "/System/Library/PrivateFrameworks/ScreenReader.framework/Versions/A/Resources/ScreenReaderUIServer.app", 
+        "appVersion": "9", 
+        "executableName": "ScreenReaderUIServer"
+    }, 
+    "com.apple.ScreenSaver.Engine": {
+        "appPath": "/System/Library/CoreServices/ScreenSaverEngine.app", 
+        "appVersion": "5.0", 
+        "executableName": "ScreenSaverEngine"
+    }, 
+    "com.apple.ScreenSharing": {
+        "appName": "Screen Sharing", 
+        "appPath": "/System/Library/CoreServices/Applications/Screen Sharing.app", 
+        "appVersion": "1.7.2", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Screen Sharing"
+    }, 
+    "com.apple.ScriptEditor.id.cocoa-applet-template": {
+        "appPath": "/Library/Application Support/Script Editor/Templates/Cocoa-AppleScript Applet.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "CocoaApplet"
+    }, 
+    "com.apple.ScriptEditor.id.droplet-with-settable-properties-template": {
+        "appPath": "/Library/Application Support/Script Editor/Templates/Droplets/Droplet with Settable Properties.app", 
+        "appVersion": "1.0", 
+        "executableName": "droplet"
+    }, 
+    "com.apple.ScriptEditor.id.file-processing-droplet-template": {
+        "appPath": "/Library/Application Support/Script Editor/Templates/Droplets/Recursive File Processing Droplet.app", 
+        "appVersion": "1.0", 
+        "executableName": "droplet"
+    }, 
+    "com.apple.ScriptEditor.id.image-file-processing-droplet-template": {
+        "appPath": "/Library/Application Support/Script Editor/Templates/Droplets/Recursive Image File Processing Droplet.app", 
+        "appVersion": "1.0", 
+        "executableName": "droplet"
+    }, 
+    "com.apple.ScriptEditor2": {
+        "appPath": "/Applications/Utilities/Script Editor.app", 
+        "appVersion": "2.11", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Script Editor"
+    }, 
+    "com.apple.ScriptMenuApp": {
+        "appName": "Script Menu", 
+        "appPath": "/System/Library/CoreServices/Script Menu.app", 
+        "appVersion": "1", 
+        "executableName": "Script Menu"
+    }, 
+    "com.apple.ScriptMonitor": {
+        "appPath": "/System/Library/CoreServices/ScriptMonitor.app", 
+        "appVersion": "1.0.1", 
+        "executableName": "ScriptMonitor"
+    }, 
+    "com.apple.SetupAssistant": {
+        "appPath": "/System/Library/CoreServices/Setup Assistant.app", 
+        "appVersion": "10.10", 
+        "executableName": "Setup Assistant"
+    }, 
+    "com.apple.Siri": {
+        "appPath": "/System/Library/CoreServices/Siri.app", 
+        "appVersion": "146.14.20", 
+        "executableName": "Siri"
+    }, 
+    "com.apple.SocialPushAgent": {
+        "appName": "SocialPushAgent", 
+        "appPath": "/System/Library/CoreServices/SocialPushAgent.app", 
+        "appVersion": "61", 
+        "executableName": "SocialPushAgent"
+    }, 
+    "com.apple.SoftwareUpdate": {
+        "appName": "Software Update", 
+        "appPath": "/System/Library/CoreServices/Software Update.app", 
+        "appVersion": "6", 
+        "executableName": "Software Update"
+    }, 
+    "com.apple.SoftwareUpdateNotificationManager": {
+        "appPath": "/System/Library/PrivateFrameworks/SoftwareUpdate.framework/Versions/A/Resources/SoftwareUpdateNotificationManager.app", 
+        "appVersion": "1.0", 
+        "executableName": "SoftwareUpdateNotificationManager"
+    }, 
+    "com.apple.Spotlight": {
+        "appName": "Spotlight", 
+        "appPath": "/System/Library/CoreServices/Spotlight.app", 
+        "appVersion": "1.0", 
+        "executableName": "Spotlight"
+    }, 
+    "com.apple.Stickies": {
+        "appPath": "/Applications/Stickies.app", 
+        "appVersion": "10.2", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Stickies"
+    }, 
+    "com.apple.StorageManagementLauncher": {
+        "appName": "Storage Management", 
+        "appPath": "/System/Library/CoreServices/Applications/Storage Management.app", 
+        "appVersion": "1.0", 
+        "executableName": "Storage Management"
+    }, 
+    "com.apple.SummaryService": {
+        "appName": "SummaryService", 
+        "appPath": "/System/Library/Services/SummaryService.app", 
+        "appVersion": "2.0", 
+        "executableName": "SummaryService"
+    }, 
+    "com.apple.SyncServices.AppleMobileDeviceHelper": {
+        "appPath": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileDeviceHelper.app", 
+        "appVersion": "5.0", 
+        "executableName": "AppleMobileDeviceHelper"
+    }, 
+    "com.apple.SyncServices.AppleMobileSync": {
+        "appPath": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/AppleMobileSync.app", 
+        "appVersion": "5.0", 
+        "executableName": "AppleMobileSync"
+    }, 
+    "com.apple.SystemImageUtility": {
+        "appName": "System Image Utility", 
+        "appPath": "/System/Library/CoreServices/Applications/System Image Utility.app", 
+        "appVersion": "10.14", 
+        "executableName": "System Image Utility"
+    }, 
+    "com.apple.SystemProfiler": {
+        "appPath": "/Applications/Utilities/System Information.app", 
+        "appVersion": "10.14", 
+        "category": "public.app-category.utilities", 
+        "executableName": "System Information"
+    }, 
+    "com.apple.TCIM-Container": {
+        "appPath": "/System/Library/Input Methods/TCIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "TCIM"
+    }, 
+    "com.apple.Terminal": {
+        "appName": "Terminal", 
+        "appPath": "/Applications/Utilities/Terminal.app", 
+        "appVersion": "2.9.5", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Terminal"
+    }, 
+    "com.apple.TextEdit": {
+        "appName": "TextEdit", 
+        "appPath": "/Applications/TextEdit.app", 
+        "appVersion": "1.14", 
+        "category": "public.app-category.productivity", 
+        "executableName": "TextEdit"
+    }, 
+    "com.apple.ThermalTrap": {
+        "appPath": "/System/Library/CoreServices/ThermalTrap.app", 
+        "appVersion": "1.0", 
+        "executableName": "ThermalTrap"
+    }, 
+    "com.apple.Ticket-Viewer": {
+        "appName": "Ticket Viewer", 
+        "appPath": "/System/Library/CoreServices/Ticket Viewer.app", 
+        "appVersion": "4.1", 
+        "executableName": "Ticket Viewer"
+    }, 
+    "com.apple.TrackpadIM-Container": {
+        "appPath": "/System/Library/Input Methods/TrackpadIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "TrackpadIM"
+    }, 
+    "com.apple.Type4Camera": {
+        "appPath": "/System/Library/Image Capture/Devices/Type4Camera.app", 
+        "appVersion": "10.1", 
+        "executableName": "Type4Camera"
+    }, 
+    "com.apple.UIKitSystemApp": {
+        "appPath": "/System/Library/CoreServices/UIKitSystem.app", 
+        "appVersion": "1.0", 
+        "executableName": "UIKitSystem"
+    }, 
+    "com.apple.UniversalAccessControl": {
+        "appPath": "/System/Library/CoreServices/UniversalAccessControl.app", 
+        "appVersion": "7.0", 
+        "executableName": "UniversalAccessControl"
+    }, 
+    "com.apple.UnmountAssistantAgent": {
+        "appPath": "/System/Library/CoreServices/UnmountAssistantAgent.app", 
+        "appVersion": "5.0", 
+        "executableName": "UnmountAssistantAgent"
+    }, 
+    "com.apple.UserNotificationCenter": {
+        "appPath": "/System/Library/CoreServices/UserNotificationCenter.app", 
+        "appVersion": "3.3.0", 
+        "executableName": "UserNotificationCenter"
+    }, 
+    "com.apple.VIM-Container": {
+        "appPath": "/System/Library/Input Methods/VietnameseIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "VietnameseIM"
+    }, 
+    "com.apple.VirtualScanner": {
+        "appPath": "/System/Library/Image Capture/Devices/VirtualScanner.app", 
+        "appVersion": "4.1", 
+        "executableName": "VirtualScanner"
+    }, 
+    "com.apple.VoiceMemos": {
+        "appName": "VoiceMemos", 
+        "appPath": "/Applications/VoiceMemos.app", 
+        "appVersion": "2.0", 
+        "executableName": "VoiceMemos"
+    }, 
+    "com.apple.VoiceOver": {
+        "appName": "VoiceOver", 
+        "appPath": "/System/Library/CoreServices/VoiceOver.app", 
+        "appVersion": "9", 
+        "executableName": "VoiceOverStarter"
+    }, 
+    "com.apple.VoiceOverQuickstart": {
+        "appName": "VoiceOver Quickstart", 
+        "appPath": "/System/Library/PrivateFrameworks/ScreenReader.framework/Versions/A/Resources/VoiceOver Quickstart.app", 
+        "appVersion": "9", 
+        "executableName": "VoiceOver Quickstart"
+    }, 
+    "com.apple.VoiceOverUtility": {
+        "appName": "VoiceOver Utility", 
+        "appPath": "/Applications/Utilities/VoiceOver Utility.app", 
+        "appVersion": "9", 
+        "category": "public.app-category.utilities", 
+        "executableName": "VoiceOver Utility"
+    }, 
+    "com.apple.WebKit.PluginHost": {
+        "appPath": "/System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebKitLegacy.framework/Versions/A/WebKitPluginHost.app", 
+        "appVersion": "14607", 
+        "executableName": "WebKitPluginHost"
+    }, 
+    "com.apple.accessibility.DFRHUD": {
+        "appPath": "/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Resources/DFRHUD.app", 
+        "appVersion": "1.0", 
+        "executableName": "DFRHUD"
+    }, 
+    "com.apple.accessibility.universalAccessAuthWarn": {
+        "appPath": "/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Resources/universalAccessAuthWarn.app", 
+        "appVersion": "1.0", 
+        "executableName": "universalAccessAuthWarn"
+    }, 
+    "com.apple.accessibility.universalAccessHUD": {
+        "appPath": "/System/Library/PrivateFrameworks/UniversalAccess.framework/Versions/A/Resources/UniversalAccessHUD.app", 
+        "appVersion": "1.0", 
+        "executableName": "UniversalAccessHUD"
+    }, 
+    "com.apple.airport.airportutility": {
+        "appName": "AirPort Utility", 
+        "appPath": "/Applications/Utilities/AirPort Utility.app", 
+        "appVersion": "6.3.9", 
+        "category": "public.app-category.utilities", 
+        "executableName": "AirPort Utility"
+    }, 
+    "com.apple.appleseed.FeedbackAssistant": {
+        "appName": "Feedback Assistant", 
+        "appPath": "/System/Library/CoreServices/Applications/Feedback Assistant.app", 
+        "appVersion": "4.5", 
+        "executableName": "Feedback Assistant"
+    }, 
+    "com.apple.archiveutility": {
+        "appName": "Archive Utility", 
+        "appPath": "/System/Library/CoreServices/Applications/Archive Utility.app", 
+        "appVersion": "10.11", 
+        "executableName": "Archive Utility"
+    }, 
+    "com.apple.audio.AudioMIDISetup": {
+        "appPath": "/Applications/Utilities/Audio MIDI Setup.app", 
+        "appVersion": "3.3", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Audio MIDI Setup"
+    }, 
+    "com.apple.automator.RoboCode": {
+        "appPath": "/Users/os/Desktop/Apps/RoboCode.app", 
+        "appVersion": "1.3", 
+        "executableName": "Application Stub"
+    }, 
+    "com.apple.automator.SaveasAdobePDF": {
+        "appPath": "/Library/PDF Services/Save as Adobe PDF.app", 
+        "appVersion": "10.0.0", 
+        "executableName": "Save as Adobe PDF"
+    }, 
+    "com.apple.backup.launcher": {
+        "appName": "Time Machine", 
+        "appPath": "/Applications/Time Machine.app", 
+        "appVersion": "1.3", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Time Machine"
+    }, 
+    "com.apple.bird": {
+        "appName": "iCloud Drive", 
+        "appPath": "/System/Library/PrivateFrameworks/CloudDocsDaemon.framework/Versions/A/Resources/iCloud Drive.app", 
+        "appVersion": "1.0", 
+        "executableName": "iCloud Drive"
+    }, 
+    "com.apple.bootcampassistant": {
+        "appName": "Boot Camp Assistant", 
+        "appPath": "/Applications/Utilities/Boot Camp Assistant.app", 
+        "appVersion": "6.1.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Boot Camp Assistant"
+    }, 
+    "com.apple.calculator": {
+        "appPath": "/Applications/Calculator.app", 
+        "appVersion": "10.14", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Calculator"
+    }, 
+    "com.apple.check-afp": {
+        "appPath": "/System/Library/Filesystems/AppleShare/check_afp.app", 
+        "appVersion": "4.0", 
+        "executableName": "check-afp"
+    }, 
+    "com.apple.cloudphotosd": {
+        "appName": "cloudphotosd", 
+        "appPath": "/System/Library/CoreServices/cloudphotosd.app", 
+        "appVersion": "4.0", 
+        "executableName": "cloudphotosd"
+    }, 
+    "com.apple.controlstrip": {
+        "appName": "Control Strip", 
+        "appPath": "/System/Library/CoreServices/ControlStrip.app", 
+        "appVersion": "1.0", 
+        "executableName": "ControlStrip"
+    }, 
+    "com.apple.coreservices.UASharedPasteboardProgressUI": {
+        "appPath": "/System/Library/PrivateFrameworks/UserActivity.framework/Agents/UASharedPasteboardProgressUI.app", 
+        "appVersion": "54.1", 
+        "executableName": "UASharedPasteboardProgressUI"
+    }, 
+    "com.apple.coreservices.uiagent": {
+        "appPath": "/System/Library/CoreServices/CoreServicesUIAgent.app", 
+        "appVersion": "224", 
+        "executableName": "CoreServicesUIAgent"
+    }, 
+    "com.apple.dashboardlauncher": {
+        "appName": "Dashboard", 
+        "appPath": "/Applications/Dashboard.app", 
+        "appVersion": "1.8", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Dashboard"
+    }, 
+    "com.apple.databaseevents": {
+        "appPath": "/System/Library/CoreServices/Database Events.app", 
+        "appVersion": "1.0.6", 
+        "executableName": "Database Events"
+    }, 
+    "com.apple.dock": {
+        "appName": "Dock", 
+        "appPath": "/System/Library/CoreServices/Dock.app", 
+        "appVersion": "1.8", 
+        "category": "", 
+        "executableName": "Dock"
+    }, 
+    "com.apple.dt.CommandLineTools.installondemand": {
+        "appPath": "/System/Library/CoreServices/Install Command Line Developer Tools.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Install Command Line Developer Tools"
+    }, 
+    "com.apple.eap8021x.eaptlstrust": {
+        "appPath": "/System/Library/PrivateFrameworks/EAP8021X.framework/Support/eaptlstrust.app", 
+        "appVersion": "13.0", 
+        "executableName": "eaptlstrust"
+    }, 
+    "com.apple.exposelauncher": {
+        "appName": "Mission Control", 
+        "appPath": "/Applications/Mission Control.app", 
+        "appVersion": "1.2", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Mission Control"
+    }, 
+    "com.apple.familycontrols.useragent": {
+        "appName": "Parental Controls", 
+        "appPath": "/System/Library/PrivateFrameworks/FamilyControls.framework/Versions/A/Resources/ParentalControls.app", 
+        "appVersion": "4.1", 
+        "executableName": "ParentalControls"
+    }, 
+    "com.apple.finder": {
+        "appName": "Finder", 
+        "appPath": "/System/Library/CoreServices/Finder.app", 
+        "appVersion": "10.14.5", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Finder"
+    }, 
+    "com.apple.finder.Open-AirDrop": {
+        "appName": "AirDrop", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/AirDrop.app", 
+        "appVersion": "1.0", 
+        "executableName": "AirDrop"
+    }, 
+    "com.apple.finder.Open-AllMyFiles": {
+        "appName": "All My Files", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/All My Files.app", 
+        "appVersion": "1.0", 
+        "executableName": "All My Files"
+    }, 
+    "com.apple.finder.Open-Computer": {
+        "appName": "Computer", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/Computer.app", 
+        "appVersion": "1.0", 
+        "executableName": "Computer"
+    }, 
+    "com.apple.finder.Open-Network": {
+        "appName": "Network", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/Network.app", 
+        "appVersion": "1.0", 
+        "executableName": "Network"
+    }, 
+    "com.apple.finder.Open-Recents": {
+        "appName": "Recents", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/Recents.app", 
+        "appVersion": "1.0", 
+        "executableName": "Recents"
+    }, 
+    "com.apple.finder.Open-iCloudDrive": {
+        "appName": "iCloud Drive", 
+        "appPath": "/System/Library/CoreServices/Finder.app/Contents/Applications/iCloud Drive.app", 
+        "appVersion": "1.0", 
+        "executableName": "iCloud Drive"
+    }, 
+    "com.apple.frameworks.diskimages.diuiagent": {
+        "appPath": "/System/Library/PrivateFrameworks/DiskImages.framework/Versions/A/Resources/DiskImages UI Agent.app", 
+        "appVersion": "480.260.1", 
+        "executableName": "DiskImages UI Agent"
+    }, 
+    "com.apple.gamecenter": {
+        "appName": "Games", 
+        "appPath": "/System/Library/CoreServices/Games.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.games", 
+        "executableName": "Games"
+    }, 
+    "com.apple.garageband10": {
+        "appName": "GarageBand", 
+        "appPath": "/Applications/GarageBand.app", 
+        "appVersion": "10.3.4", 
+        "category": "public.app-category.music", 
+        "executableName": "GarageBand"
+    }, 
+    "com.apple.grapher": {
+        "appName": "Grapher", 
+        "appPath": "/Applications/Utilities/Grapher.app", 
+        "appVersion": "2.7", 
+        "category": "public.app-category.education", 
+        "executableName": "Grapher"
+    }, 
+    "com.apple.helpviewer": {
+        "appName": "Help Viewer", 
+        "appPath": "/System/Library/CoreServices/HelpViewer.app", 
+        "appVersion": "6.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "HelpViewer"
+    }, 
+    "com.apple.iBooksX": {
+        "appName": "Books", 
+        "appPath": "/Applications/Books.app", 
+        "appVersion": "1.19", 
+        "category": "public.app-category.education", 
+        "executableName": "Books"
+    }, 
+    "com.apple.iCal": {
+        "appName": "Calendar", 
+        "appPath": "/Applications/Calendar.app", 
+        "appVersion": "11.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Calendar"
+    }, 
+    "com.apple.iChat": {
+        "appName": "Messages", 
+        "appPath": "/Applications/Messages.app", 
+        "appVersion": "12.0", 
+        "category": "public.app-category.social-networking", 
+        "executableName": "Messages"
+    }, 
+    "com.apple.iCloudUserNotificationsd": {
+        "appPath": "/System/Library/PrivateFrameworks/AOSAccounts.framework/Versions/A/Resources/iCloudUserNotificationsd.app", 
+        "appVersion": "1.0", 
+        "executableName": "iCloudUserNotificationsd"
+    }, 
+    "com.apple.iMovieApp": [
+        {
+            "appName": "iMovie", 
+            "appPath": "/Applications/iMovie.app", 
+            "appVersion": "10.1.1", 
+            "category": "public.app-category.video", 
+            "executableName": "iMovie"
+        }, 
+        {
+            "appName": "iMovie", 
+            "appPath": "/Users/os/Desktop/Apps/iMovie.app", 
+            "appVersion": "10.1.12", 
+            "category": "public.app-category.video", 
+            "executableName": "iMovie"
+        }
+    ], 
+    "com.apple.iTunes": {
+        "appName": "iTunes", 
+        "appPath": "/Applications/iTunes.app", 
+        "appVersion": "12.9.5", 
+        "category": "public.app-category.music", 
+        "executableName": "iTunes"
+    }, 
+    "com.apple.iWork.Keynote": {
+        "appPath": "/Applications/Keynote.app", 
+        "appVersion": "6.6.1", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Keynote"
+    }, 
+    "com.apple.iWork.Numbers": {
+        "appPath": "/Applications/Numbers.app", 
+        "appVersion": "3.6.1", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Numbers"
+    }, 
+    "com.apple.iWork.Pages": {
+        "appPath": "/Applications/Pages.app", 
+        "appVersion": "5.6.1", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Pages"
+    }, 
+    "com.apple.identityservicesd": {
+        "appPath": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app", 
+        "appVersion": "10.0", 
+        "executableName": "identityservicesd"
+    }, 
+    "com.apple.idsfoundation.IDSRemoteURLConnectionAgent": {
+        "appPath": "/System/Library/PrivateFrameworks/IDSFoundation.framework/IDSRemoteURLConnectionAgent.app", 
+        "appVersion": "10.0", 
+        "executableName": "IDSRemoteURLConnectionAgent"
+    }, 
+    "com.apple.imageevents": {
+        "appPath": "/System/Library/CoreServices/Image Events.app", 
+        "appVersion": "1.1.6", 
+        "executableName": "Image Events"
+    }, 
+    "com.apple.imagent": {
+        "appPath": "/System/Library/PrivateFrameworks/IMCore.framework/imagent.app", 
+        "appVersion": "10.0", 
+        "executableName": "imagent"
+    }, 
+    "com.apple.imtransferservices.IMTransferAgent": {
+        "appPath": "/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferAgent.app", 
+        "appVersion": "10.0", 
+        "executableName": "IMTransferAgent"
+    }, 
+    "com.apple.ink.inkserver": {
+        "appPath": "/System/Library/Input Methods/InkServer.app", 
+        "appVersion": "10.9", 
+        "executableName": "InkServer"
+    }, 
+    "com.apple.inputmethod.Ainu": {
+        "appName": "Ainu Input Method", 
+        "appPath": "/System/Library/Input Methods/AinuIM.app", 
+        "appVersion": "1.0", 
+        "executableName": "AinuIM"
+    }, 
+    "com.apple.inputmethod.AssistiveControl": {
+        "appPath": "/System/Library/Input Methods/Assistive Control.app", 
+        "appVersion": "2.0", 
+        "category": "", 
+        "executableName": "Assistive Control"
+    }, 
+    "com.apple.inputmethod.PluginIM": {
+        "appPath": "/System/Library/Input Methods/PluginIM.app", 
+        "appVersion": "18.15.1", 
+        "executableName": "PluginIM"
+    }, 
+    "com.apple.inputmethod.Tamil": {
+        "appPath": "/System/Library/Input Methods/TamilIM.app", 
+        "appVersion": "1.6", 
+        "executableName": "TamilIM"
+    }, 
+    "com.apple.inputmethod.ironwood": {
+        "appName": "DictationIM", 
+        "appPath": "/System/Library/Input Methods/DictationIM.app", 
+        "appVersion": "5.0.7", 
+        "executableName": "DictationIM"
+    }, 
+    "com.apple.installer": {
+        "appPath": "/System/Library/CoreServices/Installer.app", 
+        "appVersion": "6.2.0", 
+        "executableName": "Installer"
+    }, 
+    "com.apple.keychainaccess": {
+        "appName": "Keychain Access", 
+        "appPath": "/Applications/Utilities/Keychain Access.app", 
+        "appVersion": "10.5", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Keychain Access"
+    }, 
+    "com.apple.lateragent": {
+        "appPath": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/LaterAgent.app", 
+        "appVersion": "1.0", 
+        "executableName": "LaterAgent"
+    }, 
+    "com.apple.launchpad.launcher": {
+        "appName": "Launchpad", 
+        "appPath": "/Applications/Launchpad.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Launchpad"
+    }, 
+    "com.apple.locationmenu": {
+        "appPath": "/System/Library/CoreServices/LocationMenu.app", 
+        "appVersion": "1.0", 
+        "executableName": "LocationMenu"
+    }, 
+    "com.apple.loginwindow": {
+        "appPath": "/System/Library/CoreServices/loginwindow.app", 
+        "appVersion": "9.0", 
+        "executableName": "loginwindow"
+    }, 
+    "com.apple.mail": {
+        "appPath": "/Applications/Mail.app", 
+        "appVersion": "12.4", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Mail"
+    }, 
+    "com.apple.nbagent": {
+        "appPath": "/System/Library/PrivateFrameworks/Noticeboard.framework/Versions/A/Resources/nbagent.app", 
+        "appVersion": "1.0", 
+        "executableName": "nbagent"
+    }, 
+    "com.apple.news": {
+        "appName": "News", 
+        "appPath": "/Applications/News.app", 
+        "appVersion": "4.3", 
+        "executableName": "News"
+    }, 
+    "com.apple.notificationcenter.widgetsimulator": {
+        "appName": "Widget Simulator", 
+        "appPath": "/System/Library/Frameworks/NotificationCenter.framework/Versions/A/Resources/Widget Simulator.app", 
+        "appVersion": "1.0", 
+        "executableName": "Widget Simulator"
+    }, 
+    "com.apple.notificationcenterui": {
+        "appPath": "/System/Library/CoreServices/NotificationCenter.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "NotificationCenter"
+    }, 
+    "com.apple.pluginIM.pluginIMRegistrator": {
+        "appPath": "/System/Library/CoreServices/RegisterPluginIMApp.app", 
+        "appVersion": "18.15.1", 
+        "executableName": "RegisterPluginIMApp"
+    }, 
+    "com.apple.pppminiterm": {
+        "appPath": "/usr/libexec/MiniTerm.app", 
+        "appVersion": "1.9"
+    }, 
+    "com.apple.print.AirScanLegacyDiscovery": {
+        "appPath": "/Library/Image Capture/Support/LegacyDeviceDiscoveryHelpers/AirScanLegacyDiscovery.app", 
+        "appVersion": "14.4", 
+        "executableName": "AirScanLegacyDiscovery"
+    }, 
+    "com.apple.print.PrinterProxy": [
+        {
+            "appPath": "/Users/os/Library/Printers/192...29 (VLAN 10) printer jetdirect.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/test pi printer 12-20.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/SHS_COM_Student2.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n-1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/THA PRINTER ON VLAN10.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/Hewlett-Packard HP LaserJet P2035n.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7)-1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/192.168.10.125.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/192.168.1.29.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/SHS_COM_Student1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/media_center_1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7).app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/PI TEST.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/vlan107 to vlan10 multicast test.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n-2.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/IoT HP Printer \u2013\u00a0Bedroom.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/THA PRINTER BAE.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/Jayke's BR.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/Admin Printer.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Plugins/PrinterProxy.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }
+    ], 
+    "com.apple.print.add": {
+        "appPath": "/System/Library/CoreServices/AddPrinter.app", 
+        "appVersion": "14.4", 
+        "executableName": "AddPrinter"
+    }, 
+    "com.apple.quicklook.QuickLookSimulator": {
+        "appPath": "/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuickLookUI.framework/Versions/A/Resources/Quick Look Simulator.app", 
+        "appVersion": "1.0", 
+        "executableName": "Quick Look Simulator"
+    }, 
+    "com.apple.quicklook.ui.helper": {
+        "appPath": "/System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuickLookUI.framework/Versions/A/Resources/QuickLookUIHelper.app", 
+        "appVersion": "5.0", 
+        "executableName": "QuickLookUIHelper"
+    }, 
+    "com.apple.rcd": {
+        "appPath": "/System/Library/CoreServices/rcd.app", 
+        "appVersion": "354", 
+        "executableName": "rcd"
+    }, 
+    "com.apple.reminders": {
+        "appPath": "/Applications/Reminders.app", 
+        "appVersion": "6.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Reminders"
+    }, 
+    "com.apple.screencaptureui": {
+        "appPath": "/System/Library/CoreServices/screencaptureui.app", 
+        "appVersion": "1.0", 
+        "executableName": "screencaptureui"
+    }, 
+    "com.apple.screenshot.launcher": {
+        "appName": "Screenshot", 
+        "appPath": "/Applications/Utilities/Screenshot.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Screenshot"
+    }, 
+    "com.apple.security.Keychain-Circle-Notification": {
+        "appPath": "/System/Library/CoreServices/Keychain Circle Notification.app", 
+        "appVersion": "1.0", 
+        "category": "", 
+        "executableName": "Keychain Circle Notification"
+    }, 
+    "com.apple.siri.launcher": {
+        "appName": "Siri", 
+        "appPath": "/Applications/Siri.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Siri"
+    }, 
+    "com.apple.soagent": {
+        "appName": "soagent", 
+        "appPath": "/System/Library/PrivateFrameworks/MessagesKit.framework/Versions/A/Resources/soagent.app", 
+        "appVersion": "7.0", 
+        "executableName": "soagent"
+    }, 
+    "com.apple.speech.SpeechDataInstallerd": {
+        "appName": "SpeechDataInstallerd", 
+        "appPath": "/System/Library/PrivateFrameworks/SpeechObjects.framework/Versions/A/SpeechDataInstallerd.app", 
+        "appVersion": "8.5.2", 
+        "executableName": "SpeechDataInstallerd"
+    }, 
+    "com.apple.speech.SpeechRecognitionServer": {
+        "appPath": "/System/Library/PrivateFrameworks/SpeechObjects.framework/Versions/A/SpeechRecognitionServer.app", 
+        "appVersion": "8.5.2", 
+        "executableName": "SpeechRecognitionServer"
+    }, 
+    "com.apple.speech.synthesis.SpeechSynthesisServer": {
+        "appPath": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesisServer.app", 
+        "appVersion": "8.1.3", 
+        "executableName": "SpeechSynthesisServer"
+    }, 
+    "com.apple.stocks": [
+        {
+            "appName": "Stocks", 
+            "appPath": "/Applications/Stocks.app", 
+            "appVersion": "1.0", 
+            "category": "", 
+            "executableName": "Stocks"
+        }, 
+        {
+            "appName": "Stocks", 
+            "appPath": "/System/Library/CoreServices/Stocks.app", 
+            "appVersion": "1.0", 
+            "category": "public.app-category.finance", 
+            "executableName": "Stocks"
+        }
+    ], 
+    "com.apple.storeuid": {
+        "appPath": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeuid.app", 
+        "appVersion": "1.0", 
+        "executableName": "storeuid"
+    }, 
+    "com.apple.syncserver": {
+        "appPath": "/System/Library/Frameworks/SyncServices.framework/Versions/A/Resources/SyncServer.app", 
+        "appVersion": "8.1", 
+        "executableName": "SyncServer"
+    }, 
+    "com.apple.syncservices.ConflictResolver": {
+        "appName": "Conflict Resolver", 
+        "appPath": "/System/Library/PrivateFrameworks/SyncServicesUI.framework/Versions/A/Resources/Conflict Resolver.app", 
+        "appVersion": "8.1", 
+        "executableName": "Conflict Resolver"
+    }, 
+    "com.apple.syncservices.syncuid": {
+        "appName": "Sync Services UI Daemon", 
+        "appPath": "/System/Library/PrivateFrameworks/SyncServicesUI.framework/Versions/A/Resources/syncuid.app", 
+        "appVersion": "8.1", 
+        "executableName": "syncuid"
+    }, 
+    "com.apple.systemevents": {
+        "appPath": "/System/Library/CoreServices/System Events.app", 
+        "appVersion": "1.3.6", 
+        "executableName": "System Events"
+    }, 
+    "com.apple.systempreferences": {
+        "appPath": "/Applications/System Preferences.app", 
+        "appVersion": "14.0", 
+        "category": "public.app-category.utilities", 
+        "executableName": "System Preferences"
+    }, 
+    "com.apple.systemuiserver": {
+        "appPath": "/System/Library/CoreServices/SystemUIServer.app", 
+        "appVersion": "1.7", 
+        "executableName": "SystemUIServer"
+    }, 
+    "com.apple.weather": {
+        "appName": "Weather", 
+        "appPath": "/System/Library/CoreServices/Weather.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.weather", 
+        "executableName": "Weather"
+    }, 
+    "com.apple.wifi.WiFiAgent": {
+        "appPath": "/System/Library/CoreServices/WiFiAgent.app", 
+        "appVersion": "13.0", 
+        "executableName": "WiFiAgent"
+    }, 
+    "com.apple.wifi.diagnostics": {
+        "appName": "Wireless Diagnostics", 
+        "appPath": "/System/Library/CoreServices/Applications/Wireless Diagnostics.app", 
+        "appVersion": "1.0", 
+        "executableName": "Wireless Diagnostics"
+    }, 
+    "com.autodesk.mas.fusion360": {
+        "appPath": "/Applications/Fusion360.app", 
+        "appVersion": "1.48.4", 
+        "category": "public.app-category.graphics-design", 
+        "executableName": "Fusion360"
+    }, 
+    "com.belightsoft.SwiftPublisher3.appStore": {
+        "appPath": "/Applications/Swift Publisher 3.app", 
+        "appVersion": "3.3.8", 
+        "executableName": "Swift Publisher 3"
+    }, 
+    "com.blackmagic-design.BlackmagicRawPlayer": {
+        "appName": "Blackmagic RAW Player", 
+        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Applications/Blackmagic RAW Player.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.video", 
+        "executableName": "Blackmagic RAW Player"
+    }, 
+    "com.blackmagic-design.DPDecoder": {
+        "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/DPDecoder.app", 
+        "appVersion": "1.0", 
+        "executableName": "DPDecoder"
+    }, 
+    "com.blackmagic-design.DaVinciResolve": {
+        "appName": "Blackmagic DaVinci Resolve", 
+        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve.app", 
+        "appVersion": "15.1.1", 
+        "category": "public.app-category.video", 
+        "executableName": "Resolve"
+    }, 
+    "com.blackmagic-design.DaVinciResolveWelcome": {
+        "appName": "Blackmagic DaVinci Resolve Welcome", 
+        "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/DaVinci Resolve Welcome.app", 
+        "executableName": "DaVinci Resolve Welcome"
+    }, 
+    "com.blackmagic-design.ProjectServer": {
+        "appName": "DaVinci Resolve Project Server", 
+        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve Project Server.app", 
+        "appVersion": "15.1.1", 
+        "executableName": "DaVinci Resolve Project Server"
+    }, 
+    "com.blackmagic-design.UninstallDaVinciResolve": {
+        "appPath": "/Applications/DaVinci Resolve/Uninstall Resolve.app", 
+        "executableName": "Uninstall Resolve"
+    }, 
+    "com.blackmagic-design.davinci.paneldaemon": {
+        "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/BMDPanelDaemon.app", 
+        "appVersion": "1.0", 
+        "executableName": "BMDPanelDaemon"
+    }, 
+    "com.blackmagic-design.davinci.panelfirmwareupdater": {
+        "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/BMDPanelFirmware.app", 
+        "executableName": "BMDPanelFirmware"
+    }, 
+    "com.blackmagic-design.davinciresolvepanels.utility": {
+        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve Panels Setup.app", 
+        "executableName": "DaVinciResolvePanelsSetup"
+    }, 
+    "com.electron.wpilibutility": {
+        "appName": "wpilibutility", 
+        "appPath": "/Users/os/wpilib/utility/utilitymac/wpilibutility.app", 
+        "appVersion": "2020.1.2", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "wpilibutility"
+    }, 
+    "com.epson.ijfax.app.EPFaxAutoSetupTool": {
+        "appPath": "/Library/Printers/EPSON/Fax/AutoSetupTool/EPFaxAutoSetupTool.app", 
+        "appVersion": "1.71", 
+        "executableName": "EPFaxAutoSetupTool"
+    }, 
+    "com.epson.ijfax.app.FaxReceiveMonitor": {
+        "appPath": "/Library/Printers/EPSON/Fax/Utility/Fax Receive Monitor.app", 
+        "appVersion": "1.71", 
+        "executableName": "Fax Receive Monitor"
+    }, 
+    "com.epson.ijfax.app.epsonfax": {
+        "appPath": "/Library/Printers/EPSON/Fax/FaxIOSupport/epsonfax.app", 
+        "appVersion": "1.71", 
+        "executableName": "epsonfax"
+    }, 
+    "com.epson.ijfax.filter.commandFilter": {
+        "appPath": "/Library/Printers/EPSON/Fax/Filter/commandFilter.app", 
+        "appVersion": "1.71", 
+        "executableName": "commandFilter"
+    }, 
+    "com.epson.ijfax.filter.rastertoepfax": {
+        "appPath": "/Library/Printers/EPSON/Fax/Filter/rastertoepfax.app", 
+        "appVersion": "1.71", 
+        "executableName": "rastertoepfax"
+    }, 
+    "com.epson.ijfax.utility.FAXUtility": {
+        "appPath": "/Library/Printers/EPSON/Fax/Utility/FAX Utility.app", 
+        "appVersion": "1.73", 
+        "executableName": "FAX Utility"
+    }, 
+    "com.epson.scanner.ica": {
+        "appPath": "/Library/Image Capture/Devices/EPSON Scanner.app", 
+        "appVersion": "5.7.24", 
+        "executableName": "EPSON Scanner"
+    }, 
+    "com.google.Chrome": {
+        "appName": "Google Chrome", 
+        "appPath": "/Users/os/Applications/Google Chrome.app", 
+        "appVersion": "78.0.3904.70", 
+        "executableName": "Google Chrome"
+    }, 
+    "com.google.Chrome.app.Default-hmpigflbjeapnknladcfphgkemopofig": {
+        "appPath": "/Users/os/Applications/Chrome Apps.localized/Ubiquiti Device Discovery Tool.app", 
+        "appVersion": "0.2.48", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.GoogleDrive": {
+        "appName": "Backup and Sync", 
+        "appPath": "/Users/os/Applications/Backup and Sync.app", 
+        "appVersion": "3.47", 
+        "executableName": "Backup and Sync"
+    }, 
+    "com.hp.EasyScanMac": {
+        "appPath": "/Applications/HP Easy Scan.app", 
+        "appVersion": "1.9.1", 
+        "category": "public.app-category.utilities", 
+        "executableName": "HP Easy Scan"
+    }, 
+    "com.hp.devicemodel.hpdot4d": {
+        "appPath": "/Library/Printers/hp/Frameworks/HPDeviceModel.framework/Versions/4.0/Runtime/hpdot4d.app", 
+        "appVersion": "4.17.1", 
+        "executableName": "hpdot4d"
+    }, 
+    "com.hp.devicemonitor.manager": {
+        "appPath": "/Library/Printers/hp/Frameworks/HPDeviceMonitoring.framework/Versions/1.0/Helpers/HP Device Monitor Manager.app", 
+        "appVersion": "5.37.1", 
+        "executableName": "HP Device Monitor Manager"
+    }, 
+    "com.hp.dm.hpdot4d": {
+        "appPath": "/Library/Printers/hp/Frameworks/HPDM.framework/Versions/5.0/Runtime/hpdot4d.app", 
+        "appVersion": "5.3.1", 
+        "executableName": "hpdot4d"
+    }, 
+    "com.hp.fax": {
+        "appPath": "/Library/Printers/hp/Fax/fax.backend", 
+        "appVersion": "5.17.3", 
+        "executableName": "fax"
+    }, 
+    "com.hp.print.cups.filter.commandtohp": {
+        "appPath": "/Library/Printers/hp/cups/filters/commandtohp.filter", 
+        "appVersion": "2.4.1", 
+        "executableName": "commandtohp"
+    }, 
+    "com.hp.print.cups.filter.hpPreProcessing": {
+        "appPath": "/Library/Printers/hp/filter/hpPreProcessing.filter", 
+        "appVersion": "1.7.2", 
+        "executableName": "hpPreProcessing"
+    }, 
+    "com.hp.printerutility": {
+        "appName": "HP Utility", 
+        "appPath": "/Library/Printers/hp/Utilities/HP Utility.app", 
+        "appVersion": "5.37.1", 
+        "executableName": "HP Utility"
+    }, 
+    "com.hp.rastertofax": {
+        "appPath": "/Library/Printers/hp/Fax/rastertofax.filter", 
+        "appVersion": "5.17.3", 
+        "executableName": "rastertofax"
+    }, 
+    "com.hp.scan.button.handler.generic": {
+        "appPath": "/Library/Printers/hp/Utilities/Handlers/ScanEventHandler.app", 
+        "appVersion": "1.4.0", 
+        "executableName": "ScanEventHandler"
+    }, 
+    "com.hp.scanModule3": {
+        "appPath": "/Library/Image Capture/Devices/HP Scanner 3.app", 
+        "appVersion": "4.9.4", 
+        "executableName": "HP Scanner 3"
+    }, 
+    "com.if.Amphetamine": {
+        "appPath": "/Applications/Amphetamine.app", 
+        "appVersion": "4.2", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Amphetamine"
+    }, 
+    "com.install4j.8894-1892-1685-3469.24": {
+        "appPath": "/Applications/Alice 3.app", 
+        "appVersion": "3.4.0.0+build120", 
+        "executableName": "JavaApplicationStub"
+    }, 
+    "com.instin.myHomework": {
+        "appPath": "/Applications/myHomework.app", 
+        "appVersion": "1.3.8", 
+        "category": "public.app-category.education", 
+        "executableName": "myHomework"
+    }, 
+    "com.jamf.management.Jamf": {
+        "appPath": "/Library/Application Support/JAMF/Jamf.app", 
+        "appVersion": "10.13.0", 
+        "executableName": "Jamf"
+    }, 
+    "com.jamfsoftware.Management-Action": {
+        "appPath": "/Library/Application Support/JAMF/bin/Management Action.app", 
+        "appVersion": "10.13.0", 
+        "executableName": "Management Action"
+    }, 
+    "com.jamfsoftware.jamfHelper": {
+        "appPath": "/Library/Application Support/JAMF/bin/jamfHelper.app", 
+        "appVersion": "10.13.0", 
+        "executableName": "jamfHelper"
+    }, 
+    "com.jamfsoftware.selfservice.mac": {
+        "appPath": "/Applications/Self Service.app", 
+        "appVersion": "10.13.0", 
+        "executableName": "Self Service"
+    }, 
+    "com.kcptech.sketchpad5": {
+        "appPath": "/Applications/GSP5.app", 
+        "appVersion": "5.06", 
+        "executableName": "GSP5_Rel_KCPT_31_105"
+    }, 
+    "com.microsoft.ASApplication": {
+        "appPath": "/Applications/Microsoft Office 2011/Office/Add-Ins/Solver.app", 
+        "appVersion": "1.0", 
+        "executableName": "Solver"
+    }, 
+    "com.microsoft.ClipGallery": {
+        "appName": "Microsoft Clip Gallery", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Clip Gallery.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Clip Gallery"
+    }, 
+    "com.microsoft.DocumentConnection": {
+        "appName": "Microsoft Document Connection", 
+        "appPath": "/Applications/Microsoft Office 2011/Microsoft Document Connection.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Document Connection"
+    }, 
+    "com.microsoft.EquationEditor": {
+        "appName": "Equation Editor", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Equation Editor.app", 
+        "appVersion": "14.2.0", 
+        "executableName": "Equation Editor"
+    }, 
+    "com.microsoft.Excel": [
+        {
+            "appName": "Microsoft Excel", 
+            "appPath": "/Applications/Microsoft Office 2011/Microsoft Excel.app", 
+            "appVersion": "14.6.5", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft Excel"
+        }, 
+        {
+            "appName": "Microsoft Excel", 
+            "appPath": "/Applications/Microsoft Excel.app", 
+            "appVersion": "16.32", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft Excel"
+        }
+    ], 
+    "com.microsoft.Graph": {
+        "appName": "Microsoft Graph", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Graph.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Graph"
+    }, 
+    "com.microsoft.Lync": {
+        "appName": "Microsoft Lync", 
+        "appPath": "/Applications/Microsoft Lync.app", 
+        "appVersion": "14.0.2", 
+        "executableName": "Microsoft Lync"
+    }, 
+    "com.microsoft.Office365Service": {
+        "appName": "Office365Service", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Office365Service.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Office365Service"
+    }, 
+    "com.microsoft.OneDrive": {
+        "appPath": "/Applications/OneDrive.app", 
+        "appVersion": "18.044.0301", 
+        "category": "public.app-category.productivity", 
+        "executableName": "OneDrive"
+    }, 
+    "com.microsoft.Outlook": [
+        {
+            "appName": "Microsoft Outlook", 
+            "appPath": "/Applications/Microsoft Office 2011/Microsoft Outlook.app", 
+            "appVersion": "14.6.5", 
+            "executableName": "Microsoft Outlook"
+        }, 
+        {
+            "appName": "Microsoft Outlook", 
+            "appPath": "/Applications/Microsoft Outlook.app", 
+            "appVersion": "16.32", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft Outlook"
+        }
+    ], 
+    "com.microsoft.Powerpoint": [
+        {
+            "appName": "Microsoft PowerPoint", 
+            "appPath": "/Applications/Microsoft Office 2011/Microsoft PowerPoint.app", 
+            "appVersion": "14.6.5", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft PowerPoint"
+        }, 
+        {
+            "appName": "Microsoft PowerPoint", 
+            "appPath": "/Applications/Microsoft PowerPoint.app", 
+            "appVersion": "16.32", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft PowerPoint"
+        }
+    ], 
+    "com.microsoft.Query": {
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Query.app", 
+        "appVersion": "12.0.0", 
+        "executableName": "Microsoft Query"
+    }, 
+    "com.microsoft.SyncServicesAgent": {
+        "appName": "SyncServicesAgent", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/SyncServicesAgent.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "SyncServicesAgent"
+    }, 
+    "com.microsoft.VSCode": {
+        "appName": "Code", 
+        "appPath": "/Users/os/Applications/Visual Studio Code.app", 
+        "appVersion": "1.41.1", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Electron"
+    }, 
+    "com.microsoft.Word": [
+        {
+            "appName": "Microsoft Word", 
+            "appPath": "/Applications/Microsoft Office 2011/Microsoft Word.app", 
+            "appVersion": "14.6.5", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft Word"
+        }, 
+        {
+            "appName": "Microsoft Word", 
+            "appPath": "/Applications/Microsoft Word.app", 
+            "appVersion": "16.32", 
+            "category": "public.app-category.productivity", 
+            "executableName": "Microsoft Word"
+        }
+    ], 
+    "com.microsoft.alerts.daemon": {
+        "appName": "Microsoft Alerts Daemon", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Alerts Daemon.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Alerts Daemon"
+    }, 
+    "com.microsoft.autoupdate2": {
+        "appName": "Microsoft AutoUpdate", 
+        "appPath": "/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app", 
+        "appVersion": "4.17", 
+        "executableName": "Microsoft AutoUpdate"
+    }, 
+    "com.microsoft.error_reporting": {
+        "appName": "Microsoft Error Reporting", 
+        "appPath": "/Library/Application Support/Microsoft/MERP2.0/Microsoft Error Reporting.app", 
+        "appVersion": "2.2.9", 
+        "executableName": "Microsoft Error Reporting"
+    }, 
+    "com.microsoft.languageregister": {
+        "appName": "Microsoft Language Register", 
+        "appPath": "/Applications/Microsoft Office 2011/Additional Tools/Microsoft Language Register/Microsoft Language Register.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Language Register"
+    }, 
+    "com.microsoft.myday": {
+        "appName": "My Day", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/My Day.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "My Day"
+    }, 
+    "com.microsoft.netlib.shipassertprocess": {
+        "appName": "Microsoft Ship Asserts", 
+        "appPath": "/Library/Application Support/Microsoft/MERP2.0/Microsoft Ship Asserts.app", 
+        "appVersion": "1.1.4", 
+        "executableName": "Microsoft Ship Asserts"
+    }, 
+    "com.microsoft.office.setupassistant": {
+        "appName": "Microsoft Office Setup Assistant", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Office Setup Assistant.app", 
+        "appVersion": "14.4.2", 
+        "executableName": "Microsoft Office Setup Assistant"
+    }, 
+    "com.microsoft.office.uploadcenter": {
+        "appName": "Microsoft Upload Center", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Upload Center.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Upload Center"
+    }, 
+    "com.microsoft.onenote.mac": {
+        "appName": "Microsoft OneNote", 
+        "appPath": "/Applications/Microsoft OneNote.app", 
+        "appVersion": "16.32", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Microsoft OneNote"
+    }, 
+    "com.microsoft.openxml.chart.app": {
+        "appName": "Microsoft Chart Converter", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Chart Converter.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Chart Converter"
+    }, 
+    "com.microsoft.openxml.excel.app": {
+        "appName": "Open XML for Excel", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Open XML for Excel.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Open XML for Excel"
+    }, 
+    "com.microsoft.outlook.databasedaemon": {
+        "appName": "Microsoft Database Daemon", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Database Daemon.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Database Daemon"
+    }, 
+    "com.microsoft.outlook.databaseutility": {
+        "appName": "Microsoft Database Utility", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Database Utility.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Database Utility"
+    }, 
+    "com.microsoft.outlook.officereminders": {
+        "appName": "Microsoft Office Reminders", 
+        "appPath": "/Applications/Microsoft Office 2011/Office/Microsoft Office Reminders.app", 
+        "appVersion": "14.6.5", 
+        "executableName": "Microsoft Office Reminders"
+    }, 
+    "com.oracle.jmc": [
+        {
+            "appPath": "/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/missioncontrol/Java Mission Control.app", 
+            "appVersion": "6.0.0", 
+            "executableName": "jmc"
+        }, 
+        {
+            "appPath": "/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/missioncontrol/Java Mission Control.app", 
+            "appVersion": "5.5.0", 
+            "executableName": "jmc"
+        }
+    ], 
+    "com.safeincloud.Safe-In-Cloud.OSX": {
+        "appName": "SafeInCloud Password Manager", 
+        "appPath": "/Users/os/Desktop/PW Manager.app", 
+        "appVersion": "19.3.3", 
+        "category": "public.app-category.productivity", 
+        "executableName": "SafeInCloud Password Manager"
+    }, 
+    "com.sketchup.LayOut.2015": {
+        "appPath": "/Applications/SketchUp 2015/LayOut.app", 
+        "appVersion": "15.3", 
+        "executableName": "LayOut"
+    }, 
+    "com.sketchup.LayOut.2017": {
+        "appPath": "/Applications/SketchUp 2017/LayOut.app", 
+        "appVersion": "17.3", 
+        "executableName": "LayOut"
+    }, 
+    "com.sketchup.SketchUp.2015": {
+        "appPath": "/Applications/SketchUp 2015/SketchUp.app", 
+        "appVersion": "15.3", 
+        "executableName": "SketchUp"
+    }, 
+    "com.sketchup.SketchUp.2017": {
+        "appPath": "/Applications/SketchUp 2017/SketchUp.app", 
+        "appVersion": "17.3", 
+        "executableName": "SketchUp"
+    }, 
+    "com.sketchup.StyleBuilder.2015": {
+        "appPath": "/Applications/SketchUp 2015/Style Builder.app", 
+        "appVersion": "15.3", 
+        "executableName": "Style Builder"
+    }, 
+    "com.sketchup.StyleBuilder.2017": {
+        "appPath": "/Applications/SketchUp 2017/Style Builder.app", 
+        "appVersion": "17.3", 
+        "executableName": "Style Builder"
+    }, 
+    "com.spotify.client": {
+        "appPath": "/Users/os/Applications/Spotify (old).app", 
+        "appVersion": "1.1.22.633.g1bab253a", 
+        "category": "public.app-category.music", 
+        "executableName": "Spotify"
+    }, 
+    "com.tcltk.wish": {
+        "appPath": "/System/Library/Frameworks/Tk.framework/Versions/8.5/Resources/Wish.app", 
+        "appVersion": "8.5.9", 
+        "executableName": "Wish"
+    }, 
+    "com.vernier.loggerpro": {
+        "appPath": "/Applications/Logger Pro 3/Logger Pro.app", 
+        "appVersion": "3.9", 
+        "category": "", 
+        "executableName": "Logger Pro"
+    }, 
+    "com.yoyogames.gamemakerlite": {
+        "appName": "Game Maker for Mac Lite", 
+        "appPath": "/Applications/Game Maker Lite.app", 
+        "appVersion": "Game Maker for Mac Lite 7.5.83", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Game Maker License Check"
+    }, 
+    "com.zive.kiwi": {
+        "appPath": "/Applications/Kiwi for Gmail.app", 
+        "appVersion": "2.0.31", 
+        "category": "public.app-category.productivity", 
+        "executableName": "Kiwi for Gmail"
+    }, 
+    "io.brackets.appshell": {
+        "appPath": "/Applications/Brackets.app", 
+        "appVersion": "1.7.0", 
+        "executableName": "Brackets"
+    }, 
+    "jp.co.canon.ij.ica.scanner4": {
+        "appPath": "/Library/Image Capture/Devices/Canon IJScanner4.app", 
+        "appVersion": "4.0.0", 
+        "executableName": "Canon IJScanner4"
+    }, 
+    "jp.co.canon.ij.ica.scanner6": {
+        "appPath": "/Library/Image Capture/Devices/Canon IJScanner6.app", 
+        "appVersion": "4.0.0", 
+        "executableName": "Canon IJScanner6"
+    }, 
+    "jp.co.canon.ijscanner2.scanner.ica": {
+        "appPath": "/Library/Image Capture/Devices/Canon IJScanner2.app", 
+        "appVersion": "4.0.0", 
+        "executableName": "Canon IJScanner2"
+    }, 
+    "octagonmac.lukaskorba.com": {
+        "appPath": "/Users/os/Desktop/Apps/Octagon.app", 
+        "appVersion": "3.2", 
+        "category": "public.app-category.arcade-games", 
+        "executableName": "Octagon"
+    }, 
+    "org.audacityteam.audacity": {
+        "appPath": "/Users/os/Applications/Audacity.app", 
+        "appVersion": "2.3.3.0", 
+        "executableName": "Audacity.sh"
+    }, 
+    "org.drc.insight": {
+        "appPath": "/Applications/DRC INSIGHT Online Assessments/DRC INSIGHT Online Assessments.app", 
+        "category": "public.app-category.education", 
+        "executableName": "DRC INSIGHT Online Assessments"
+    }, 
+    "org.drc.insight.UnInstaller": {
+        "appPath": "/Applications/DRC INSIGHT Online Assessments/DRC INSIGHT Uninstaller.app", 
+        "appVersion": "1"
+    }, 
+    "org.eclipse.platform.ide": {
+        "appName": "Eclipse", 
+        "appPath": "/Applications/Eclipse.app", 
+        "appVersion": "4.8.0", 
+        "executableName": "eclipse"
+    }, 
+    "org.herf.Flux": {
+        "appPath": "/Users/os/Applications/Flux.app", 
+        "appVersion": "40.1", 
+        "category": "public.app-category.utilities", 
+        "executableName": "Flux"
+    }, 
+    "org.mozilla.firefox": {
+        "appPath": "/Users/os/Applications/Firefox.app", 
+        "appVersion": "72.0", 
+        "category": "public.app-category.productivity", 
+        "executableName": "firefox"
+    }, 
+    "org.netbeans.ide.baseide.8.1": {
+        "appPath": "/Applications/NetBeans/NetBeans 8.1.app", 
+        "appVersion": "8.1", 
+        "executableName": "netbeans"
+    }, 
+    "org.python.python": {
+        "appPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app", 
+        "appVersion": "2.7.10", 
+        "executableName": "Python"
+    }
+}
