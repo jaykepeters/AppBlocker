@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-## File Date Getter
+## File Date Getter 
 def getOutputFileDate(filename):
     # Month map
     monthMap = {
@@ -48,5 +48,7 @@ def getOutputFileDate(filename):
 
 if __name__ == "__main__":
    # print getOutputFileDate("0101202359") # January 1st, 2020 at 23:59
-    print getOutputFileDate("0131191259")
-    print getOutputFileDate("0131190159")
+    print getOutputFileDate("appDB_0113202251.json")
+    print getOutputFileDate("errors_0113202303.json")
+    print getOutputFileDate("appDB_0114200030.json")
+    print getOutputFileDate("errors_0114200032.json")
