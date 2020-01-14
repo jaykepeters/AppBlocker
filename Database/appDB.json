@@ -19,6 +19,13 @@
         "appVersion": "4.0.244", 
         "executableName": "Adobe Help"
     }, 
+    "co.zeit.hyper": {
+        "appName": "Hyper", 
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Desktop/Personal/Hyper.app", 
+        "appVersion": "2.1.2", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Hyper"
+    }, 
     "com.Adobe.Uninstall Product": [
         {
             "appPath": "/Applications/Utilities/Adobe Application Manager/DECore/DE5/resources/uninstall/Uninstall Product.app", 
@@ -274,6 +281,11 @@
         "appPath": "/Library/Application Support/Adobe/SwitchBoard/SwitchBoard.app", 
         "appVersion": "SBSV 2.0.13.7486", 
         "executableName": "SwitchBoard"
+    }, 
+    "com.anaconda.io": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/Anaconda-Navigator.app", 
+        "appVersion": "$PKG_VERSION", 
+        "executableName": "run.sh"
     }, 
     "com.apple..NowPlayingWidgetContainer": {
         "appPath": "/System/Library/CoreServices/NowPlayingWidgetContainer.app", 
@@ -579,6 +591,12 @@
         "appPath": "/System/Library/PrivateFrameworks/FamilyNotification.framework/Versions/A/Resources/Family.app", 
         "appVersion": "1.0", 
         "executableName": "Family"
+    }, 
+    "com.apple.FinalCut": {
+        "appPath": "/Volumes/External SSD/Marks shit/Applications/Final Cut Pro X.app", 
+        "appVersion": "10.2", 
+        "category": "public.app-category.video", 
+        "executableName": "Final Cut Pro"
     }, 
     "com.apple.FindMyMacMessenger": {
         "appPath": "/System/Library/PrivateFrameworks/FindMyMac.framework/Versions/A/Resources/FindMyMacMessenger.app", 
@@ -918,6 +936,11 @@
         "category": "public.app-category.utilities", 
         "executableName": "Screen Sharing"
     }, 
+    "com.apple.ScriptEditor.id.Untitled": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Files/Student Files/CS:PRG/AppleScript/Projects/Untitled.app", 
+        "appVersion": "1.0", 
+        "executableName": "applet"
+    }, 
     "com.apple.ScriptEditor.id.cocoa-applet-template": {
         "appPath": "/Library/Application Support/Script Editor/Templates/Cocoa-AppleScript Applet.app", 
         "appVersion": "1.0", 
@@ -938,6 +961,11 @@
         "appPath": "/Library/Application Support/Script Editor/Templates/Droplets/Recursive Image File Processing Droplet.app", 
         "appVersion": "1.0", 
         "executableName": "droplet"
+    }, 
+    "com.apple.ScriptEditor.id.mountaction": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Files/Student Files/CS:PRG/AppleScript/Projects/mountaction.app", 
+        "appVersion": "1.0", 
+        "executableName": "applet"
     }, 
     "com.apple.ScriptEditor2": {
         "appPath": "/Applications/Utilities/Script Editor.app", 
@@ -1034,13 +1062,29 @@
         "appVersion": "1.0", 
         "executableName": "TCIM"
     }, 
-    "com.apple.Terminal": {
-        "appName": "Terminal", 
-        "appPath": "/Applications/Utilities/Terminal.app", 
-        "appVersion": "2.9.5", 
-        "category": "public.app-category.utilities", 
-        "executableName": "Terminal"
-    }, 
+    "com.apple.Terminal": [
+        {
+            "appName": "Terminal", 
+            "appPath": "/Applications/Utilities/Terminal.app", 
+            "appVersion": "2.9.5", 
+            "category": "public.app-category.utilities", 
+            "executableName": "Terminal"
+        }, 
+        {
+            "appName": "Terminal", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Files/Student Files/CS:PRG/Applications/UNIX.app", 
+            "appVersion": "2.6.1", 
+            "category": "public.app-category.utilities", 
+            "executableName": "Terminal"
+        }, 
+        {
+            "appName": "Terminal", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Files/Student Files/CS:PRG/JPITS/Resources/Quick Links/CLI.app", 
+            "appVersion": "2.6.1", 
+            "category": "public.app-category.utilities", 
+            "executableName": "Terminal"
+        }
+    ], 
     "com.apple.TextEdit": {
         "appName": "TextEdit", 
         "appPath": "/Applications/TextEdit.app", 
@@ -1560,12 +1604,27 @@
             "executableName": "PrinterProxy"
         }, 
         {
-            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7)-1.app", 
+            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n-1.app", 
             "appVersion": "14.4", 
             "executableName": "PrinterProxy"
         }, 
         {
-            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7).app", 
+            "appPath": "/Users/os/Library/Printers/THA PRINTER ON VLAN10.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/Hewlett-Packard HP LaserJet P2035n.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7)-1.app", 
             "appVersion": "14.4", 
             "executableName": "PrinterProxy"
         }, 
@@ -1581,6 +1640,21 @@
         }, 
         {
             "appPath": "/Users/os/Library/Printers/192.168.1.29.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/SHS_COM_Student1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/media_center_1.app", 
+            "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Users/os/Library/Printers/HP LaserJet Pro MFP M225dw (12E0C7).app", 
             "appVersion": "14.4", 
             "executableName": "PrinterProxy"
         }, 
@@ -1610,42 +1684,12 @@
             "executableName": "PrinterProxy"
         }, 
         {
-            "appPath": "/Users/os/Library/Printers/THA PRINTER ON VLAN10.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
-            "appPath": "/Users/os/Library/Printers/Hewlett-Packard HP LaserJet P2035n.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
-            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
-            "appPath": "/Users/os/Library/Printers/media_center_1.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
-            "appPath": "/Users/os/Library/Printers/SHS_COM_Student1.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
             "appPath": "/Users/os/Library/Printers/THA PRINTER BAE.app", 
             "appVersion": "14.4", 
             "executableName": "PrinterProxy"
         }, 
         {
             "appPath": "/Users/os/Library/Printers/Jayke's BR.app", 
-            "appVersion": "14.4", 
-            "executableName": "PrinterProxy"
-        }, 
-        {
-            "appPath": "/Users/os/Library/Printers/HP LaserJet P2035n-1.app", 
             "appVersion": "14.4", 
             "executableName": "PrinterProxy"
         }, 
@@ -1657,6 +1701,111 @@
         {
             "appPath": "/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Plugins/PrinterProxy.app", 
             "appVersion": "14.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/192.168.1.3 2.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/192.168.1.3 Static IP.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/192.168.1.3-1.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/192.168.1.3.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/192.168.2.246.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/C210.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/C_210.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/CP.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Hewlett-Packard HP LaserJet P2035n @ pd-rpi.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/HP LaserJet P2035n-1.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/HP LaserJet P2035n.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Media Center #1.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Media Center #2.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/media_center_1.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Media_center_2.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Peters-D'Allessandro Printer.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Peters-D'Allessandro.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Print Server Test @ 10.1.11.4 (DNS-Print Server).app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Tech Wing.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/Tech-Philips.app", 
+            "appVersion": "11.4", 
+            "executableName": "PrinterProxy"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Printers/TJJ Printer.app", 
+            "appVersion": "11.4", 
             "executableName": "PrinterProxy"
         }
     ], 
@@ -1776,12 +1925,20 @@
         "appVersion": "1.3.6", 
         "executableName": "System Events"
     }, 
-    "com.apple.systempreferences": {
-        "appPath": "/Applications/System Preferences.app", 
-        "appVersion": "14.0", 
-        "category": "public.app-category.utilities", 
-        "executableName": "System Preferences"
-    }, 
+    "com.apple.systempreferences": [
+        {
+            "appPath": "/Applications/System Preferences.app", 
+            "appVersion": "14.0", 
+            "category": "public.app-category.utilities", 
+            "executableName": "System Preferences"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Mail/V3/39BF37AD-B1E9-4AED-A625-DC821D8AE0DF/[Gmail].mbox/All Mail.mbox/0907562B-90E2-4DA3-A75F-572CE7FCF287/Data/3/4/Attachments/43119/1/SP.app", 
+            "appVersion": "14.0", 
+            "category": "public.app-category.utilities", 
+            "executableName": "System Preferences"
+        }
+    ], 
     "com.apple.systemuiserver": {
         "appPath": "/System/Library/CoreServices/SystemUIServer.app", 
         "appVersion": "1.7", 
@@ -1816,22 +1973,45 @@
         "appVersion": "3.3.8", 
         "executableName": "Swift Publisher 3"
     }, 
-    "com.blackmagic-design.BlackmagicRawPlayer": {
-        "appName": "Blackmagic RAW Player", 
-        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Applications/Blackmagic RAW Player.app", 
-        "appVersion": "1.0", 
-        "category": "public.app-category.video", 
-        "executableName": "Blackmagic RAW Player"
-    }, 
-    "com.blackmagic-design.DPDecoder": {
-        "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/DPDecoder.app", 
-        "appVersion": "1.0", 
-        "executableName": "DPDecoder"
-    }, 
+    "com.blackmagic-design.BlackmagicRawPlayer": [
+        {
+            "appName": "Blackmagic RAW Player", 
+            "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/Applications/Blackmagic RAW Player.app", 
+            "appVersion": "1.0", 
+            "category": "public.app-category.video", 
+            "executableName": "Blackmagic RAW Player"
+        }, 
+        {
+            "appName": "Blackmagic RAW Player", 
+            "appPath": "/Volumes/External SSD/Marks shit/Applications/DaVinci Resolve.app/Contents/Applications/Blackmagic RAW Player.app", 
+            "appVersion": "1.3", 
+            "category": "public.app-category.video", 
+            "executableName": "Blackmagic RAW Player"
+        }
+    ], 
+    "com.blackmagic-design.DPDecoder": [
+        {
+            "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/DPDecoder.app", 
+            "appVersion": "1.0", 
+            "executableName": "DPDecoder"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/Marks shit/Applications/DaVinci Resolve.app/Contents/Applications/DPDecoder.app", 
+            "appVersion": "1.0", 
+            "executableName": "DPDecoder"
+        }
+    ], 
     "com.blackmagic-design.DaVinciResolve": {
         "appName": "Blackmagic DaVinci Resolve", 
         "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve.app", 
         "appVersion": "15.1.1", 
+        "category": "public.app-category.video", 
+        "executableName": "Resolve"
+    }, 
+    "com.blackmagic-design.DaVinciResolveLite": {
+        "appName": "Blackmagic DaVinci Resolve", 
+        "appPath": "/Volumes/External SSD/Marks shit/Applications/DaVinci Resolve.app", 
+        "appVersion": "15.3", 
         "category": "public.app-category.video", 
         "executableName": "Resolve"
     }, 
@@ -1859,10 +2039,26 @@
         "appPath": "/Library/Application Support/Blackmagic Design/DaVinci Resolve/BMDPanelFirmware.app", 
         "executableName": "BMDPanelFirmware"
     }, 
-    "com.blackmagic-design.davinciresolvepanels.utility": {
-        "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve Panels Setup.app", 
-        "executableName": "DaVinciResolvePanelsSetup"
-    }, 
+    "com.blackmagic-design.davinciresolvepanels.utility": [
+        {
+            "appPath": "/Applications/DaVinci Resolve/DaVinci Resolve Panels Setup.app", 
+            "executableName": "DaVinciResolvePanelsSetup"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/Marks shit/Applications/DaVinci Resolve.app/Contents/Applications/DaVinci Resolve Panels Setup.app", 
+            "executableName": "DaVinciResolvePanelsSetup"
+        }
+    ], 
+    "com.continuum.python": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/python.app", 
+            "executableName": "python"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/python.app-2-py37_9/python.app", 
+            "executableName": "python"
+        }
+    ], 
     "com.electron.wpilibutility": {
         "appName": "wpilibutility", 
         "appPath": "/Users/os/wpilib/utility/utilitymac/wpilibutility.app", 
@@ -1905,22 +2101,86 @@
         "appVersion": "5.7.24", 
         "executableName": "EPSON Scanner"
     }, 
-    "com.google.Chrome": {
-        "appName": "Google Chrome", 
-        "appPath": "/Users/os/Applications/Google Chrome.app", 
-        "appVersion": "78.0.3904.70", 
-        "executableName": "Google Chrome"
+    "com.github.GitHubClient": {
+        "appName": "GitHub Desktop", 
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/GitHub Desktop.app", 
+        "appVersion": "1.6.5", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "GitHub Desktop"
+    }, 
+    "com.google.Chrome": [
+        {
+            "appName": "Google Chrome", 
+            "appPath": "/Users/os/Applications/Google Chrome.app", 
+            "appVersion": "78.0.3904.70", 
+            "executableName": "Google Chrome"
+        }, 
+        {
+            "appName": "Google Chrome", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Google Chrome.app", 
+            "appVersion": "73.0.3683.103", 
+            "executableName": "Google Chrome"
+        }
+    ], 
+    "com.google.Chrome.app.Default-cbkkbcmdlboombapidmoeolnmdacpkch-internal": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Google/Chrome/Default/Web Applications/_crx_cbkkbcmdlboombapidmoeolnmdacpkch/Default cbkkbcmdlboombapidmoeolnmdacpkch.app", 
+        "appVersion": "4.47.1.3", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.Chrome.app.Default-gaedmjdfmmahhbjefcbgaolhhanlaolb": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Chrome Apps.localized/Default gaedmjdfmmahhbjefcbgaolhhanlaolb.app", 
+        "appVersion": "2.6.0", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.Chrome.app.Default-gaedmjdfmmahhbjefcbgaolhhanlaolb-internal": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Google/Chrome/Default/Web Applications/_crx_gaedmjdfmmahhbjefcbgaolhhanlaolb/Default gaedmjdfmmahhbjefcbgaolhhanlaolb.app", 
+        "appVersion": "2.6.0", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.Chrome.app.Default-gbchcmhmhahfdphkhkmpfmihenigjmpp": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Chrome Apps.localized/Default gbchcmhmhahfdphkhkmpfmihenigjmpp.app", 
+        "appVersion": "73.0.3683.20", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.Chrome.app.Default-gbchcmhmhahfdphkhkmpfmihenigjmpp-internal": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Google/Chrome/Default/Web Applications/_crx_gbchcmhmhahfdphkhkmpfmihenigjmpp/Default gbchcmhmhahfdphkhkmpfmihenigjmpp.app", 
+        "appVersion": "73.0.3683.20", 
+        "executableName": "app_mode_loader"
     }, 
     "com.google.Chrome.app.Default-hmpigflbjeapnknladcfphgkemopofig": {
         "appPath": "/Users/os/Applications/Chrome Apps.localized/Ubiquiti Device Discovery Tool.app", 
         "appVersion": "0.2.48", 
         "executableName": "app_mode_loader"
     }, 
-    "com.google.GoogleDrive": {
-        "appName": "Backup and Sync", 
-        "appPath": "/Users/os/Applications/Backup and Sync.app", 
-        "appVersion": "3.47", 
-        "executableName": "Backup and Sync"
+    "com.google.Chrome.app.Default-mpbbnannobiobpnfblimoapbephgifkm-internal": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Google/Chrome/Default/Web Applications/_crx_mpbbnannobiobpnfblimoapbephgifkm/Default mpbbnannobiobpnfblimoapbephgifkm.app", 
+        "appVersion": "4.47.2.4", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.Chrome.app.Default-odldmflbckacdofpepkdkmkccgdfaemb-internal": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Google/Chrome/Default/Web Applications/_crx_odldmflbckacdofpepkdkmkccgdfaemb/Default odldmflbckacdofpepkdkmkccgdfaemb.app", 
+        "appVersion": "1.3.3", 
+        "executableName": "app_mode_loader"
+    }, 
+    "com.google.GoogleDrive": [
+        {
+            "appName": "Backup and Sync", 
+            "appPath": "/Users/os/Applications/Backup and Sync.app", 
+            "appVersion": "3.47", 
+            "executableName": "Backup and Sync"
+        }, 
+        {
+            "appName": "Backup and Sync", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Backup and Sync.app", 
+            "appVersion": "3.43", 
+            "executableName": "Backup and Sync"
+        }
+    ], 
+    "com.google.android.studio": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/AndroidStudio/ch-0/183.5452501/Android Studio.app", 
+        "appVersion": "3.4", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "studio"
     }, 
     "com.hp.EasyScanMac": {
         "appPath": "/Applications/HP Easy Scan.app", 
@@ -2016,6 +2276,73 @@
         "appVersion": "10.13.0", 
         "executableName": "Self Service"
     }, 
+    "com.jetbrains.CLion": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/CLion.app", 
+        "appVersion": "2018.3.4", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "clion"
+    }, 
+    "com.jetbrains.apps.activator": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox.app", 
+        "appVersion": "1.14.5179", 
+        "executableName": "jetbrains-toolbox"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__ion_2018_3_4": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/CLion.app", 
+        "appVersion": "2018.3.4", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__ndroid_tudio_3_4": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/Android Studio.app", 
+        "appVersion": "3.4", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__ntelli_ltimate_2019_1_1": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/IntelliJ IDEA Ultimate.app", 
+        "appVersion": "2019.1.1", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__ntelli_ommunity_ducational_2018_3_1": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/IntelliJ IDEA Community Educational.app", 
+        "appVersion": "2018.3.1", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__y_harm_du_2018_3": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/PyCharm Edu.app", 
+        "appVersion": "2018.3", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.apps.activator.linkapp.pcom.jetbrains.apps.activator__y_harm_rofessional_2018_3_4": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/JetBrains Toolbox/PyCharm Professional.app", 
+        "appVersion": "2018.3.4", 
+        "executableName": "jetbrains-toolbox-launcher"
+    }, 
+    "com.jetbrains.intellij": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/191.6707.61/IntelliJ IDEA.app", 
+        "appVersion": "2019.1.1", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "idea"
+    }, 
+    "com.jetbrains.intellij.ie": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/IDEA-E/ch-0/183.4588.179/IntelliJ IDEA EDU.app", 
+        "appVersion": "2018.3.1", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "idea"
+    }, 
+    "com.jetbrains.pycharm": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-E/ch-0/183.4588.180/PyCharm Edu.app", 
+            "appVersion": "2018.3", 
+            "category": "public.app-category.developer-tools", 
+            "executableName": "pycharm"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/183.5429.31/PyCharm.app", 
+            "appVersion": "2018.3.4", 
+            "category": "public.app-category.developer-tools", 
+            "executableName": "pycharm"
+        }
+    ], 
     "com.kcptech.sketchpad5": {
         "appPath": "/Applications/GSP5.app", 
         "appVersion": "5.06", 
@@ -2126,13 +2453,22 @@
         "appVersion": "14.6.5", 
         "executableName": "SyncServicesAgent"
     }, 
-    "com.microsoft.VSCode": {
-        "appName": "Code", 
-        "appPath": "/Users/os/Applications/Visual Studio Code.app", 
-        "appVersion": "1.41.1", 
-        "category": "public.app-category.developer-tools", 
-        "executableName": "Electron"
-    }, 
+    "com.microsoft.VSCode": [
+        {
+            "appName": "Code", 
+            "appPath": "/Users/os/Applications/Visual Studio Code.app", 
+            "appVersion": "1.41.1", 
+            "category": "public.app-category.developer-tools", 
+            "executableName": "Electron"
+        }, 
+        {
+            "appName": "Code", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Visual Studio Code.app", 
+            "appVersion": "1.33.1", 
+            "category": "public.app-category.developer-tools", 
+            "executableName": "Electron"
+        }
+    ], 
     "com.microsoft.Word": [
         {
             "appName": "Microsoft Word", 
@@ -2234,6 +2570,11 @@
         "appVersion": "14.6.5", 
         "executableName": "Microsoft Office Reminders"
     }, 
+    "com.mojang.minecraftlauncher": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Desktop/Personal/Games/MC.app", 
+        "appVersion": "", 
+        "executableName": "launcher"
+    }, 
     "com.oracle.jmc": [
         {
             "appPath": "/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/missioncontrol/Java Mission Control.app", 
@@ -2246,13 +2587,22 @@
             "executableName": "jmc"
         }
     ], 
-    "com.safeincloud.Safe-In-Cloud.OSX": {
-        "appName": "SafeInCloud Password Manager", 
-        "appPath": "/Users/os/Desktop/PW Manager.app", 
-        "appVersion": "19.3.3", 
-        "category": "public.app-category.productivity", 
-        "executableName": "SafeInCloud Password Manager"
-    }, 
+    "com.safeincloud.Safe-In-Cloud.OSX": [
+        {
+            "appName": "SafeInCloud Password Manager", 
+            "appPath": "/Users/os/Desktop/PW Manager.app", 
+            "appVersion": "19.3.3", 
+            "category": "public.app-category.productivity", 
+            "executableName": "SafeInCloud Password Manager"
+        }, 
+        {
+            "appName": "SafeInCloud Password Manager", 
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Desktop/PW Manager.app", 
+            "appVersion": "19.0.0", 
+            "category": "public.app-category.productivity", 
+            "executableName": "SafeInCloud Password Manager"
+        }
+    ], 
     "com.sketchup.LayOut.2015": {
         "appPath": "/Applications/SketchUp 2015/LayOut.app", 
         "appVersion": "15.3", 
@@ -2283,22 +2633,67 @@
         "appVersion": "17.3", 
         "executableName": "Style Builder"
     }, 
-    "com.spotify.client": {
-        "appPath": "/Users/os/Applications/Spotify (old).app", 
-        "appVersion": "1.1.22.633.g1bab253a", 
-        "category": "public.app-category.music", 
-        "executableName": "Spotify"
-    }, 
+    "com.spotify.client": [
+        {
+            "appPath": "/Users/os/Applications/Spotify (old).app", 
+            "appVersion": "1.1.22.633.g1bab253a", 
+            "category": "public.app-category.music", 
+            "executableName": "Spotify"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Spotify.app", 
+            "appVersion": "1.1.4.197.g92d52c4f", 
+            "category": "public.app-category.music", 
+            "executableName": "Spotify"
+        }
+    ], 
     "com.tcltk.wish": {
         "appPath": "/System/Library/Frameworks/Tk.framework/Versions/8.5/Resources/Wish.app", 
         "appVersion": "8.5.9", 
         "executableName": "Wish"
+    }, 
+    "com.teamdev.browsercore": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Pearson/TestNav/jxbrowser/6.20/browsercore.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "browsercore"
+    }, 
+    "com.teamdev.jxbrowser": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Application Support/Pearson/TestNav/jxbrowser/6.14.2/jxbrowser-chromium.app", 
+        "appVersion": "1.0", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "jxbrowser-chromium"
+    }, 
+    "com.techsmith.camtasia3": {
+        "appPath": "/Volumes/External SSD/Marks shit/Applications/Camtasia 3.app", 
+        "appVersion": "3.1.5", 
+        "category": "public.app-category.video", 
+        "executableName": "Camtasia 3"
+    }, 
+    "com.termius-dmg.mac": {
+        "appName": "Termius", 
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Termius.app", 
+        "appVersion": "4.2.7", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Termius"
     }, 
     "com.vernier.loggerpro": {
         "appPath": "/Applications/Logger Pro 3/Logger Pro.app", 
         "appVersion": "3.9", 
         "category": "", 
         "executableName": "Logger Pro"
+    }, 
+    "com.weirdrocketeer.Foobar": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Files/Student Files/CS:PRG/Applications/Foobar.app", 
+        "appVersion": "1.5", 
+        "category": "public.app-category.developer-tools", 
+        "executableName": "Foobar"
+    }, 
+    "com.yonilevy.mutejack": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/AutoMute.app", 
+        "appVersion": "1.4", 
+        "category": "public.app-category.utilities", 
+        "executableName": "AutoMute"
     }, 
     "com.yoyogames.gamemakerlite": {
         "appName": "Game Maker for Mac Lite", 
@@ -2333,17 +2728,43 @@
         "appVersion": "4.0.0", 
         "executableName": "Canon IJScanner2"
     }, 
-    "octagonmac.lukaskorba.com": {
-        "appPath": "/Users/os/Desktop/Apps/Octagon.app", 
-        "appVersion": "3.2", 
-        "category": "public.app-category.arcade-games", 
-        "executableName": "Octagon"
+    "monitorproduct": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Android/sdk/tools/lib/monitor-x86_64/monitor.app", 
+        "appVersion": "25.2.2", 
+        "executableName": "monitor"
     }, 
-    "org.audacityteam.audacity": {
-        "appPath": "/Users/os/Applications/Audacity.app", 
-        "appVersion": "2.3.3.0", 
-        "executableName": "Audacity.sh"
+    "octagonmac.lukaskorba.com": [
+        {
+            "appPath": "/Users/os/Desktop/Apps/Octagon.app", 
+            "appVersion": "3.2", 
+            "category": "public.app-category.arcade-games", 
+            "executableName": "Octagon"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Mail/V3/39BF37AD-B1E9-4AED-A625-DC821D8AE0DF/[Gmail].mbox/All Mail.mbox/0907562B-90E2-4DA3-A75F-572CE7FCF287/Data/2/4/Attachments/42051/2/Octagon.app", 
+            "appVersion": "3.2", 
+            "category": "public.app-category.arcade-games", 
+            "executableName": "Octagon"
+        }
+    ], 
+    "org.apache.directory.studio.product": {
+        "appName": "ApacheDirectoryStudio", 
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Desktop/MacTinker/NOT SORTED/LDAP/ApacheDirectoryStudio.app", 
+        "appVersion": "2.0.0", 
+        "executableName": "ApacheDirectoryStudio"
     }, 
+    "org.audacityteam.audacity": [
+        {
+            "appPath": "/Users/os/Applications/Audacity.app", 
+            "appVersion": "2.3.3.0", 
+            "executableName": "Audacity.sh"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/Marks shit/Applications/Audacity.app", 
+            "appVersion": "2.3.0.0", 
+            "executableName": "Audacity.sh"
+        }
+    ], 
     "org.drc.insight": {
         "appPath": "/Applications/DRC INSIGHT Online Assessments/DRC INSIGHT Online Assessments.app", 
         "category": "public.app-category.education", 
@@ -2359,12 +2780,20 @@
         "appVersion": "4.8.0", 
         "executableName": "eclipse"
     }, 
-    "org.herf.Flux": {
-        "appPath": "/Users/os/Applications/Flux.app", 
-        "appVersion": "40.1", 
-        "category": "public.app-category.utilities", 
-        "executableName": "Flux"
-    }, 
+    "org.herf.Flux": [
+        {
+            "appPath": "/Users/os/Applications/Flux.app", 
+            "appVersion": "40.1", 
+            "category": "public.app-category.utilities", 
+            "executableName": "Flux"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Applications/Flux.app", 
+            "appVersion": "39.987", 
+            "category": "public.app-category.utilities", 
+            "executableName": "Flux"
+        }
+    ], 
     "org.mozilla.firefox": {
         "appPath": "/Users/os/Applications/Firefox.app", 
         "appVersion": "72.0", 
@@ -2376,9 +2805,91 @@
         "appVersion": "8.1", 
         "executableName": "netbeans"
     }, 
+    "org.opensource.namebench": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Desktop/Personal/namebench.app", 
+        "appVersion": "1.3.1", 
+        "executableName": "namebench"
+    }, 
     "org.python.python": {
         "appPath": "/System/Library/Frameworks/Python.framework/Versions/2.7/Resources/Python.app", 
         "appVersion": "2.7.10", 
         "executableName": "Python"
-    }
+    }, 
+    "org.qt-project.Designer": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/Designer.app", 
+            "executableName": "Designer"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/Designer.app", 
+            "executableName": "Designer"
+        }
+    ], 
+    "org.qt-project.Linguist": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/Linguist.app", 
+            "executableName": "Linguist"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/Linguist.app", 
+            "executableName": "Linguist"
+        }
+    ], 
+    "org.qt-project.assistant": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/Assistant.app", 
+            "executableName": "Assistant"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/Assistant.app", 
+            "executableName": "Assistant"
+        }
+    ], 
+    "org.qt-project.dbusviewer": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/qdbusviewer.app", 
+            "executableName": "qdbusviewer"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/qdbusviewer.app", 
+            "executableName": "qdbusviewer"
+        }
+    ], 
+    "org.qt-project.pixeltool": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/pixeltool.app", 
+            "executableName": "pixeltool"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/pixeltool.app", 
+            "executableName": "pixeltool"
+        }
+    ], 
+    "org.qt-project.qml": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/bin/qml.app", 
+            "executableName": "qml"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/anaconda3/pkgs/qt-5.9.7-h468cd18_1/bin/qml.app", 
+            "executableName": "qml"
+        }
+    ], 
+    "us.jpits.installer.InstallScreenSavers": {
+        "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Mail/V3/39BF37AD-B1E9-4AED-A625-DC821D8AE0DF/[Gmail].mbox/All Mail.mbox/0907562B-90E2-4DA3-A75F-572CE7FCF287/Data/2/4/Attachments/42140/1/Install Screen Savers.app", 
+        "appVersion": "1.2.2", 
+        "executableName": "Install Screen Savers"
+    }, 
+    "us.jpits.notifier": [
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Mail/V3/39BF37AD-B1E9-4AED-A625-DC821D8AE0DF/[Gmail].mbox/All Mail.mbox/0907562B-90E2-4DA3-A75F-572CE7FCF287/Data/2/4/Attachments/42868/1/terminal-notifier.app", 
+            "appVersion": "1.00", 
+            "executableName": "terminal-notifier"
+        }, 
+        {
+            "appPath": "/Volumes/External SSD/21petejay/Users/os/Library/Mail/V3/9F380897-DE90-4DED-BDAC-87AC71C0BDEE/Sent Messages.mbox/0907562B-90E2-4DA3-A75F-572CE7FCF287/Data/7/2/Attachments/27641/1/terminal-notifier.app", 
+            "appVersion": "1.00", 
+            "executableName": "terminal-notifier"
+        }
+    ]
 }
