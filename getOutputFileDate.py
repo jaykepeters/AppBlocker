@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 ## File Date Getter 
+## DATE FORMAT: MMDDYYHHMM
 def getOutputFileDate(filename):
     # Month map
     monthMap = {
