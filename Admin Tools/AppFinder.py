@@ -3,6 +3,10 @@ import subprocess # for running the commmand
 import plistlib # for getting bundle identifiers
 import json # for formatting the dict
 import xml.parsers.expat # for error checking
+from datetime import datetime
+
+# Generate the outfile name
+timestamp = datetime.now().strftime('%m%d%y%H%M')
 
 # Initialize Necessary Types
 applicationDB = {}
@@ -13,7 +17,6 @@ appsWithErrors = {
     "noPlist": [],
     "unknown": []
 }
-appDBJSON = "appdb.json"
 
 ## FUNCTIONS
 def getBinaryPlistKey(plist, key):
@@ -132,11 +135,11 @@ if counter == len(appsWithErrors['binaryPlist']): #temp
     del appsWithErrors['binaryPlist'] #temp
 
 # Output our findings to 2 files
-writeDict(applicationDB, appDBJSON)
-writeDict(appsWithErrors, 'appfinder_errors.json')
+writeDict(applicationDB, 'appDB_{}.json'.format(timestamp))
+writeDict(appsWithErrors, 'errors_{}.json'.format(timestamp))
 
 # Let the user know some key information ;)
 print("Total Apps Found: "+str(len(apps)))
 print("Total Bundle Identifiers found: "+str(len(applicationDB)))
-print("The application database has been exported to: "+appDBJSON)
-print("Any apps with errors can be found in appErrors.json")
+print("The application database has been exported to: "+'appDB_{}.json'.format(timestamp))
+print("Any apps with errors can be found in "+'errors_{}.json'.format(timestamp))
