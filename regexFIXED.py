@@ -21,13 +21,9 @@ def killRunningApps():
         matchedq = re.search(regex, str(app.bundleIdentifier()))
         if matchedq:
             _index = matchedq.lastindex - 1### WORKING
-            
-           # print(_index)
-            print regex.replace('(', '').replace(')', '').split("|")[_index]
-
+            print re.sub(r"\(|\)", '', regex).split("|")[_index]
             
         # We call the takeaction method, with the additions below
-        #if app.bundleIdentifier() in blockedApps: # if re.match(blockedBundleIdentifiersCombined, app.bundleIdentifier()): # does the bundle identifier match?\
             violationInfo = {
                 "name": app.localizedName(),
                 "bundleIdentifier": app.bundleIdentifier(),
