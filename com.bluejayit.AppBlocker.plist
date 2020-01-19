@@ -5,7 +5,7 @@
 	<key>KeepAlive</key>
 	<true/>
 	<key>Label</key>
-	<string>net.jayke.AppBlocker</string>
+	<string>com.BlueJayIT.AppBlocker</string>
 	<key>Nice</key>
 	<integer>20</integer>
 	<key>Program</key>
