@@ -1,12 +1,4 @@
-#!/usr/bin/python
-# Next version, use categorify.org to extract bundle id info, block categories...
-# Users that should have gaming access
-"""
-SOMETHING LIKE THIS, NOT EXACTLY...
-dscl . -create /Groups/gaming RealName "Gaming Users"
-dseditgroup -o edit -a jaykepeters -t user gaming
-"""
-print("Status: Starting AppBlocker")
+#!/usr/bin/env python
 import Foundation
 import signal
 import re
@@ -15,227 +7,254 @@ import sys
 import shutil
 from AppKit import *
 from PyObjCTools import AppHelper
-from SystemConfiguration import SCDynamicStoreCopyConsoleUser # For getting the currently logged in user
+import re
 import json
-import threading
-import hashlib
+import inspect
 
-import plistlib # FOR APP VERSION
+# The username of the current user tied to this process in this workspace
+currentUser = Foundation.NSProcessInfo.processInfo().userName()
 
-## Current User Function
-# A more "Apple Approved" way
-def current_user():
-	username = (SCDynamicStoreCopyConsoleUser(None, None, None) or [None])[0] 
-	username = [username,""][username in [u"loginwindow", None, u""]]
-	return username
+# The config file
+config_file = "/Users/os/.AppBlocker2.json"
 
-def get_groups(user):
-	import grp, pwd 
-	groups = [g.gr_name for g in grp.getgrall() if user in g.gr_mem]
-	gid = pwd.getpwnam(user).pw_gid
-	groups.append(grp.getgrgid(gid).gr_name)
-	return groups
+# The log file
+log_file = "/Users/os/AppBlocker.log"
 
-## CONFIG FILE ##
-config = "/Users/os/.AppBlocker.json"
-## CONFIG FILE ##
+# Record violations queue
+violations = []
 
-## MD5 File Hasher
-def hashfile(file):
-	hasher = hashlib.md5()
-	try:
-		with open(file, 'rb') as afile:
-			buf = afile.read()
-			hasher.update(buf)
-		return hasher.hexdigest()
-	except:
-		print("Error: Could not hash config file")
+# Key existence checker
+def KeyExists(dict, key): 
+    if key in dict.keys(): 
+        return True 
+    else: 
+        return False
 
-## CONFIG LOAD FUNCTIONS
-def loadConfig():
-	global whitelisted
+# Config file checker
+def parseConfig(_config):
+    # Read the JSON
+    with open(_config) as json_file:
+        config = json.load(json_file)
+    
+    # List of errors
+    errors = []
+        
+    # Current available options
+    availableOptionKeys = {
+        "allowedGroups": list,
+        "allowedUsers": list,
+        "customAlert": {
+            "message": unicode,
+            "informativeText": unicode,
+            "iconPath": unicode,
+            "proceedButton": list
+        },
+        "deleteBlockedApplication": bool,
+        "allowedPath": unicode
+    }
+    
+    for record in config:
+        for key in config[record]:
+            if KeyExists(availableOptionKeys, key):
+                if type(config[record][key]) is availableOptionKeys[key]:
+                    pass
+                elif type(config[record][key]) is dict:
+                    for subkey in config[record][key]:
+                        if KeyExists(availableOptionKeys[key], subkey):
+                            if type(config[record][key][subkey]) is availableOptionKeys[key][subkey]:
+                                pass
+                            else:
+                                errors.append("Invalid subkey type, {} -> {} -> {}".format(record, key, subkey))
+                        else:
+                            errors.append("Invalid subkey, {} -> {} -> {}".format(record, key, subkey))
+                else:
+                    errors.append("Invalid key type, {} -> {}".format(record, key))
+            else:
+                errors.append("Invalid key, {} -> {}".format(record, key))
+    
+    # Were there any errors in the config?
+    if len(errors) > 0:
+        print("WARNING: INVALID CONFIG")
+        print("\tThe configuration file located at {} has errors!".format("{CONFIG PATH}"))
+        for error in errors:
+            print("\tERROR:\t"+error)
+        exit(1)
+    else:
+        print("STATUS: CONFIG OK")
+        return config
 
-	global filehash
-	global currentuser
-	global blockedBundleIdentifiers
-	global blockedBundleIdentifiersCombined
+# Function for killing apps
+def killApp(_violationInfo):
+    try:
+        os.kill(_violationInfo['processIdentifier'], signal.SIGKILL)
+    except:
+        print("ERROR: Someone else killed pid "+str(_violationInfo['processIdentifier']))
 
-	# Get the current user
-	currentuser = current_user()
+# Performs actions on a per-app basis
+def takeAction(_violationInfo):
+    # Extract the options
+    options = config[_violationInfo['matchedRegex']]
+    
+    # Path, version, user options... none? kill
+    if KeyExists(options, 'allowedPath'):
+        if _violationInfo['appPath'] != options['allowedPath']:
+            killApp(_violationInfo)
+    if KeyExists(options, 'allowedUsers'):
+        pass
+    else:
+        killApp(_violationInfo)
+            
+    # Are we going to delete the app?
+    if KeyExists(options, 'deleteBlockedApplication'):
+        if options['deleteBlockedApplication'] is True:
+            try:
+                shutil.rmtree(_violationInfo['appPath'])
+            except OSError, e:
+                print ("Error: %s - %s." % (e.filename,e.strerror))
+                
+    # Caller(s) for verbose logging
+    caller = inspect.stack()[1][3]
+    callers = {
+        "killRunningApps": "EXG",
+        "appLaunched_": "NEW"
+    }
+    
+    ## DEFAULTS
+    deleteBlockedApplication =  False
+    message = "The application \"{appname}\" has been blocked by IT"
+    informativeText = "Contact your administrator for more information"
+    iconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
+    proceedButton = ["OK"]
+    ## DEFAULTS
+    
+    # Log to the console
+    print("STATUS: AppBlocker killed {}, \"{}\" matching regex group: \"{}\", pid {}".format(callers[caller], _violationInfo['appName'], _violationInfo['matchedRegex'], _violationInfo['processIdentifier']))
+    
+    # Add the app to the queue
+    violations.append(_violationInfo)
+    
+    # Print the length of the violations
+    print "Current Violations Count: "+str(len(violations))
+    
+    # Alert Message Configuration
+    if KeyExists(options, 'customAlert'):
+        key = options['customAlert']
+        if KeyExists(key, 'message'):
+            message = key['message']
+        else:
+            message = message.format()
+        if KeyExists(key, 'informativeText'):
+            informativeText = key['informativeText']
+        if KeyExists(key, 'iconPath') and os.path.exists(key['iconPath']):
+            iconPath = key['iconPath']
+        if KeyExists(key, 'proceedButton'):
+            proceedButton = key['proceedButton']
+        alert(iconPath, message, informativeText, proceedButton)
 
-	# Load the config
-	if config:
-		filehash = hashfile(config)
-		try:
-			with open(config) as config_file:
-				blockedBundleIdentifiers = json.load(config_file)
-		except: 
-			print("Error: could not open or parse config file")
-			exit(1)
-	else:
-		print("Error: Config file does not exist!")
-		exit(1)
+def killRunningApps(workspace):
+    running_apps = workspace.runningApplications()
+    for app in running_apps:
+        match = re.match(blockedBundleIdentifiersCombined, str(app.bundleIdentifier()))
+        if match:
+            exactBundleIDOrWildcard = re.sub(r"\(|\)", '', blockedBundleIdentifiersCombined).split("|")[match.lastindex - 1]
+            
+            # We call the takeaction method, with the additions below
+            violationInfo = {
+                "matchedRegex": exactBundleIDOrWildcard,
+                "userName": NSProcessInfo.processInfo().userName(),
+                "appName": app.localizedName(),
+                "bundleIdentifier": app.bundleIdentifier(),
+                "processIdentifier": app.processIdentifier(),
+                "appPath": app.bundleURL().path() # Not NSURL
+            }
+            
+            # Take action upon the app
+            takeAction(violationInfo)
 
-	# Combine the bundle identifiers
-	blockedBundleIdentifiersCombined = "(" + ")|(".join(blockedBundleIdentifiers.keys()) + ")"
-
-## Configuration refresher
-## No more reloading the agent :)
-## Probably stop for sake of battery life...
-def refreshConfig():
-	threading.Timer(30, refreshConfig).start()
-
-	global blockedBundleIdentifiers
-	global blockedBundleIdentifiersCombined
-
-	# Hash check the config
-	if hashfile(config) != filehash:
-		print("Status: Config file hash changed")
-		# We should refresh the configuration file
-		loadConfig()
-
-## Load the Config Now...
-loadConfig()
-
-print("Status: AppBlocker Ready")
-## Match Regex Identifier Options
-def matchIdentifier(dictionary, substr):
-	result = {}
-	for key in dictionary.keys():
-		if re.match(key, substr):
-			result = dictionary[key]
-			break
-	return results
-
-# Message displayed to the user when application is blocked
-alertMessage = "The application \"{appname}\" has been blocked by IT"
-alertInformativeText = "Contact your administrator for more information"
-
-# Use a custom Icon for the alert. If none is defined here, the Python rocketship will be shown.
-alertIconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
+## BEFORE ANYTHING ELSE
+# Attempt to parse the config
+config = {}
+if os.path.exists(config_file):
+    config = parseConfig(config_file)
+else:
+    exit(1)
+## BEFORE ANYTHING ELSE
 
 # Define callback for notification
 class AppLaunch(NSObject):
-	def appLaunched_(self, notification):
-	
-		# Store the userInfo dict from the notification
-		userInfo = notification.userInfo
+    def appLaunched_(self, notification):
 
-		# Get the laucnhed applications bundle identifier
-		bundleIdentifier = userInfo()['NSApplicationBundleIdentifier']
+        # Store the userInfo dict from the notification
+        userInfo = notification.userInfo
 
-		# Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
-		matched = re.match(blockedBundleIdentifiersCombined, bundleIdentifier)
-		if matched:
-			## OPTIONS
-			try:
-				# Verbatim Identifier
-				options = blockedBundleIdentifiers[bundleIdentifier]
-			except:
-				# Regex Identifier
-				print(matched.group()) ## BUG and NOT WORKING?
-				options = matchIdentifier(blockedBundleIdentifiers, matched.group())
-				print(options)
+        # Get the laucnhed applications bundle identifier
+        bundleIdentifier = userInfo()['NSApplicationBundleIdentifier']
+       
+        # Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
+        match = re.match(blockedBundleIdentifiersCombined, str(bundleIdentifier))
+        if match:
 
-			## ABSOLUTE PATH
-			def takeAction():
-				# Get path of launched app
-				path = userInfo()['NSApplicationPath']
-				print(path)
+            # Get the exact bundle identifier or regex that matched
+            exactBundleIDOrWildcard = re.sub(r"\(|\)", '', blockedBundleIdentifiersCombined).split("|")[match.lastindex - 1]
 
-				# Get PID of launchd app
-				pid = userInfo()['NSApplicationProcessIdentifier']
-
-				# Quit launched app
-				try:
-					os.kill(pid, signal.SIGKILL)
-				except:
-					print("Error, some other process killed the app first...")
-					
-				# Delete launched app
-				if 'deleteBlockedApplication' in options:
-					if options['deleteBlockedApplication']:
-						try:
-							shutil.rmtree(path)
-						except OSError, e:
-							print ("Error: %s - %s." % (e.filename,e.strerror))
-
-				# Alert user
-				if 'alertMessage' in options:
-					alert(options['alertMessage'], alertInformativeText, ["I Understand"])
-				## REMEMBER THAT ALERTUSER IS NOW DEPRECATED. THE PRESENCE OF THE ALERT MESSAGE IS THE TRIGGER
-
-			## ALLOWED USERS/GROUPS/FILEPATHS
-			if 'allowedUsers' in options:
-				if options['allowedUsers']:
-					if currentuser not in options['allowedUsers']:
-						takeAction()
-			elif 'allowedGroups' in options:
-				if options['allowedGroups']:
-					groups = get_groups(currentuser)
-					membercount = 0
-					for group in groups:
-						if group in options['allowedGroups']:
-							membercount += 1
-					if not membercount >= 1:
-						takeAction()
-			elif 'allowedPath' in options:
-				if options['allowedPath'] and options['allowedPath'] != userInfo()['NSApplicationPath']:
-					print(userInfo()['NSApplicationPath'])
-					print(options['allowedPath'])
-					whitelisted = False #experimental
-				 	takeAction()# Maybe convert option path to that of path launched... Making sure compares no matter what...
-			# elif 'allowedVersion' in options:
-			# 	if options['allowedVersion']:
-			# 		plistPath = os.path(os.path.join([userInfo()['NSApplicationPath'], "Contents/Info.plist"]))
-			# 		pl = plistlib.loadPlist(plistPath)
-			# 		#print(appVersion)
-			# 		if appVersion != options['allowedVersion']:
-			# 			takeAction()
-			else:
-				takeAction()
-
+            # Store the violation information
+            violationInfo = {
+                "matchedRegex": exactBundleIDOrWildcard,
+                "bundleIdentifier": bundleIdentifier,
+                "processIdentifier": userInfo()['NSApplicationProcessIdentifier'],
+                "appName": userInfo()['NSApplicationName'],
+                "appPath": str(userInfo()['NSApplicationPath'])
+            }
+            
+            # Take action upon the application
+            takeAction(violationInfo)
+            
 # Define alert class
 class Alert(object):
 
-	def __init__(self, messageText):
-		super(Alert, self).__init__()
-		self.messageText = messageText
-		self.informativeText = ""
-		self.buttons = []
+    def __init__(self, messageText):
+        super(Alert, self).__init__()
+        self.messageText = messageText
+        self.informativeText = ""
+        self.buttons = []
 
-	def displayAlert(self):
-		alert = NSAlert.alloc().init()
-		alert.setMessageText_(self.messageText)
-		alert.setInformativeText_(self.informativeText)
-		alert.setAlertStyle_(NSInformationalAlertStyle)
-		for button in self.buttons:
-			alert.addButtonWithTitle_(button)
+    def displayAlert(self):
+        alert = NSAlert.alloc().init()
+        alert.setMessageText_(self.messageText)
+        alert.setInformativeText_(self.informativeText)
+        alert.setAlertStyle_(NSInformationalAlertStyle)
+        for button in self.buttons:
+            alert.addButtonWithTitle_(button)
 
-		if os.path.exists(alertIconPath):
-			icon = NSImage.alloc().initWithContentsOfFile_(alertIconPath)
-			alert.setIcon_(icon)
+        if os.path.exists(self.alertIconPath):
+            icon = NSImage.alloc().initWithContentsOfFile_(self.alertIconPath)
+            alert.setIcon_(icon)
 
-		# Don't show the Python rocketship in the dock
-		NSApp.setActivationPolicy_(1)
+        # Don't show the Python rocketship in the dock
+        NSApp.setActivationPolicy_(1)
 
-		NSApp.activateIgnoringOtherApps_(True)
-		alert.runModal()
+        NSApp.activateIgnoringOtherApps_(True)
+        alert.runModal()
 
 # Define an alert
-def alert(message="Default Message", info_text="", buttons=["OK"]):	   
-	ap = Alert(message)
-	ap.informativeText = info_text
-	ap.buttons = buttons
-	ap.displayAlert()
+def alert(iconPath, message="Default Message", info_text="", buttons=["OK"]):    
+    ap = Alert(message)
+    ap.alertIconPath = iconPath
+    ap.informativeText = info_text
+    ap.buttons = buttons
+    ap.displayAlert()
 
-# Start the refreshConfig function
-refreshConfig()
+# Combine all bundle identifiers and regexes to one
+blockedBundleIdentifiersCombined = "(" + ")|(".join(config.keys()) + ")"
 
 # Register for 'NSWorkspaceDidLaunchApplicationNotification' notifications
-nc = Foundation.NSWorkspace.sharedWorkspace().notificationCenter()
+workspace = Foundation.NSWorkspace.sharedWorkspace() # For runnning apps
+nc = workspace.notificationCenter()
 AppLaunch = AppLaunch.new()
 nc.addObserver_selector_name_object_(AppLaunch, 'appLaunched:', 'NSWorkspaceWillLaunchApplicationNotification',None)
 
-# Launch "app"
+# Kill existing applications
+killRunningApps(workspace)
+
+# Launch "app" (kills newly launched apps)
 AppHelper.runConsoleEventLoop()
