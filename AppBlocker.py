@@ -36,10 +36,11 @@ def KeyExists(dict, key):
 def parseConfig(_config):
     # Read the JSON
     try:
-        with open(_config) as json_file:
-            config = ast.literal_eval(json.dumps(json.load(json_file)))
+        with open(_config) as json_file: # EVAL BOOLS????? REDO!!!!
+            #config = ast.literal_eval(json.dumps(json.load(json_file))) # So yeah, UTF-8...
+            config = json.load(json_file)
     except:
-        exit(1) # Invalid json or not exists!
+        exit("BAD CONFIG OR NO FILE")
     
     # List of errors
     errors = []
@@ -48,13 +49,13 @@ def parseConfig(_config):
     availableOptionKeys = {
         "allowedUsers": list,
         "customAlert": {
-            "message": str,
-            "informativeText": str,
-            "iconPath": str,
+            "message": unicode,
+            "informativeText": unicode,
+            "iconPath": unicode,
             "proceedButton": list
         },
         "deleteBlockedApplication": bool,
-        "allowedPath": str
+        "allowedPath": unicode
     }
     
     # Traverse the config file :) Sad looking!
@@ -95,7 +96,7 @@ def killApp(_violationInfo):
         os.kill(_violationInfo['processIdentifier'], signal.SIGKILL)
     except:
         killed = False
-        print("ERROR: Someone else killed pid "+str(_violationInfo['processIdentifier']))
+        #print("ERROR: Someone else killed pid "+str(_violationInfo['processIdentifier']))
     return killed
 
 # Performs actions on a per-app basis
@@ -137,8 +138,14 @@ def takeAction(_violationInfo):
         violations.append(_violationInfo)
         
         # Log the successful termination of violation
-        print("STATUS: AppBlocker killed {}, \"{}\" matching regex group: \"{}\", pid {}".format(callers[caller], _violationInfo['appName'], _violationInfo['matchedRegex'], _violationInfo['processIdentifier']))
-       
+        k = str(killedStatus)[0] # For killed status
+        if not KeyExists(config, _violationInfo['bundleIdentifier']):
+            er = 'R'
+        else:
+            er = 'E'
+        
+        print("STATUS: K{}-{}-{}{} -> {}".format(k, callers[caller], _violationInfo['processIdentifier'], er, _violationInfo['bundleIdentifier']))
+
         # Are we going to delete the app?
         if KeyExists(options, 'deleteBlockedApplication'):
             if options['deleteBlockedApplication'] is True:
@@ -166,14 +173,15 @@ def takeAction(_violationInfo):
                     
                     # Config Variables (Keys)
                     for key in options.keys():
-                        setattr(self, key, options[key])
+                        setattr(self, key, options[key]) #arr = [str(r) for r in arr]
                                         
                     # Violation Information Parameters
                     for key in _violationInfo.keys():
                         setattr(self, key, _violationInfo[key])
+                        
             MV = CustomAlertVars()
             ## ALERT FORMATTING ##
-            
+                        
             # So we don't call every time
             key = options['customAlert']
             if KeyExists(key, 'message'):
@@ -233,12 +241,13 @@ else:
 class AppLaunch(NSObject):
     def appLaunched_(self, notification):
 
+        print(notification)
         # Store the userInfo dict from the notification
         userInfo = notification.userInfo
 
         # Get the laucnhed applications bundle identifier
         bundleIdentifier = userInfo()['NSApplicationBundleIdentifier']
-       
+        
         # Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
         match = re.match(blockedBundleIdentifiersCombined, str(bundleIdentifier))
         if match:
