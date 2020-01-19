@@ -10,6 +10,7 @@ from PyObjCTools import AppHelper
 import re
 import json
 import inspect
+from string import Template
 
 # Get the current user and their groups
 currentUser = Foundation.NSProcessInfo.processInfo().userName()
@@ -22,14 +23,6 @@ log_file = "/Users/os/AppBlocker.log"
 
 # Record violations queue
 violations = []
-
-## DEFAULT NOTIFICATION
-deleteBlockedApplication =  False
-message = "The application \"{appname}\" has been blocked by IT"
-informativeText = "Contact your administrator for more information"
-iconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
-proceedButton = ["OK"]
-## DEFAULT NOTIFICATION
 
 # Key existence checker
 def KeyExists(dict, key): 
@@ -153,9 +146,26 @@ def takeAction(_violationInfo):
 
         # Notify the user, if specified
         if KeyExists(options, 'customAlert'):
+            ## DEFAULTS
+            message = "The application \"{}\" has been blocked by IT".format(_violationInfo['appName'])
+            informativeText = "Contact your administrator for more information"
+            iconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
+            proceedButton = ["OK"]
+            ## DEFAULTS
+            
+            ## ALERT FORMATTING ##
+            class MessageVars:
+                def __init__(self):
+                    for key in _violationInfo.keys():
+                        setattr(self, key, _violationInfo[key])
+            MV = MessageVars()
+            ## ALERT FORMATTING ##
+            
+            # So we don't call every time
             key = options['customAlert']
             if KeyExists(key, 'message'):
-                message = key['message']
+                message = Template(key['message']).substitute(vars(MV))
+                del MV
             else:
                 message = message.format()
             if KeyExists(key, 'informativeText'):
@@ -164,6 +174,7 @@ def takeAction(_violationInfo):
                 iconPath = key['iconPath']
             if KeyExists(key, 'proceedButton'):
                 proceedButton = key['proceedButton']
+            
             alert(iconPath, message, informativeText, proceedButton)
         
 def killRunningApps(workspace):
