@@ -164,8 +164,12 @@ def takeAction(_violationInfo):
             # So we don't call every time
             key = options['customAlert']
             if KeyExists(key, 'message'):
-                message = Template(key['message']).substitute(vars(MV))
-                del MV
+                try:
+                    _message = message
+                    message = Template(key['message']).substitute(vars(MV))
+                    del MV
+                except KeyError:
+                    message = _message
             else:
                 message = message.format()
             if KeyExists(key, 'informativeText'):
