@@ -11,7 +11,7 @@ import re
 import json
 import inspect
 
-# The username of the current user tied to this process in this workspace
+# Get the current user and their groups
 currentUser = Foundation.NSProcessInfo.processInfo().userName()
 
 # The config file
@@ -23,6 +23,14 @@ log_file = "/Users/os/AppBlocker.log"
 # Record violations queue
 violations = []
 
+## DEFAULT NOTIFICATION
+deleteBlockedApplication =  False
+message = "The application \"{appname}\" has been blocked by IT"
+informativeText = "Contact your administrator for more information"
+iconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
+proceedButton = ["OK"]
+## DEFAULT NOTIFICATION
+
 # Key existence checker
 def KeyExists(dict, key): 
     if key in dict.keys(): 
@@ -33,8 +41,11 @@ def KeyExists(dict, key):
 # Config file checker
 def parseConfig(_config):
     # Read the JSON
-    with open(_config) as json_file:
-        config = json.load(json_file)
+    try:
+        with open(_config) as json_file:
+            config = json.load(json_file)
+    except:
+        exit(1) # Invlid json or not exists!
     
     # List of errors
     errors = []
@@ -53,6 +64,7 @@ def parseConfig(_config):
         "allowedPath": unicode
     }
     
+    # Traverse the config file :) Sad looking!
     for record in config:
         for key in config[record]:
             if KeyExists(availableOptionKeys, key):
@@ -92,26 +104,6 @@ def killApp(_violationInfo):
 
 # Performs actions on a per-app basis
 def takeAction(_violationInfo):
-    # Extract the options
-    options = config[_violationInfo['matchedRegex']]
-    
-    # Path, version, user options... none? kill
-    if KeyExists(options, 'allowedPath'):
-        if _violationInfo['appPath'] != options['allowedPath']:
-            killApp(_violationInfo)
-    if KeyExists(options, 'allowedUsers'):
-        pass
-    else:
-        killApp(_violationInfo)
-            
-    # Are we going to delete the app?
-    if KeyExists(options, 'deleteBlockedApplication'):
-        if options['deleteBlockedApplication'] is True:
-            try:
-                shutil.rmtree(_violationInfo['appPath'])
-            except OSError, e:
-                print ("Error: %s - %s." % (e.filename,e.strerror))
-                
     # Caller(s) for verbose logging
     caller = inspect.stack()[1][3]
     callers = {
@@ -119,38 +111,61 @@ def takeAction(_violationInfo):
         "appLaunched_": "NEW"
     }
     
-    ## DEFAULTS
-    deleteBlockedApplication =  False
-    message = "The application \"{appname}\" has been blocked by IT"
-    informativeText = "Contact your administrator for more information"
-    iconPath = "/System/Library/CoreServices/CoreTypes.bundle/Contents/Resources/Actions.icns"
-    proceedButton = ["OK"]
-    ## DEFAULTS
+    # We should assume the app killed
+    kill  = True
     
-    # Log to the console
-    print("STATUS: AppBlocker killed {}, \"{}\" matching regex group: \"{}\", pid {}".format(callers[caller], _violationInfo['appName'], _violationInfo['matchedRegex'], _violationInfo['processIdentifier']))
+    # Why was the app killed? Useful for debugging on the server
+    _violationInfo['reasoning'] = {}
     
-    # Add the app to the queue
-    violations.append(_violationInfo)
+    # Extract the options
+    options = config[_violationInfo['matchedRegex']]
     
-    # Print the length of the violations
-    print "Current Violations Count: "+str(len(violations))
-    
-    # Alert Message Configuration
-    if KeyExists(options, 'customAlert'):
-        key = options['customAlert']
-        if KeyExists(key, 'message'):
-            message = key['message']
+    # AppBlocker Core Config Options
+    if KeyExists(options, 'allowedPath'):
+        if _violationInfo['appPath'] == options['allowedPath']:
+            kill = False
         else:
-            message = message.format()
-        if KeyExists(key, 'informativeText'):
-            informativeText = key['informativeText']
-        if KeyExists(key, 'iconPath') and os.path.exists(key['iconPath']):
-            iconPath = key['iconPath']
-        if KeyExists(key, 'proceedButton'):
-            proceedButton = key['proceedButton']
-        alert(iconPath, message, informativeText, proceedButton)
+            _violationInfo['reasoning']['pathMismatch'] = True
+    if KeyExists(options, 'allowedUsers'):
+        if currentUser in options['allowedUsers']:
+            kill = False
+        else:
+            _violationInfo['reasoning']['userMismatch'] = True
+       
+    ## Should we kill the app?
+    if kill == True:
+        # Kill the app
+        killApp(_violationInfo)
+        
+        # Add the app to the queue
+        violations.append(_violationInfo)
+        
+        # Log the successful termination of violation
+        print("STATUS: AppBlocker killed {}, \"{}\" matching regex group: \"{}\", pid {}".format(callers[caller], _violationInfo['appName'], _violationInfo['matchedRegex'], _violationInfo['processIdentifier']))
+       
+        # Are we going to delete the app?
+        if KeyExists(options, 'deleteBlockedApplication'):
+            if options['deleteBlockedApplication'] is True:
+                try:
+                    shutil.rmtree(_violationInfo['appPath'])
+                except OSError, e:
+                    print ("Error: %s - %s." % (e.filename,e.strerror))
 
+        # Notify the user, if specified
+        if KeyExists(options, 'customAlert'):
+            key = options['customAlert']
+            if KeyExists(key, 'message'):
+                message = key['message']
+            else:
+                message = message.format()
+            if KeyExists(key, 'informativeText'):
+                informativeText = key['informativeText']
+            if KeyExists(key, 'iconPath') and os.path.exists(key['iconPath']):
+                iconPath = key['iconPath']
+            if KeyExists(key, 'proceedButton'):
+                proceedButton = key['proceedButton']
+            alert(iconPath, message, informativeText, proceedButton)
+        
 def killRunningApps(workspace):
     running_apps = workspace.runningApplications()
     for app in running_apps:
