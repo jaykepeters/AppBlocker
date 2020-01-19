@@ -90,10 +90,13 @@ def parseConfig(_config):
 
 # Function for killing apps
 def killApp(_violationInfo):
+    killed = True
     try:
         os.kill(_violationInfo['processIdentifier'], signal.SIGKILL)
     except:
+        killed = False
         print("ERROR: Someone else killed pid "+str(_violationInfo['processIdentifier']))
+    return killed
 
 # Performs actions on a per-app basis
 def takeAction(_violationInfo):
@@ -128,7 +131,7 @@ def takeAction(_violationInfo):
     ## Should we kill the app?
     if kill == True:
         # Kill the app
-        killApp(_violationInfo)
+        killedStatus = killApp(_violationInfo)
         
         # Add the app to the queue
         violations.append(_violationInfo)
@@ -154,31 +157,43 @@ def takeAction(_violationInfo):
             ## DEFAULTS
             
             ## ALERT FORMATTING ##
-            class MessageVars:
+            class CustomAlertVars:
                 def __init__(self):
+                    # Approved Global Variables
+                    approvedGlobals = ['currentUser']
+                    for i in approvedGlobals:
+                        setattr(self, i, eval(i))
+                        
+                    # Violation Information Parameters
                     for key in _violationInfo.keys():
                         setattr(self, key, _violationInfo[key])
-            MV = MessageVars()
+            MV = CustomAlertVars()
             ## ALERT FORMATTING ##
             
             # So we don't call every time
             key = options['customAlert']
             if KeyExists(key, 'message'):
+                _message = message
                 try:
-                    _message = message
                     message = Template(key['message']).substitute(vars(MV))
-                    del MV
                 except KeyError:
                     message = _message
+                    print "ERROR: There are invalid variables in your message contents!"
             else:
                 message = message.format()
             if KeyExists(key, 'informativeText'):
-                informativeText = key['informativeText']
+                _informativeText = informativeText
+                try:
+                    informativeText = Template(key['informativeText']).substitute(vars(MV))
+                except KeyError:
+                    informativeText = _informativeText
+                    print "ERROR: There are invalid variables in your informative text contents!"
             if KeyExists(key, 'iconPath') and os.path.exists(key['iconPath']):
                 iconPath = key['iconPath']
             if KeyExists(key, 'proceedButton'):
                 proceedButton = key['proceedButton']
-            
+
+            del MV
             alert(iconPath, message, informativeText, proceedButton)
         
 def killRunningApps(workspace):
@@ -287,4 +302,7 @@ nc.addObserver_selector_name_object_(AppLaunch, 'appLaunched:', 'NSWorkspaceWill
 killRunningApps(workspace)
 
 # Launch "app" (kills newly launched apps)
-AppHelper.runConsoleEventLoop()
+try:
+    AppHelper.runConsoleEventLoop()
+except KeyboardInterrupt:
+    os.kill(NSProcessInfo.processInfo().processIdentifier(), SIGNAL.KILL)
