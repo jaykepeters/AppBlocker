@@ -11,6 +11,7 @@ import re
 import json
 import inspect
 from string import Template
+import ast
 
 # Get the current user and their groups
 currentUser = Foundation.NSProcessInfo.processInfo().userName()
@@ -36,25 +37,24 @@ def parseConfig(_config):
     # Read the JSON
     try:
         with open(_config) as json_file:
-            config = json.load(json_file)
+            config = ast.literal_eval(json.dumps(json.load(json_file)))
     except:
-        exit(1) # Invlid json or not exists!
+        exit(1) # Invalid json or not exists!
     
     # List of errors
     errors = []
         
     # Current available options
     availableOptionKeys = {
-        "allowedGroups": list,
         "allowedUsers": list,
         "customAlert": {
-            "message": unicode,
-            "informativeText": unicode,
-            "iconPath": unicode,
+            "message": str,
+            "informativeText": str,
+            "iconPath": str,
             "proceedButton": list
         },
         "deleteBlockedApplication": bool,
-        "allowedPath": unicode
+        "allowedPath": str
     }
     
     # Traverse the config file :) Sad looking!
@@ -163,7 +163,11 @@ def takeAction(_violationInfo):
                     approvedGlobals = ['currentUser']
                     for i in approvedGlobals:
                         setattr(self, i, eval(i))
-                        
+                    
+                    # Config Variables (Keys)
+                    for key in options.keys():
+                        setattr(self, key, options[key])
+                                        
                     # Violation Information Parameters
                     for key in _violationInfo.keys():
                         setattr(self, key, _violationInfo[key])
