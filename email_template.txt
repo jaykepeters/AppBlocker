@@ -1,0 +1,6 @@
+The computer "{computerName}" has violated the restricted software record {regexMatch}.
+
+Here's some more information:
+  Process:	{runningappname}
+  Owner:	{username}
+  PID:		{pid}
