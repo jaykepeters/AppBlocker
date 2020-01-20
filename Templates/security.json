@@ -1,0 +1,7 @@
+{
+    "com.apple.automator.*": {},
+    "com.zeobit.MacKeeper": {
+        "deleteBlockedApplication": true
+    },
+    "com.apple.DirectoryUtility": {}
+}
