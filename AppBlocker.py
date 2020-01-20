@@ -5,7 +5,7 @@ import re
 import os
 import sys
 import shutil
-from AppKit import *
+import AppKit
 from PyObjCTools import AppHelper
 import re
 import json
@@ -218,7 +218,7 @@ def killRunningApps(workspace):
             # We call the takeaction method, with the additions below
             violationInfo = {
                 "matchedRegex": exactBundleIDOrWildcard,
-                "userName": NSProcessInfo.processInfo().userName(),
+                "userName": AppKit.NSProcessInfo.processInfo().userName(),
                 "appName": app.localizedName(),
                 "bundleIdentifier": app.bundleIdentifier(),
                 "processIdentifier": app.processIdentifier(),
@@ -251,7 +251,7 @@ def prepare(app):
             # Store the violation information
         violationInfo = {
             "matchedRegex": exactBundleIDOrWildcard,
-            "userName": NSProcessInfo.processInfo().userName(),
+            "userName": AppKit.NSProcessInfo.processInfo().userName(),
             "appName": app.localizedName(),
             "bundleIdentifier": app.bundleIdentifier(),
             "processIdentifier": app.processIdentifier(),
@@ -265,10 +265,10 @@ def prepare(app):
 
 
 # Define callback for notification
-class AppLaunch(NSObject):
+class AppLaunch(AppKit.NSObject):
     #def appLaunched_(self, notification):
     def observeValueForKeyPath_ofObject_change_context_(self, path, object, changeDescription, context):
-        if NSKeyValueChangeNewKey == 'new':
+        if AppKit.NSKeyValueChangeNewKey == 'new':
             prepare(object.runningApplications()[-1])
                 
 # Define alert class
@@ -281,21 +281,21 @@ class Alert(object):
         self.buttons = []
 
     def displayAlert(self):
-        alert = NSAlert.alloc().init()
+        alert = AppKit.NSAlert.alloc().init()
         alert.setMessageText_(self.messageText)
         alert.setInformativeText_(self.informativeText)
-        alert.setAlertStyle_(NSInformationalAlertStyle)
+        alert.setAlertStyle_(AppKit.NSInformationalAlertStyle)
         for button in self.buttons:
             alert.addButtonWithTitle_(button)
 
         if os.path.exists(self.alertIconPath):
-            icon = NSImage.alloc().initWithContentsOfFile_(self.alertIconPath)
+            icon = AppKit.NSImage.alloc().initWithContentsOfFile_(self.alertIconPath)
             alert.setIcon_(icon)
 
         # Don't show the Python rocketship in the dock
-        NSApp.setActivationPolicy_(1)
+        AppKit.NSApp.setActivationPolicy_(1)
 
-        NSApp.activateIgnoringOtherApps_(True)
+        AppKit.NSApp.activateIgnoringOtherApps_(True)
         alert.runModal()
 
 # Define an alert
@@ -314,13 +314,14 @@ workspace = Foundation.NSWorkspace.sharedWorkspace() # For runnning apps
 #nc = workspace.notificationCenter()
 AppLaunch = AppLaunch.new()
 #nc.addObserver_selector_name_object_(AppLaunch, 'appLaunched:', 'NSWorkspaceWillLaunchApplicationNotification',None) #NO MORE
-workspace.addObserver_forKeyPath_options_context_(AppLaunch, 'runningApplications', NSKeyValueObservingOptionNew, 0)
+workspace.addObserver_forKeyPath_options_context_(AppLaunch, 'runningApplications', AppKit.NSKeyValueObservingOptionNew, 0)
 
 # Kill existing applications
 killRunningApps(workspace)
 
 # Launch "app" (kills newly launched apps)
 try:
+    print "PID OF THIS INSTANCE: "+str(AppKit.NSProcessInfo.processInfo().processIdentifier())
     AppHelper.runConsoleEventLoop().run() # RUN!
 except KeyboardInterrupt:
-    os.kill(NSProcessInfo.processInfo().processIdentifier(), SIGNAL.KILL)
+    os.kill(AppKit.NSProcessInfo.processInfo().processIdentifier(), SIGNAL.KILL)
