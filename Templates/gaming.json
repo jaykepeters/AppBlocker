@@ -1,0 +1,56 @@
+{
+    "com.ninjakiwi.bloonstd5osx": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "org.openemu.OpenEmu": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.twitch.desktop": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "octagonmac.lukaskorba.com": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.apple.gamecenter": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.mojang.*": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.Roblox.*": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.epicgames.EpicGamesLauncher": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    },
+    "com.valvesoftware.steam": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "Games such as $appName are not allowed on this computer."
+        }
+    }
+}
