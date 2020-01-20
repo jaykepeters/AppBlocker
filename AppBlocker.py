@@ -105,7 +105,7 @@ def takeAction(_violationInfo):
     caller = inspect.stack()[1][3]
     callers = {
         "killRunningApps": "EXG",
-        "appLaunched_": "NEW"
+        "prepare": "NEW"
     }
     
     # We should assume the app killed
@@ -237,36 +237,40 @@ else:
     exit(1)
 ## BEFORE ANYTHING ELSE
 
-# Define callback for notification
-class AppLaunch(NSObject):
-    def appLaunched_(self, notification):
-
-        print(notification)
-        # Store the userInfo dict from the notification
-        userInfo = notification.userInfo
-
-        # Get the laucnhed applications bundle identifier
-        bundleIdentifier = userInfo()['NSApplicationBundleIdentifier']
-        
-        # Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
-        match = re.match(blockedBundleIdentifiersCombined, str(bundleIdentifier))
-        if match:
-
-            # Get the exact bundle identifier or regex that matched
-            exactBundleIDOrWildcard = re.sub(r"\(|\)", '', blockedBundleIdentifiersCombined).split("|")[match.lastindex - 1]
+## TESTING ##
+def prepare(app):
+    bundleIdentifier = app.bundleIdentifier()
+    
+    # Check if launched app's bundle identifier matches any 'blockedBundleIdentifiers'
+    match = re.match(blockedBundleIdentifiersCombined, str(bundleIdentifier))
+    
+    if match:
+        # Get the exact bundle identifier or regex that matched
+        exactBundleIDOrWildcard = re.sub(r"\(|\)", '', blockedBundleIdentifiersCombined).split("|")[match.lastindex - 1]
 
             # Store the violation information
-            violationInfo = {
-                "matchedRegex": exactBundleIDOrWildcard,
-                "bundleIdentifier": bundleIdentifier,
-                "processIdentifier": userInfo()['NSApplicationProcessIdentifier'],
-                "appName": userInfo()['NSApplicationName'],
-                "appPath": str(userInfo()['NSApplicationPath'])
-            }
-            
-            # Take action upon the application
-            takeAction(violationInfo)
-            
+        violationInfo = {
+            "matchedRegex": exactBundleIDOrWildcard,
+            "userName": NSProcessInfo.processInfo().userName(),
+            "appName": app.localizedName(),
+            "bundleIdentifier": app.bundleIdentifier(),
+            "processIdentifier": app.processIdentifier(),
+            "appPath": app.bundleURL().path() # Not NSURL
+        }
+                
+        # Take action upon the application
+        takeAction(violationInfo)
+
+## TESTING ##
+
+
+# Define callback for notification
+class AppLaunch(NSObject):
+    #def appLaunched_(self, notification):
+    def observeValueForKeyPath_ofObject_change_context_(self, path, object, changeDescription, context):
+        if NSKeyValueChangeNewKey == 'new':
+            prepare(object.runningApplications()[-1])
+                
 # Define alert class
 class Alert(object):
 
@@ -307,15 +311,16 @@ blockedBundleIdentifiersCombined = "(" + ")|(".join(config.keys()) + ")"
 
 # Register for 'NSWorkspaceDidLaunchApplicationNotification' notifications
 workspace = Foundation.NSWorkspace.sharedWorkspace() # For runnning apps
-nc = workspace.notificationCenter()
+#nc = workspace.notificationCenter()
 AppLaunch = AppLaunch.new()
-nc.addObserver_selector_name_object_(AppLaunch, 'appLaunched:', 'NSWorkspaceWillLaunchApplicationNotification',None)
+#nc.addObserver_selector_name_object_(AppLaunch, 'appLaunched:', 'NSWorkspaceWillLaunchApplicationNotification',None) #NO MORE
+workspace.addObserver_forKeyPath_options_context_(AppLaunch, 'runningApplications', NSKeyValueObservingOptionNew, 0)
 
 # Kill existing applications
 killRunningApps(workspace)
 
 # Launch "app" (kills newly launched apps)
 try:
-    AppHelper.runConsoleEventLoop()
+    AppHelper.runConsoleEventLoop().run() # RUN!
 except KeyboardInterrupt:
     os.kill(NSProcessInfo.processInfo().processIdentifier(), SIGNAL.KILL)
