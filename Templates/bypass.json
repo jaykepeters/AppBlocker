@@ -6,5 +6,12 @@
     "net.macterm.MacTerm": {},
     "co.zeit.hyper": {},
     "com.googlecode.iterm2": {},
-    "com.apple.ActivityMonitor": {}
+    "com.apple.ActivityMonitor": {},
+    "com.apple.systempreferences": {
+        "deleteBlockedApplication": true,
+        "customAlert": {
+            "message": "The bypassing of restrictions on this computer is prohibited!"
+        },
+        "allowedPath": "/Applications/System Preferences.app"
+    }
 }
