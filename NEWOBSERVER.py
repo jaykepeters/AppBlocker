@@ -15,18 +15,30 @@ https://stackoverflow.com/questions/52710089/macos-detect-all-application-launch
 import Foundation
 import AppKit
 from PyObjCTools import AppHelper
+import signal
+import os
 
 def takeaction(runningapp):
-    print(runningapp.bundleIdentifier())
-    
+    if runningapp.bundleIdentifier() == 'com.twitch.desktop':
+        os.kill(runningapp.processIdentifier(), signal.SIGKILL)
+        print("TWITCH IS NOT ALLOWED!")
+    elif runningapp.bundleIdentifier() == 'com.apple.DirectoryUtility':
+        print "adrna"
+        os.kill(runningapp.processIdentifier(), signal.SIGKILL)
+    elif runningapp.bundleIdentifier() == 'com.jamfsoftware.selfservice.mac':
+        print 1
+        os.kill(runningapp.processIdentifier(), signal.SIGKILL)
 class Observer(NSObject):
+    def __init__(self):
+        #self.currentbid = 0
+        pass
     def observeValueForKeyPath_ofObject_change_context_(self, path, object, changeDescription, context):
         if NSKeyValueChangeNewKey == 'new':
             takeaction(object.runningApplications()[-1])
         #print changeDescription[NSKeyValueChangeNewKey]
         
     def willChangeValueForKey_(self, key):
-        print "Changed"
+        print "Changed" +key
         
 
 observer = Observer.new()
