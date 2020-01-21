@@ -1,3 +1,6 @@
+# New idea! Use plist so that Jamf Now and such can push the blocked apps to the agent... This would be amazing! Maybe we use some monitoring observer to see that the file changes and reload accordingly. ]
+
+
 # keysToRemove: remove duplicates, or ignore such as appPath... All other appInfo parameters same, remove dupes...
 # exclude /Library/Widgets and /Library/Scripts, none have cfbids
 # note that automator apps can be blocked by wildcarding com.apple.automator.*
