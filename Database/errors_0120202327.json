@@ -1,0 +1,35 @@
+{
+    "noCFBundleIdentifier": [
+        "/Library/Scripts/ColorSync/Remove.app", 
+        "/Library/Scripts/ColorSync/Proof.app", 
+        "/Library/Scripts/ColorSync/Match.app", 
+        "/Library/Scripts/ColorSync/Embed.app", 
+        "/Library/Scripts/ColorSync/Extract.app", 
+        "/Library/Scripts/ColorSync/Show Info.app", 
+        "/Library/Scripts/ColorSync/Rename.app", 
+        "/Library/Scripts/ColorSync/Set Info.app", 
+        "/Library/Filesystems/osxfuse.fs/Contents/Resources/uninstall_osxfuse.app"
+    ], 
+    "noPlist": [
+        "/Applications/Terminal.app", 
+        "/System/Library/CoreServices/Stocks.app", 
+        "/Applications/Spotify.app", 
+        "/Users/jaykepeters/anaconda3/bin/python.app", 
+        "/Applications/Adobe Photoshop CC 2018/Adobe Photoshop CC 2018.app", 
+        "/Users/jaykepeters/Library/Containers/com.microsoft.openxml.excel.app", 
+        "/Users/jaykepeters/Library/Application Scripts/com.microsoft.openxml.excel.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-watchos-clang/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-tvos-clang/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-ios-clang/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-icc/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-g++/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/qt-5.9.7-h468cd18_1/mkspecs/macx-clang/Info.plist.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/ncurses-6.1-h0a44026_1/share/terminfo/69/iTerm2.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/ncurses-6.1-h0a44026_1/share/terminfo/69/iTerm.app", 
+        "/Users/jaykepeters/anaconda3/pkgs/python.app-2-py37_9/bin/python.app", 
+        "/Users/justinpeters/Scripter.app", 
+        "/Users/jaykepeters/Library/Application Support/com.twocanoes.macdeploystick/__MACOSX/Imagr.app", 
+        "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/lib/missioncontrol/__MACOSX/Java Mission Control.app"
+    ], 
+    "unknown": []
+}
